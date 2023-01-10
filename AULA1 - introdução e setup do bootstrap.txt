@@ -1,0 +1,2444 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+O QUE É O BOOSTRAP?
+
+
+
+
+
+
+
+
+
+-- >VAMOS COMEÇAR POR:
+
+
+
+
+
+
+
+
+
+''O QUE É UM CSS FRAMEWORK''
+
+
+
+
+
+
+
+
+
+
+
+''COMO PODEMOS ADICIONAR O BOOTSTRAP A 1 DE NOSSOS WEBSITES...
+
+
+
+
+
+
+
+
+
+
+
+-> VEREMOS COMO PODEMOS CONSTRUIR UM WEBAPP 
+
+
+COM O BOOTSRAP..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-_> O BOOTSTRAP É UM 
+
+
+
+
+CSS FRAMEWORK... MAS O QUE É ISSO?
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- BEM, VOCÊ JÁ SABE QUE 'CSS' 
+
+É USADO PARA ESTILIZAR NOSSO WEBSITE..
+
+
+
+
+
+
+
+
+
+
+------> TIPICAMENTE,
+
+
+NÓS ESTILIZAMOS NOSSO WEBSITE 
+
+POR MEIO 
+
+
+DE SELECTORS,
+
+
+'ELEMENT' OU 'CLASS' SELECTORS..
+
+
+
+
+
+
+
+
+
+
+
+--> VOCê ESCREVE CLASSES PARA ENTÃO AS ANEXAR AOS 
+
+SEUS 
+
+
+
+
+COMPONENTS...
+
+
+
+
+
+
+
+
+
+--> MAS O DOWNSIDE É QUE VOCÊ PRECISA ESCREVER TODO ESSE CÓDIGO POR CONTA PRÓPRIA...
+
+
+
+
+
+
+
+
+
+
+-> ISSO FICA BEM CUMBERSOME...
+
+
+
+
+
+
+
+--> CSS FRAMEWORKS EXISTEM PARA TE AJUDAR ---> TRAZEM UM MONTE 
+
+
+DE ESTILOS PRÉ-DEFINIDOS,
+
+E UM 
+
+RICO 
+
+
+
+CONJUNTO DE 'PRE-STYLED CSS CLASSES',
+
+QUE 
+
+VOCÊ 
+
+PODE ADICIONAR 
+
+
+
+
+
+
+
+AOS _ SEUS __ HTML ELEMENTS PARA 
+
+
+
+ENTÃO CONSEGUIR 
+
+
+
+CERTOS LOOKS NA SUA PÁGINA ---> 
+
+
+É ÓTIMO PARA 
+
+
+
+
+
+
+'QUICK PROTOTYPING',
+
+
+
+
+
+
+
+
+
+MAS __ TAMBÉM É ÓTIMO PARA PRODUCTION-READY APPS,
+
+
+EM QEU 
+
+VOCe^
+
+
+
+
+
+QUER __ TER UM CERTO ESTILO,
+
+
+E EM QUE VOCÊ NÃO QUER ESCREVER TODO O STYLING POR CONTA PRÓPRIA..
+
+
+
+
+
+
+
+
+
+
+
+
+--> O BOOTSTRAP NA VERDADE 
+
+
+COBRE 3 COISAS::::
+
+
+
+
+
+
+
+
+
+
+
+1) ALGUNS 'DEFAULT STYLES'... ---> ELE SETTA UMA 'DEFAULT FONT-SIZE',
+
+
+
+UNS DEFAULT FONT-SIZES..
+
+
+
+TAMBÉM:
+
+A) DEFAULT PADDING 
+
+B) DEFAULT MARGINS 
+
+C) DEFAULT COLORS 
+
+
+
+
+
+
+---> UM MONTE DE DEFAULTS 
+
+AOS SEUS HEADINGS,
+
+PARAGRAPHS,
+
+ETC...
+
+
+
+
+
+
+
+
+
+
+
+
+2) ALÉM DISSO,
+
+
+O 
+
+
+
+BOOTSTRAP TAMBÉM TE OFERECE '''1 RICO SET DE PRE-DEFINED CSS CLASSES'',
+
+
+
+E O PROFESSOR LOGO NOS MOSTRARÁ O QUE É ISSO...
+
+
+
+
+
+
+
+
+
+
+3) A ÚLTIMA COISA GRANDE QUE ELE NOS OFERECE É ''THE GRID''...
+
+
+
+
+
+
+
+
+
+
+--> A COISA BOA DA 'GRID'
+
+É QUE 
+
+VOCÊ 
+
+
+PODE LAYOUTAR 
+
+
+SUA 
+
+PAGE
+ 
+
+
+ COM __ UMA GRID DESSAS...
+
+
+
+
+
+
+
+
+ (
+
+    PQ SE VOCÊ 
+
+    PENSAR SOBRE UMA PAGE,
+
+
+
+    VOCê 
+
+    PODE A LAYOUTAR,
+
+    PENSAR 
+
+    NELA COMO __ ROWS__ E COLUMNS...
+
+
+
+ )
+
+
+
+
+
+
+
+
+
+
+
+ --> E O BOOTSTRAP ___ TE OFERECE___ UMA GRID __ EASY-TO-USE,
+
+
+
+
+ QUE VOCÊ 
+
+
+
+ DEFINE 
+
+ POR MEIO DO USO DE 'HTML ELEMENTS' COM ALGUMAS 
+
+ CERTAS CSS CLASSES,
+
+
+
+
+ QUE FARÃO COM QUE 
+
+
+ OS ELEMENTOS HTML SERÃO POSICIONADOS 
+ CORRETAMENTE AUTOMATICAMENTE,
+
+
+ POR MEIO DOS BOOTSTRAP STYLINGS...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ MAS VAMOS VER TUDO ISSO AGORA...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 1) GENERAL STYLES...
+
+
+
+
+
+
+ O QUE SIGNIFICAM?
+
+
+
+
+
+
+
+
+
+----> BASICAMENTE __ 
+
+
+
+
+
+SIGNIFICAM QUE:
+
+
+
+a) EXISTE UMA '''GENERAL PACKAGE''',
+
+
+de nome 'reboot_css'',
+
+criada _ PELA EQUIPE DO BOOTSTRAP,
+
+
+
+QUE __ BASICAMENTE 
+
+'ESTILIZA VÁRIAS COISAS NA SUA PAGE',
+
+
+PARA QUE 
+
+__FUNCIONEM _ DE FORMA EQUIVALENTE EM DIVERSOS BROWSERS....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REBOOT --> 'SET CROSS-BROWSER STYLE DEFAULTS'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> ISSO PQ CADA _ BROWSER_ VEM COM SEU PRÓPRIO SET __ DE 
+
+
+'DEFAULT STYLES',
+
+
+E
+ 
+
+ISSO QUER DIZER QUE ____ 
+
+
+ALGUNS ELEMENTOS PODEM SE COMPORTAR/FICAR DIFERENTES EM DIFERENTES 
+
+BROWSERS...
+
+
+
+
+
+
+
+
+
+
+-> O REBOOT GARANTE QUE 'TODOS OS BROWSERS COMEÇAM DO MESMO NÍVEL'...
+
+
+
+
+
+
+
+
+
+
+
+
+----> CERTO... ------> DEPOIS DISSO,
+
+
+
+
+
+TEMOS 
+
+
+
+
+'''''DEFAULT STYLES/TYPOGRAPHY STYLES''' --> OU SEJA,
+
+
+SÃO 
+
+
+DEFAULT FONT-FAMILY,
+
+
+FONT-WEIGHTS,
+
+
+
+
+TYPOGRAPHY PARA 'SPANS',
+
+
+'PARAGRAPHS',
+
+HEADINGS,
+
+ ETC...
+
+
+
+
+
+
+
+
+ TODOS ESSES ELEMENTOS HTML DEFAULT RECEBEM 
+
+
+ 'STANDARD STYLES' POR CONTA DAS BOOTSTRAP PACKAGES...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> POR FIM, TEMOS 'TABLES, IMAGES E FIGURES' --> ELES TAMBÉM 
+
+ RECEBEM 'DEFAULT RESPONSIVE STYLES',
+
+
+
+
+
+
+
+ PARA _ QUE FIQUEM BONITOS E PROFISSIONAIS..
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> OU SEJA,
+
+ COM O 'DEFAULT BOOTSTRAP', o básico,
+
+ ganhamos:
+
+
+
+
+ A) REBOOT (CROSS-BROWSER STYLE DEFAULTS) 
+
+
+
+ B) TYPOGRAPHY/DEFAULT STYLES  (letras)
+
+
+
+
+
+ 3) TABLES, IMAGES AND FIGURES (elementos visuais, images)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> OK... ISSO TUDO É O 'DEFAULT STYLING' DO BOOTSTRAP --> ESSES 
+
+
+
+ ESTILOS ACABAM APLICADOS A CERTOS ELEMENTOS,
+
+ NÃO INTERESSA SE VOCê QUER OU NÃO....
+
+
+
+
+
+
+
+
+
+
+
+ ---> OK, ESSES SÃO 'SET BY DEFAULT'... --> VOCÊ PODE OS OVERWRITTAR COM SUAS PRÓPRIAS 
+
+
+ CSS RULES,
+
+ MAS VOCê COMEÇA COM ELES...
+
+
+
+
+
+
+
+
+
+
+
+
+ --> DEPOIS DISSO,
+
+
+
+
+ TEMOS 
+
+
+
+
+
+
+
+ O BUILDING BLOCK DO 'GRID LAYOUT'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> GRID LAYOUT --> COMO O PROFESSOR MENCIONOU, PODEMOS 
+
+
+
+ PENSAR NA NOSSA PAGE COMO 
+
+ UM MONTE DE 
+
+
+
+
+
+ ROWS 
+
+
+ E 
+
+ COLUMNS...
+
+
+
+
+
+
+
+
+
+ E O 'GRID LAYOUT',
+
+
+
+ NO BOOTSTRAP,
+
+
+ É 
+
+
+ SEMPRE DEFINIDO 
+
+
+
+
+
+
+
+
+POR UMA __ DIV__ COM UMA CLASS DE 'CONTAINER'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> CONTAINER --> UM CONTAINER SIMPLESMENTE CONTÉM O 
+
+
+
+'GRID'
+ 
+
+ QUE VOCê ACABA DEFININDO,
+
+
+ COM UM 
+
+
+
+ PUNHADO DE 'ROWS' E 'COLUMNS'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> isso quer dizer que a GRANDE FEATURE DO BOOTSTRAP,
+
+
+
+
+a 'grid',
+
+
+é acessada por 
+
+'container'
+
+
+'row' 
+
+
+e 
+
+'col'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> OK... DENTRO DO 'CONTAINER',
+
+
+
+VOCê SEMPRE TERÁ:
+
+
+
+
+
+
+
+
+1) 1 OU MAIS 'ROWS'...
+
+
+
+
+
+
+
+
+2) DENTRO DESSES 'ROWS',
+
+
+
+VOCÊ TERÁ '1 OU MAIS'
+
+
+'COLS'...
+
+
+
+
+
+
+
+--> E VOCê __ SIMPLESMENTE_ CRIA __ NOVOS 'ROWS' E 'COLS'
+
+
+
+
+
+
+_ POR MEIO __ DO 
+
+
+NESTING DE 'DIVS' OU QUAISQUER OUTROS 
+
+'BLOCK-LEVEL ELEMENTS'
+
+
+
+
+__ DENTRO __ DE OUTROS ELEMENTS...
+
+
+
+
+
+
+
+
+BLOCK LEVEL ELEMENTS:
+
+
+
+BLOCK LEVEL ---> ELEMENTOS QUE PODEM APARECER NO BODY DE UMA PÁGINA HTML..
+
+
+
+
+
+
+
+BLOCK --> PODE CONTER: __ OU UM OUTRO BLOCO NO SEU INTERIOR, OU UM 'INLINE ELEMENT'...
+
+
+
+
+
+BLOCK --> POR DEFAULT, BLOCK-LEVEL ELEMENTS __COMEÇAM EM NOVAS LINES...
+
+
+
+
+
+
+
+BLOCK ---> BLOCK LEVEL ELEMENTS CRIAM ESTRUTURAS MAIORES DO QUE 'INLINE ELEMENTS'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LISTA DE BLOCK-LEVEL ELEMENTS:
+
+
+
+
+
+
+
+p 
+
+h1, h2, h3, h4, h5, h6 
+
+
+
+
+
+ol, ul 
+
+
+
+
+pre (poemas, código)
+
+
+
+
+address (raro)
+
+
+
+blockquote (mt raro, faz um backspace)
+
+
+
+
+
+
+dl (também raro, outro tipo de indentação)
+
+
+
+fieldset --> usado em forms 
+
+
+
+
+form --- também é block 
+
+
+
+
+hr --> também é block 
+
+
+noscript - também é block 
+
+
+
+
+table --> também é block
+
+
+
+
+
+
+
+
+
+
+SPAN --> NAÕ É BLOCK.
+
+
+
+
+
+
+---> OK.... --> 
+
+
+
+
+
+
+
+<CONTAINER>
+
+
+
+
+<ROW>
+
+
+<COL>
+
+
+
+
+
+
+
+
+
+--> OK... MAS QUANTO A 'COLUMNS',
+
+
+
+TEMOS 
+
+
+_DIFERENTES CLASSES QUE PODEMOS USAR --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COL --> MTAS CLASSES DIFERENTES --> 
+
+
+
+
+PODEMOS DEIXAR NOSSA GRID RESPONSIVE --> ''QUEREMOS QUE 
+
+
+ESSA COLLUMN SEJA 
+
+AMPLA ASSIM NESSE DEVICE ESPECÍFICO, NESSE MOBILE...'' -->
+
+
+
+
+
+posso dizer '''EM UM MOBILE DEVICE, QUERO TER AS 2 COLUMN
+
+
+NÃO 1 DO LADO DA OUTRA,
+
+E SIM 1 EM CIMA DA OUTRA''....
+
+
+
+
+(
+    OU SEJA,
+
+    CADA COLUMN DEVE TER A FULL WIDTH,
+
+    NA VERSÃO MOBILE... --> JÁ NA VERSÃO 'DESKTOP',
+    QUEREMOS 
+
+    QUE 
+
+
+    CADA 1 DAS COLUMN 
+
+    TENHA '50%' DA WIDTH...
+)
+
+
+
+
+
+
+
+
+
+--> ISSO SÃO COISAS QUE VOCÊ PODE FACILMENTE DEFINIR, POR MEIO DAS CSS CLASSES DO BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+
+
+--> A 'GRID' , POR TRÁS DAS CENAS,
+
+
+
+USA 
+
+
+
+'FLEXBOX' ---> É UMA TECNOLOGIA QUE VOCÊ PODE USAR SEM O BOOTSTRAP..
+
+
+
+
+
+
+
+
+
+
+
+--> USAR O FLEXBOX SEM O BOOTSTRAP NÃO É TÃO DIFÍCIL,
+
+
+MAS É MAIS DIFÍCIL 
+
+
+DO QUE 
+
+USAR O BOOTSTRAP (mais fácil ainda)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------> A ÚLTIMA COISA QUE O BOOTSTRAP TE FORNECE SÃO AS 
+
+
+'PRE-DEFINED CSS CLASSES'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> PODEM SER CHAMADOS TAMBÉM DE 'COMPONENTS',
+
+
+MAS O PROFESSOR QUER QUE NÃO CONFUNDAMOS 
+
+
+COM COMPONENTS DE 
+
+'ANGULAR/REACT OU VUE'...
+
+
+
+
+
+
+
+
+
+
+
+
+-> NÃO ESTAMOS ADICIONANDO NENHUMA LÓGICA  DE JAVASCRIPT 
+
+
+NESSAS CLASSES BOOTSTRAP (como no react/angular/vue).... ---> 
+
+
+
+
+
+
+
+
+
+
+MAS É CLARO QUE HÁ ALGUNS BOOTSTRAP COMPONENTS QUE 
+
+__ UTILIZAM JAVASCRIPT, SIM.. --> 
+
+
+
+
+
+
+
+
+
+MAS O PROFESSOR ESTÁ FALANDO DE CSS CLASSES QUE VOCê ADICIONA A 
+
+
+HTML ELEMENTS PARA QUE ELES SE COMPORTEM DE CERTA MANEIRA...
+
+
+
+
+
+
+
+
+--> CERTO...
+
+
+
+
+
+
+E AQUELA PARTE DO 'JAVASCRIPT' QUE O PROFESSOR MENCIONOU:
+
+
+
+
+
+** ALGUMAS COISAS,
+
+COMO '' 1 MODAL SER MOSTRADO/ESCONDIDO'',
+
+
+
+ESSAS COISAS REQUEREM JAVASCRIPT (com jquery, eu acho ) ---> VOCÊ PRECISA 
+
+
+DO JAVASCRIPT PARA TOGGLAR CERTOS STYLES COM 
+ 
+
+ O 
+
+ BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> O BOOTSTRAP JÁ VEM COM O JAVASCRIPT NECESSÁRIO PARA ISSO (
+
+
+    e você pode adicionar isso ao seu código se você quiser...
+
+ )
+
+
+
+
+
+
+
+
+
+
+ --> É OPCIONAL, VOCÊ PODE ADICIOANR ESSE JS SE QUISER,
+
+
+
+ PQ VOCÊ PODE TOGGALR ESSAS CLASSES MANUALMENTE...
+
+
+
+
+ (
+
+
+    O 
+
+    BOOTSTRAP TE DÁ ESSE JS, SE VOCÊ QUISER USAR...
+ )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> CERTO... VAMOS ESTUDAR ALGUMAS DAS CLASSES DO BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+
+
+
+ EX:
+
+
+
+
+
+
+
+
+
+ 1) PRE-DEFINED CLASSES/COMPONENTS:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALERTS ---> TEMOS DIVERSOS ALERTS,
+
+QUE PODEMOS 
+
+
+
+USAR COM DIFERENTES CORES...
+
+
+
+
+
+
+
+
+
+'danger' --> É O 'RED'...
+
+
+
+
+
+temos o tipo 'azul', padrão...
+
+
+
+
+
+
+
+
+
+--> PODEMOS USAR ESSAS DIVS, COM CERTOS STYLES,
+
+
+
+
+_ PARA _ AÍ MOSTRAR AVISOS AO USER (se queremos mostrar alguma message a ele,
+
+chamar sua atenção)....
+
+
+
+
+
+
+
+
+
+
+
+--> TAMBÉM TEMOS ALGUNS DEFAULT BUTTONS,
+
+
+OU CARDS,
+
+EM QUE PODEMOS 
+
+
+ADICIONAR IMAGE,
+
+
+
+TEXT E UM BUTTON, ETC ETC..
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> TAMBÉM TEMOS FORMS --> NICE-LOOKING FORMS,
+
+
+
+
+
+
+
+
+OS INPUTS E DROPDOWNS,
+
+
+todos 
+
+eles podem 
+ser estilizados 
+
+de forma profissional e nice....
+
+
+
+
+
+
+
+
+
+
+
+--> PODEMOS FACILMENTE ADICIONAR 
+
+
+
+
+
+
+__ UMA 'NAVBAR',
+
+
+
+
+COM LINKS, 1 BRAND,
+
+
+
+
+SEARCHBAR,
+
+ETC ETC...
+
+
+
+
+
+
+
+
+
+
+
+
+--> TUDO ISSO É ALTAMENTE CONFIGURÁVEL --> PODEMOS __ 
+
+
+
+
+
+ADICIONAR 1 CSS CLASS A OUTRAS, PARA CONSEGUIR 
+
+
+
+
+
+OUTRO LOOK.... ---> 
+
+
+
+
+
+
+
+
+
+
+
+
+SÃO TODAS COISAS QUE VEREMOS NESSA SÉRIE...
+
+
+
+
+
+
+
+
+
+
+
+--> PODEMOS FAZER ELEMENTOS FICAREM BONITOS,
+
+TUDO COM CLASSES DIFERENTES..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----> PARA FAZER TUDO ISSO FUNCIONAR,
+PPRECISAMOS 
+
+
+
+INSTALAR O BOOTSTRAP.... ----> 
+
+
+
+
+
+
+
+
+
+
+PARA COMEÇARMOS,
+
+
+VAMOS ATÉ 'BOOTSTRAP4'..
+
+
+
+
+
+
+
+
+
+--> NA PAGE DE START,
+
+
+TEMOS AQUELE 
+
+LINK DE 
+
+
+'CSS'
+ 
+
+ E 
+
+ O 
+
+ LINK DE 
+
+ 'JS'..
+
+
+
+
+
+
+
+ ----> O LINK DE 'CSS'
+
+
+
+
+
+ NÃO USA O JQUERY E O POPPER.JS (quando não temos modais, etc)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> CRIAMOS UM NOVO HTML, PARA TESTAR O BOOTSTRAP...
+
+
+
+
+
+
+
+
+ EX:
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK... ISSO VAI IMPORTAR O BOOTSTRAP LÁ DE UM CDN.... -----> 
+
+
+
+
+CDN --> ALTAMENTE OPTIMIZADO PARA VELOCIDADE..
+
+
+
+
+
+
+
+
+
+
+--> O IMPORT DE CDNS GERALMENTE É MAIS RÁPIDO DO QUE O IMPORT DE SEU 'LOCAL SERVER'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK...
+
+
+
+
+
+
+
+
+--> PODEMOS ADICIONAR AQUELES JAVASCRIPT IMPORTS...
+
+
+
+
+
+
+
+
+
+--> 'POPPER' --> nunca ouvi falar...
+
+
+
+
+
+
+
+
+
+
+
+--> BOOTSTRAP --> ESSA VERSÃO JAVASCRIPT 
+
+
+
+__ É USADA PARA COISAS COMO 'MODALS'...
+
+
+
+
+
+
+
+
+
+--> CERTO..
+
+
+
+
+
+
+
+
+
+
+--> MAS NA ESQUERDA,
+
+
+NA PARTE DE DOCUMENTAÇÃO,
+
+
+
+TEMOS OUTRA MANEIRA DE INSTALL...
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> OUTRAS OPÇÕES,
+
+COMO 
+
+'DOWNLOAD THE COMPILED CSS AND JS FILES' --> 
+
+
+
+ARQUIVO ZIP,
+
+VOC~E 
+
+PODE 
+
+
+BAIXAR ESSES ARQUIVOS NO SEU LOCAL 
+
+
+
+
+
+
+PROJECT FOLDER,
+
+E AÍ 
+
+SIMPLESMENTE OS IMPORTAR DE LÁ...
+
+
+
+
+
+
+
+
+
+--> SE VOCÊ DEPLOYAR SEU APP A UM SERVER DE VERDADE,
+
+
+VOCê 
+TERÁ 
+
+DE SHIPPAR ESSES ARQUIVOS DE SEU SERVER DE VERDADE ---> 
+
+A VANTAGEM
+ 
+
+ É QUE 
+
+
+ __ SE SEU SERVER ESTIVER UP,
+
+ ESSAS FILES SERÃO REACHABLE ( o cdn pode ficar down, mas isso é improvável)...
+
+
+
+
+
+
+
+
+
+
+
+ --> IR COM O CDN É GERALMENTE MELHOR...
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> 'SOURCE FILES' --> 
+
+ VOCÊ 
+
+ PODE 
+
+ PEGAR 
+
+ AS SOURCE FILES DO BOOTSTRAP,
+
+ QUE É 
+ ESCRITO EM 'SASS',
+
+ QUE 
+
+ É UM
+
+  
+  SUPERSET DO CSS (
+
+    é uma linguagem 
+
+    de compilação,
+
+    é compilada 
+
+
+
+    para CSS NORMAL 
+
+    durante o development...
+  )
+
+
+
+
+
+
+
+
+
+
+
+
+  SASS --> TE DEIXA 
+
+  ESCREVER 
+
+CODIGO MAIS CONVENIENTE,
+
+
+
+TE DEIXA 
+
+
+_ COM MAIS FEATURES,
+
+
+DEIXA O WRITE DE CSS 
+
+
+MAIS FÁCIL...
+
+
+
+
+
+
+
+
+
+
+
+--> VOCê PODE BAIXAR O 
+
+
+
+SOURCE CODE,
+
+
+
+
+MAS É CLARO QUE 
+
+ISSO REQUER 
+BAIXAR 
+
+
+OS SOURCE FILES,
+
+
+CONSTRUIR UM WORKFLOW E AÍ COMPILAR ESSE CÓDIGO (avançado)..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> POR FIM,
+
+
+
+TEMOS __ OS 'PACKAGE MANAGERS'...
+
+
+
+
+
+
+
+
+
+
+
+--> SE ESTAMOS TRABALHANDO EM UM PROJETO 
+
+
+COM 'REACT, ANGULAR', ETC
+,
+
+
+
+
+
+
+
+
+__ VOCê TIPICAMENTE USA O 'NPM'
+ 
+
+
+
+
+OU 'YARN'
+
+PARA MANAGEAR SUAS DEPENDENCIES ---------> O BOOTSTRAP É OUTRA 
+
+
+
+
+
+DEPENDENCY QUE 
+
+VOCê 
+
+PODE ADICIONAR,
+
+
+
+E AÍ 
+
+
+_ ELE __ É INSTALADO COMO UM PACOTE DENTRO DO FOLDER DE 'NODE_MODULES',
+
+
+
+
+
+
+E DEPOIS VOCÊ PODERÁ IMPORTAR ESSE BOOTSTRAP NO SEU PROJECT...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------> COMO IMPORTAR NO SEU PROJETO?
+
+
+
+
+
+
+
+
+
+
+
+
+'''OU IMPORTAR DO SEU NODE_MODULES FOLDER'',
+
+
+mas isso não É _ ÓPTIMO,
+PPQ 
+
+
+
+
+
+FREQUENTEMENTE VOCÊ NÃO DEPLOYA SEU FOLDER DE 'NODE_MODULES'... (ruim)...
+
+
+
+
+
+
+
+
+
+
+
+
+---->  O APPROACH MELHOR É SÓ IMPORTAR OS ARQUIVOS 
+
+
+'CSS E JS FILES'
+
+
+PARA 
+
+DENTRO DOS OUTROS 
+
+ARQUIVOS 
+
+'.JS'
+
+
+DO 
+
+SEU 
+
+
+PROJETO __ ,
+
+
+
+
+
+
+
+PQ VOCê TIPICAMENTE TERÁ UM BUILD WORKFLOW 
+
+COM WEBPACK,
+QUE 
+
+VAI ENTENDER ESSE TIPO DE IMPORTING,
+
+E AÍ 
+
+
+VAI __ ASSEGURAR _ QUE 
+
+
+
+
+
+
+___ SUAS DEPENDENCIES SERÃO COPIADAS PARA O SEU 'PRODUCTION FOLDER' 
+
+DE FORMA CORRETA...
+
+
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR TEM UMA SÉRIE SOBRE O WEBPACK,
+
+
+
+
+
+E ELE DIZ QUE É BEM AVANÇADO...
+
+
+
+
+
+
+
+
+
+
+
+--> MAS É UMA OPÇÃO QUE TEMOS--> 
+
+
+
+
+
+É UMA OPÇÃO 
+
+
+EM QUE 
+
+USAMOS 
+
+
+
+
+FREQUENTEMENTE EM 
+
+
+
+
+
+PROJETOS FRONTEND MAIS COMPLEXOS...
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK, O PROFESSOR JÁ ADICIONOU O LINK AO NOSSO PROJECT...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> OK.. 
+
+
+
+
+
+O PROFESSOR PEGA ESSE ARQUIVO, ABRE-O...
+
+
+
+
+
+
+
+
+
+---->  O PROFESSOR ABRE O INDEX.HTML --> 
+
+
+
+
+
+
+
+
+
+ELE GANHA UM ARQUIVO EM BRANCO SÓ COM 'MY FIRST BOOTSTRAP4 PAGE'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> nos styles ele visualiza 
+
+
+
+
+
+
+
+'_type.scss'...
+
+
+
+
+
+
+
+
+
+
+
+
+-----> ESSA É A 'DEFAULT FONT-SIZE',
+
+
+QUE ESTÁ SENDO SETTADA LÁ DESSE ARQUIVO..
+
+
+
+
+
+
+
+
+
+
+
+--> SCSS -------> É UM TIPO DE ARQUIVO SASS,
+
+
+
+
+
+
+
+
+
+
+NÓS NÃO BAIXAMOS O 'SOURCE CODE' DO 
+
+
+
+
+
+BOOTSTRAP,
+
+
+MAS 
+
+
+
+
+
+O ARQUIVO COMPILADO E OPTIMIZADO LÁ DA CDN DO BOOTSTRAP 
+
+
+
+CONTÉM 'SOURCE-MAPPING' --> SÃO SIMPLESMENTE 
+
+INFORMAÇÕES
+
+
+QUE 
+
+
+
+__ PERMITEM O BROWSER 
+
+
+
+__TRADUZIR O COMPILED CODE A 'RAW CODE'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+------> CERTO... -----> É POR ISSO QUE TEMOS UMA REFERÊNCIA AO 'RAW CODE' -----> MAS O QUE INTERESSA É QUE 
+
+ISSO TUDO ESTÁ VINDO DO 'BOOTSTRAP'...
+
+
+
+
+
+
+
+
+---> OK, O BOOTSTRAP FOI ADICIOANDO COM SUCESSO... ---> É SOBRE ISSO QUE EXPANDIREMOS....

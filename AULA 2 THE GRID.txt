@@ -1,0 +1,2825 @@
+
+
+
+
+
+
+
+
+
+
+
+NA ÚLTIMA AULA ESTUDAMOS O INÍCIO DO BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+
+
+--> NESSE VÍDEO VEREMOS O 'BOOTSTRAP GRID',
+
+
+
+COMO ELE FUNCIOAN,
+
+
+E COMO 
+
+PODEMOS 
+
+
+O UTILIZAR PARA LAYOUTAR 
+
+NOSSA PAGE,
+
+
+
+
+PARA _ 
+
+
+
+
+
+
+VER COMO PODEMOS __ 
+
+
+
+GARANTIR QUE TUDO FIQUE POSICIONADO NO LUGAR CERTO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----> OK, MAS COMO O BS GRID FUNCIONA?
+
+
+
+
+
+
+
+
+
+
+
+---> POR TRÁS DAS CENAS,
+
+
+
+
+ELE USA __ FLEXBOX __ PARA POSICIONAR ELEMENTOS E GARANTIR QUE TUDO FIQUE NO LUGAR CERTO....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> FLEXBOX --> VOCÊ PODE FAZER POR CONTA PRÓPRIA...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> DEVEMOS VER COMO O BS GRID FUNCIONA..
+
+
+
+
+
+
+
+
+
+
+
+--> USAMOS UM MONTE DE CSS ELEMENTS,
+
+TIPICAMENTE 
+
+
+
+'DIVS'...
+
+
+
+
+
+
+
+
+--> VOCê COMEÇA COM UMA DIV COM CLASS DE 'CONTAINER'..
+
+
+
+
+
+
+
+ex:
+
+
+
+
+
+
+
+<div class="container"></div>
+
+
+
+
+
+
+
+
+
+
+
+_> dENTRO DESSA DIV,
+
+VOCê 
+
+TIPICAMENTE
+CRIA 
+
+ROWS E COLS 
+
+PARA DEFINIR SUA GRID..
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> VAMOS ADIICONAR 1 
+
+DIV 
+
+NO INTERIOR DELA,
+
+COM CLASS DE 'ROW'...
+
+
+
+
+
+ex:
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Document2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+
+        
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> CERTO,
+
+E DENTRO 
+
+DE 
+
+'ROWS'
+
+
+VAMOS COLOCAR COLUMNS...
+
+
+
+
+
+
+
+
+--> cols ---> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+COLUMNS --> SÃO OS LUGARES EM QUE VOCÊ COLOCA SEU ACTUAL CONTENT...
+
+
+
+
+
+
+
+
+
+--> AS COLUMNS PODEM TER O TAMANHHO QUE VOCÊ QUISER,
+
+PODEM SE EXPANDIR DA FORMA QUE VOCê QUISER...
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VOCÊ AS UTILIZA PARA BASICAMENTE CRIAR CELLS NA SUA GRID...
+
+
+
+
+
+
+
+
+
+
+
+--> BEM, VOCÊ TEM 'ROWS' COM 'COLUMNS',
+
+E AÍ VOCê TEM 'CELLS'...
+
+
+
+
+
+
+
+
+
+
+
+
+--> UMA 'COL',
+
+
+
+
+NO FINAL DAS CONTAS,
+
+É CRIADA EXATAMENTE ASSIM:
+
+
+
+
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----> CERTO... O PROFESSOR COLOCA UM CONTEÚDO DE 'Row 1 Col 1'
+
+
+
+
+PARA PRINTAR 
+
+O 'ADDRESS' DESSA COLUMN...
+
+
+
+
+
+
+
+-> MESMA COISA PARA A SEGUNDA 'COL'...
+
+
+
+
+
+
+
+
+
+
+
+NO SEGUNDO ROW,
+
+ELE 
+
+_TAMBÉM ADICIONA 1 
+
+OUTRA COL,
+MAS APENAS 1...
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Document2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            ROW 1 COL 1 
+        </div>
+        <div class="col">
+            ROW 1 COL 2
+        </div>
+      </div>
+      <div class="row">
+           <div class="col">ROW 2 COL 1</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+---> OK, SALVAMOS TUDO ISSO E VOLTAMOS A NOSSA PÁGINA...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> VEMOS O NOSSO TEXTO...
+
+
+
+
+
+
+
+
+
+
+
+
+-> CERTO, MAS O PROFESSOR DIZ QUE ISSO AINDA ESTÁ MEIO DIFÍCIL DE VER,
+POR ISSO 
+
+
+
+ELE ADICIONA ALGUMAS CUSTOM CLASSES,
+
+
+E AÍ 
+
+
+ADIICONA UM ARQUIVO CSS EXTRA AO NOSSO PROJECT...
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+
+  <body>
+    <div class="container my-container">
+      <div class="row my-row">
+        <div class="col my-col">
+            ROW 1 COL 1 
+        </div>
+        <div class="col my-col">
+            ROW 1 COL 2
+        </div>
+      </div>
+      <div class="row my-row">
+           <div class="col my-col">ROW 2 COL 1</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> COLOCO UMAS CORES DE '3px solid red',
+
+
+
+
+
+
+TAMBÉM GREEN E BLACK...
+
+
+
+
+
+
+O PROFESSOR TAMBÉM COLOCA UMA MARGIN DE '30px',
+
+PARA QUE 
+
+
+
+__ NOSSO CONTENT NÃO FIQUE BEM NA BORDA DA PÁGINA..
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+body {
+  margin: 30px;
+}
+
+
+.my-container {
+    border: 1px solid green;
+}
+
+
+.my-row {
+    border: 3px solid red;
+}
+
+.my-col {
+    border: 3px dotted blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+-> OK, AGORA É POSSÍVEL VER COM CLAREZA OS 'ROWS' E 'COLUMNS',
+
+
+E ENTENDER COMO PODEMOS POSICIONAR NOSSO CONTEÚDO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS É INTERESSANTE VER QUE:
+
+
+
+
+
+
+
+
+
+
+1) POR DEFAULT,
+
+
+
+CADA __ COLUMN __ 
+
+
+
+TOMA UMA QUANTIDADE __ IGUAL _ DE ESPAÇO --> 
+
+
+
+
+
+
+
+
+
+
+SERÁ SEMPRE '50%' 
+
+DA AVAILABLE WIDTH' --> 
+
+
+
+
+
+
+
+
+MAS SE REDUZIRMOS O TAMANHO DA JANELA,
+
+
+
+
+
+ISSO TAMBÉM SERÁ O CASO,
+
+
+_ MAS __ SE 
+
+SEGUIRMOS ATÉ UM THRESHOLD 
+
+
+MT 
+
+
+BAIXO,
+
+
+
+
+__ EM DEVICES _ __ MUITO PEQUENOS__,
+
+
+
+A GRID VAI _ QUEBRAR __ AQUELE ROW EM 2 LINES (rows) -->  MAS TEMOS QUE IR __ MUITO _ 
+
+PARA BAIXO, 
+
+
+EM QUESTÃO 
+
+
+
+DE 
+
+
+
+'DEVICE WIDTH'...
+
+
+
+
+
+
+
+
+
+
+--> OK... ESSE É O BEHAVIOR SE USAMOS 
+
+
+
+
+
+
+
+
+ESSA CLASS PURA DE 'COL'...
+
+
+
+
+
+
+
+
+
+
+--> MAS É CLARO QUE 
+
+
+
+__ ESSE NÃO É O ÚNICO COMPORTAMENTO POSSÍVEL....
+
+
+
+
+
+
+
+
+
+
+
+--> O BOOTSTRAP TEM MAIORES CAPACIDADES --> 
+
+
+
+
+
+
+
+
+
+
+
+O GRID DO BS TEM MAIORES CAPACIDADES --> VOCê TERÁ CASOS EM QUE 
+
+
+NÃO VAI QUERER 'METADE-METADE' (2 cols, metade da width para cada)...
+
+
+
+
+
+
+
+
+
+
+
+--> DIGAMOS QUE VOCÊ QUER QUE:
+
+
+
+
+
+1) UMA DAS COLs tenha _ '1/3' DA AVAILABLE WIDTH,
+
+
+
+
+E A OUTRA COL 
+
+TENHA 2/3 .. -------> 
+
+
+
+
+
+
+
+
+
+
+
+PARA CONSEGUIR DIVIDIR O TAMANHO DOS ELEMENTOS ('cols')
+
+
+
+DE FORMA MAIS EFICIENTE,
+
+VOCÊ PODE MODIFICAR A ESCRITA DE 'col'...
+
+
+
+
+
+
+
+
+
+--> VOCÊ PODE COLOCAR MAIS ALGUNS PIECES OF INFo....
+
+
+
+
+
+
+
+
+
+--> NÓS BASICAMENTE 
+
+
+MUDAREMOS O __ NOME __ DA CLASS --> NÃO USAREMOS 
+
+
+
+
+'col',
+
+
+E SIM 
+USAREMOS 
+
+
+
+'col-4'..
+
+
+
+
+
+
+
+
+
+
+
+
+------> PARA O __ OUTRO 'COL',
+
+
+
+O PROFESSOR DECIDE COLOCAR O TAMANHO DE 'col-8'..
+
+
+
+
+
+
+
+
+
+-> OK.... 
+
+
+
+
+
+
+
+O PROFESSOR QUER, AGORA,
+
+QUE PENSEMOS SOBRE ESSES _ NÚMEROS_ AÍ 
+
+__ COMO __ 
+
+
+
+
+
+
+
+'FRAÇÕES'
+
+
+DA AVAILABLE WIDTH DE CADA _ ROW__ DE SUA PAGE...
+
+
+
+
+
+
+
+
+
+--> SÃO 'SHARES OF THE AVAILABLE SPACE',
+
+ESSENCIALMENTE...
+
+
+
+
+
+
+
+
+-> ELES __ SEMPRE __ DEVERÃO __ SER __ SOMADOS_ ATÉ _aTINGIR '12'...
+
+
+
+
+
+
+
+
+
+--> OU SEJA,
+
+
+
+
+AS LINHAS DO __ BOOTSTRAP SEMPRE SOMARÃO '12'... --> ESSE É O NÚMERO MÁGICO...
+
+
+
+
+
+
+
+
+
+
+
+
+----> MAS O PROFESSOR COMPLEMENTA:
+
+
+
+
+''''THEY __ cAN _ ADD UP TO 12 --> ESSE É O MÁXIMO,
+
+
+MAS MAIS TARDE VEREMOS QUE __ É POSSÍVEL __ USAR MENOS DO QUE 
+
+12 COMO SOMA DOS ELEMENTOS''...
+
+
+
+
+
+
+
+
+
+
+-> ADD UP TO 12 
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> POR DEFAULT,
+
+TEMOS UMA GRID DE 12...
+
+
+
+
+
+
+
+
+
+
+
+
+12 COLUMN GRID --------> 12 columns,
+
+
+
+
+
+
+
+
+
+
+em que cada uma delas por default é 
+
+
+'col-1' 
+
+ou só 'col'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---->  CERTO, MAS SE DIZEMOS 
+
+'col-4',
+
+
+
+ESTAMOS EXPLICANDO QUE QUEREMOS QUE _ ESSA COLUMN __ TOME 4 ESPAÇOS...
+
+
+
+
+
+
+
+A OUTRA DEVERÁ TOMAR '8'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> É CLARO QUE VOCÊ PODERIA ESCREVER 
+
+
+
+
+
+'col-4' e 'col-6' (
+
+
+    ISSO FARIA COM QUE 2 ESPAÇOS FICASSEM 'EMPTY' ao final desse row...
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> OK, ISSO SIGNIFICA QUE AGORA A PRIMEIRA COL TOMA '1/3' do tamanho,
+
+e a segunda 
+
+
+TOMA 
+
+
+'2/3'...
+
+
+
+
+
+
+
+
+
+
+
+-----> OK... MAS AGORA QUEREMOS COMPLICAÇÃO...
+
+
+
+
+
+
+
+
+
+
+
+--> DIGAMOS QUE QUEREMOS 
+
+
+MAIOR PRECISÃO;
+
+QUEREMOS 
+
+
+1 LAYOUT PARA OS SMALLER DEVICES,
+
+E 
+
+1 
+
+PARA 
+
+oS 
+
+
+'DESKTOP DEVICES'..
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+DIGAMOS QUE QUEREMOS __ QUE, NOS DEVICES MENORES,
+
+
+
+
+NOSSAS 'COLS' _________dEIXEM_ DE SER 'COLS'
+
+
+
+E PASSEM A SER 'ROWS' (para que ocupem toda a largura do dispositivo,
+
+e para que não fiquem 'ACHATADAS' horizontalmente, nos dispositivos mobile)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA MEDIUM-SIZED OU LARGE SCREENS, QUEREMOS QUE 
+
+
+
+ESSAS COLS CONTINUEM 'UMA AO LADO DA OUTRA'...
+
+
+
+
+
+
+
+------------> PARA __ CUSTOMIZAR _  o 
+
+
+
+
+'TIPO DE TELA' 
+
+
+
+EM QUE VOCÊ QUER QUE ESSE LAYOUT/DISTRIBUIÇÃO DE SUA ROW 
+
+
+
+aconteça,
+
+
+
+
+
+
+
+
+
+vocÊ 
+
+
+
+
+DEVE __ ADICIONAR AINDA MAIS COISAS EM 'col-x'...
+
+
+
+
+
+
+
+
+
+--> VAMOS COLOCAR _ UMA __  SCREEN SIZE, MAIS ESPECIFICAMENTE...
+
+
+
+
+
+
+
+
+SÃO AQUELES TAMANHOS CLÁSSICOS:
+
+
+
+'s',
+
+
+'m'
+
+
+
+'l'
+
+
+
+
+
+'xs',
+
+
+
+
+'xl'...
+
+
+
+
+
+
+
+--> SÃO OS 'SIZE NAMES' -----> COM ISSO,
+
+
+EXPLICAMOS 
+
+
+'A QUAIS SCREEN-SIZES  ESSE TAMANHO DE COL DEVE SER APLICADO'..
+
+
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR ESCREVE 
+
+
+
+
+
+
+
+
+
+'col-md-4'...
+
+
+
+
+
+
+
+
+
+
+
+--> ISSO SIGNIFICA:
+
+
+
+
+
+
+
+
+
+'PARA __ TELAS_ DE TAMANHO _ MÉDIO OU MAIOR,
+
+
+__ QUEREMOS QUE _ ESSA COL TOME 4 ESPAÇOS DA ROW'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK, MAS QUANTAS CLASSES DE TAMANHO ESTÃO DISPONÍVEIS A NÓS?
+
+
+
+
+
+
+
+
+
+
+
+--> SÃO __ 5 CLASSES DIFERENTES... __ 
+
+
+
+
+
+
+
+
+
+
+--> md --> MEDIUM-SIZED 
+
+
+
+--> lg -->  LARGE-SIZED..
+
+
+--> xl --> EXTRA LARGE 
+
+
+
+
+--> sm --> SMALL, TABLET-SIZED...
+
+
+
+
+--> xs --> EXTRA SMALL, MOBILE PHONES...
+
+
+
+
+
+
+
+
+
+
+
+
+--> ESSES SÃO OS NAMES DISPONÍVEIS A NÓS...
+
+
+
+
+
+
+
+
+
+
+
+--> PODEMOS COMBINAR TODOS ESSES NÚMEROS E SIZE-CLASSES 
+
+PARA CONTROLAR  A APARÊNCIA DE NOSSA GRID...
+
+
+
+
+
+
+
+
+
+--> AS CLASSES SEMPRE TERÃO UM FORMATO COMO 
+
+
+
+
+
+
+
+
+
+
+col-xs-3
+
+
+
+
+
+
+
+
+col-md-9
+
+
+
+
+
+col-lg-2
+
+
+
+col-sm-9
+
+
+
+
+
+
+
+
+col-xl-4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----> LEMBRE-SE DE TENTAR SOMAR ATÉ '12'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------> OK, MAS AGORA DIGAMOS QUE QUEREMOS TER 2 DIFERENTES ESTILOS,
+
+
+
+
+
+
+1 para 'MOBILE PHONES' e outro 
+
+para 
+
+
+
+DESKTOP...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> queremos ter 1 'sm' (para TABLETS e aparelhos pequenos, mas não para telefones especificamente)
+
+
+
+
+estilo de 'ONE NEXT TO EACH OTHER'.... (ou seja, '6' para cada 1 dos cols)...
+
+
+
+
+e QUE O ESTILO/CLASS DE '4-8'
+
+
+CONTINUE PARA 
+
+_TELAS MEDIUM/LARGE...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> COM ISSO, PODEMOS REALMENTE CUSTOMIZAR UM MONTE, DO JEITO QUE DESEJARMOS (diferentes usos da width, para DIFERENTES DEVICES)
+
+
+
+
+
+
+
+
+
+
+
+----> certo... essas combinações da 'share' da available-width e device sizes...
+
+
+
+
+
+
+
+
+
+
+
+---> PODEMOS USAR APENAS 'col' 
+
+PARA _ DISTRIBUIR NOSSA WIDTH 'EVENLY' 
+
+
+
+AO LONGO DO ROW...
+
+
+
+
+
+
+
+
+
+
+
+--> OK, MAS ESSES SÃO OS BASICS...
+
+
+
+
+
+
+
+
+
+
+
+--> OS BASICS DA GRID...
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS PODEMOS FAZER __ MAIS DO QUE ISSO...
+
+
+
+
+
+
+
+
+
+
+--> PODEMOS FAZER COM QUE AS COLS NÃO FAÇAM 'ADD UP TO 12'...
+
+
+
+
+
+
+
+
+
+--> DIGAMOS QUE QUEREMOS QUE A ROW 5 
+
+
+NÃO SEJA 
+
+COMPLETA,
+
+
+
+
+SEJA 
+
+
+TIPO 
+
+
+'col-4' e 'col-4'...
+
+
+
+
+
+
+
+
+
+-----> ISSO FARÁ COM QUE 2 ESPAÇOS SEJAM PREENCHIDOS, MAS O TERCEIRO, DE '4',
+
+FICA SOBRANDO,
+
+
+
+
+E AÍ FICA EM BRANCO..
+
+
+
+
+
+
+
+
+
+
+--> àS VEZES ISSO SERÁ O QUE VOCê DESEJA FAZER (pq 
+
+vocÊ pode 
+
+estar criando um header, uma sidebar,
+ 
+ etc ,
+ 
+ várias coisas...)
+
+
+
+
+
+
+
+
+ --> OK... MAS DIGAMOS QUE __ 
+
+ VOCÊ AGORA QUER 
+ _CENTRALIZAR__ 
+
+
+ ESSAS 
+
+
+
+
+ 2 COLUMNS,
+
+ CENTRALIZA-LAS HORIZONTALMENTE... 
+
+
+
+
+
+
+
+
+
+
+ ---> PARA CONSEGUIR CENTRALIZAR ESSAS COLS HORIZONTALMENTE,
+
+ PODEMOS ADICIONAR UMA _ CLASS ADICIONAL,
+
+
+
+ _ QUE ___ É A CLASS DE 'center'...
+
+
+
+
+
+
+
+
+
+---> ESSAS 'CLASSES' ADICIONAIS, COMO 'center',
+
+
+
+SÃO TODAS __ INSPIRADAS_ NAS PROPRIEDADES FLEXBOX QUE ACONTECEM (por trás das cenas)...
+
+
+
+
+
+
+
+
+---> É POR ISSO QUE SE VOCê CONHECE O FLEXBOX,
+
+
+ESSAS CLASSES TERÃO NOMES FAMILIARES...
+
+
+
+
+
+
+
+
+
+
+ex:
+
+
+
+
+
+'justify-content-center'....
+
+
+
+
+
+
+
+
+
+
+-------> ESSA É A FLEXBOX RULE USADA PARA _ 
+
+
+
+DITAR 'EM QUE LUGAR O CONTENT DEVE SER POSICIONADO''' 
+
+
+
+
+
+--> E ISSO VAI CENTRALIZAR SEU CONTEÚDO...
+
+
+
+
+
+
+
+
+
+--> AS ALTERNATIVAS SÃO 
+
+
+
+'justify-content-start' 
+
+
+
+'justify-content-end' 
+
+
+
+
+'justify-content-around'  (SPACE AROUND )
+
+
+
+
+
+
+'justify-content-between' (SPACE-BETWEEN, coloca todo o espaço entre os negócios NO MEIO DELES)
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        )  -> A TRADUÇÃO DISSO SERIA 'col-md-3'
+        -->
+        <div class="col-4 my-col">ROW 3 COL 1</div>
+        <div class="col-8 my-col">ROW 3 COL 2</div>
+   </div>
+   <div class="row your-row">
+
+    <!-- EM APARELHOS MENORES, QUEREMOS QUE _ OS 2 COLS FIQUEM 1 AO LADO DO OUTRO, por isso 'col, sm (small), 6' (para somar 12, de forma equivalente)-->
+    <!-- EM APARELHOS MAIORES, QUEREMOS A PROPORÇÃO '8-4', por isso 'col-xl-8' e 'col-xl-4'-->
+    
+    <div class="col-xl-8  col-sm-6   my-col">ROW 4 COL 1</div>
+    <div class="col-xl-4  col-sm-6  my-col">ROW 4 COL 2</div>
+   </div>
+
+   <!-- NESTE EXEMPLO, FICAM SOBRANDO '4' dos pedaços da grid, o que quer dizer que EXISTIRÁ UM ESPAÇÃO EM BRANCO, 1/3 DO ROW FICARÁ EM BRANCO... (o que pode ser o que você quer, dependendo do caso)... -->
+   <div class="row your-row">
+    <div class="col-4   my-col">ROW 5 COL 1</div>
+    <div class="col-4 my-col">ROW 5 COL 2</div>
+   </div>
+
+
+   <!-- exemplo das 'CLASSES ADICIONAIS' de tipo flexbox, que são usadas para CENTRALIZAR MELHOR SUAS COL... são 'justify-content-center' 'justify-content-start' 'justify-content-end' 'justify-content-around' 'justify-content-between'-->
+   <!-- aqui as utilizamos para CENTRALIZAR NOSSOS COL, que estão com aquele ESPAÇO no meio...-->
+   
+   <div class="row your-row justify-content-center">
+    <div class="col-4  my-col">ROW 6 COL 1</div>
+    <div class="col-4 my-col">ROW 6 COL 2</div>
+   </div>
+
+
+    </div>
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK, MAS E QUANTO AO 'VERTICAL ALIGNMENT' ?
+
+
+
+
+
+
+
+
+
+
+--> ISSO TEM HISTORICAMENTE TEM SIDO MT DIFÍCIL,
+ 
+ NO CSS...
+
+
+
+
+
+
+
+
+
+
+
+ --> BEM, É SUPER SIMPLES COM O FLEXBOX E COM 
+
+ O 
+
+
+ CSS GRID.....
+
+
+
+
+
+
+
+
+
+
+ --> PARA CONSEGUIR ISSO,
+
+
+ O PROFESSOR 
+
+
+
+
+DÁ A NOSSA CLASS DE 'row' 
+
+
+
+ UMA 
+
+ 'HEIGHT',
+
+
+ PARA QUE 
+
+ CONSIGAMOS 
+
+ VER ISSO BEM..
+
+
+
+
+
+
+
+ --> ELE COLOCA UMA HEIGHT DE '300PX'... ---> CADA ROW TERÁ UMA HEIGHT DE '300PX',
+
+
+
+ e vai ocupar TODO O ESPAÇO DISPONÍVEL A SI...
+
+
+
+
+
+
+
+
+
+
+
+ CERTO:
+
+
+
+
+
+
+ 
+    <div class="container my-container">
+      <div class="row my-row-2">
+        <div class="col my-col">
+            ROW 1 COL 1 
+        </div>
+        <div class="col my-col">
+            ROW 1 COL 2
+        </div>
+      </div>
+      <div class="row my-row-2">
+           <div class="col my-col">ROW 2 COL 1</div>
+      </div>
+      <div class="row my-row-2">
+        <div class="col-4 my-col">ROW 3 COL 1</div>
+        <div class="col-8 my-col">ROW 3 COL 2</div>
+   </div>
+   <div class="row my-row-2">
+
+    <div class="col-xl-8  col-sm-6   my-col">ROW 4 COL 1</div>
+    <div class="col-xl-4  col-sm-6  my-col">ROW 4 COL 2</div>
+   </div>
+
+   <div class="row my-row-2">
+    <div class="col-4   my-col">ROW 5 COL 1</div>
+    <div class="col-4 my-col">ROW 5 COL 2</div>
+   </div>
+
+   <div class="row my-row-2 justify-content-center">
+    <div class="col-4  my-col">ROW 6 COL 1</div>
+    <div class="col-4 my-col">ROW 6 COL 2</div>
+   </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    --> ESSAS ROWS ESTÃO OCUPANDO 'ALL THE AVAILABLE HEIGHT'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> esse pode ser um behavior NICE, QUE VOCê QUER...
+
+
+
+
+
+
+
+
+
+
+
+--> MAS às VEZES VOCê PODE 
+
+
+
+
+
+''''JUST WANT TO TAKE THE HEIGHT THE CONTENT REQUIRES, OR THE HEIGHT YOU SET  TO 
+
+YOUR COLUMNS'''...
+
+
+
+
+
+
+
+
+
+---> é por isso que vocÊ também pode definir como essas cols devem se posicionar _VERTICALMENTE__...
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA _ CENTRALIZAR ALGO ___VERTICALMENTE__ USANDO O BOOTSRAP,
+
+
+
+
+VOCÊ DEVE USAR A CLASS ADICIONAL DE 'align-items-xxx',
+
+
+
+
+
+
+QUE É _ EQUIVALENTE __ à PROPRIEDADE FLEXBOX 'VERTICAL'
+
+
+
+
+
+de 
+
+'align-items'...
+
+
+
+
+
+
+
+
+
+--> PARA ISSO,
+
+O CÓDIGO FICA TIPO 
+
+
+
+
+
+
+<div class= "row justify-content-between align-items-center" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> DE NOVO,
+
+TEMOS 
+
+OS MESMOS VALORES:
+
+
+
+
+
+
+
+
+
+
+align-items-start 
+
+
+align-items-end 
+
+
+
+align-items-center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> CENTER É MT BOM, PQ CENTRALIZA HORIZONTALMENTE (não é mt fácil com o css)
+
+
+
+
+
+
+
+
+
+
+--> O VALOR DEFAULT, É CLARO, É 'STRECH', QUE VAI 
+
+alongar os items pela row ao MÁXIMO.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> POR FIM, ÀS VEZES VOCê VAI QUERER ALTERAR O COMPORTAMENTO DE 1 ÚNICA COL, E NÃO 
+
+DE TODAS AS COL EM UMA ROW...
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> PARA CONSEGUIR ESSE EFEITO,
+
+VOCÊ NÃO DEVE MEXER NO ROW EM SI,
+
+E SIM 
+DEVE 
+
+MEXER NA __ COL_....
+
+
+
+
+
+
+
+
+
+VÁ ATÉ A CLASS DELA,
+
+
+
+e aí 
+
+
+
+
+USE A PROPRIEDADE 'align-self-xxx'...
+
+
+
+
+
+
+
+
+
+
+
+--> TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+   <div class="row my-row-2 justify-content-center align-items-center">
+    <div class="col-4  my-col">ROW 7 COL 1</div>
+    <div class="col-4 my-col">ROW 7 COL 2</div>
+   </div>
+
+   <!-- HÁ TAMBÉM COMO USAR O FLEXBOX/BOOTSTRAP PARA ALINHAR COLS ESPECÍFICAS, POR MEIO DE 'ALIGN-SELF'...  propriedades 'align-self-start' 'align-self-end' 'align-self-center'-->
+   <hr>
+   <div class="row my-row-2 justify-content-center align-items-center">
+    <div class="col-4 align-self-start my-col">ROW 8 COL 1</div>
+    <div class="col-4 my-col">ROW 8 COL 2</div>
+   </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------> é assim que podemos posicionar elementos na grid..
+
+
+
+
+
+
+
+
+temos os official docs
+
+
+
+https://getbootstrap.com/docs/4.0/layout/grid/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> AGORA, POR FIM, VEREMOS __ COMO _ PODEMOS __ ALTERAR __ A ORDER _ DAS COLUMNS... (coisa do flexbox tbm)....
+
+
+
+
+
+
+
+
+
+
+--> COMO TROCAR A ORDER DAS COLUMNS?
+
+
+
+
+
+
+
+
+--> ISSO É ÚTIL, MAS PODE SER CONFUSO... --> 
+
+
+
+
+
+
+
+MAS É ÚTIL,
+
+
+PQ VOCÊ VAI QUERER TER UMA ORDER DIFERENTE PARA OS ELEMENTOS 
+
+
+NO SEU 
+
+
+MOBILE PHONE/DESKTOP...
+
+
+
+
+
+
+
+
+
+
+
+--> VOCÊ PODE 
+
+
+
+
+COLOCAR UMA NOVA 'ADDITIONAL CLASS'
+
+
+
+AOS SEUS ELEMENTS...
+
+
+
+
+
+
+
+
+---> O nome será 'order-x' 
+
+
+
+
+
+E O NÚMERO VAI ATÉ 12,
+
+PQ TEMOS UM 12-CELL GRID....
+
+
+
+
+
+
+------> A ESCRITA FICA TIPO ASSIM:
+
+
+
+<div class="col-4 my-col order-12">
+
+<div class="col-4 my-col align-self-start order-2">
+
+
+
+
+
+
+
+COM ISSO, A ORDEM DOS ELEMENTOS SERÁ INVERTIDA, AINDA QUE O DOM FLOW SEJA DIFERENTE...
+
+
+
+
+
+
+
+
+
+
+
+--> OK, ISSO SIGNIFICA QUE A ORDEM DOS NÚMEROS IMPORTA... --> OS NÚMEROS MAIORES SÃO EMPURRADOS PARA A DIREITA, ESSENCIALMENTE..
+
+
+
+
+
+
+
+
+--> OK... ISSO É SIMPLES...
+
+
+
+
+
+
+
+--> E O PROFESSOR _ NOS EXPLICA QUE ESSA MECÂNICA DE 'order'
+
+
+
+
+
+PODE SER USADA __ _EM CONJUNTO _ COM 
+ 
+
+
+
+
+ OS 'DEVICE SIZE BREAKPOINTS'... ---------> DIGAMOS QUE SÓ QUEREMOS TROCAR 
+
+
+
+
+ A ORDER _ PARA ___ 
+
+
+
+
+
+
+ DEVICES DE TAMANHO 'MEDIUM'....
+
+
+
+
+
+
+
+
+
+ ---> SE QUISERMOS FAZER ISSO,
+
+
+ DEVEMOS 
+
+
+
+
+ ESCREVER TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+ 'order-md-12' 
+
+
+
+
+ (
+  COM ISSO,
+
+  EXPLICAMOS QUE __ SÓ QUEREMOS QUE __ 
+
+  A ORDER SEJA 'ÚLTIMO ELEMENTO DO ROW'
+
+  NO CASO 
+
+
+DE DEVICES COM WIDTH DE 'MEDIUM OR BIGGER'
+ )
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> PARA DEVICES MENORES DO QUE 'MEDIUM',
+
+ A ORDER DEFAULT SERÁ UTILIZADA, NESSE EXEMPLO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ISSO É ÓTIMO PARA DESENVOLVER MOBILE LAYOUTS (
+
+
+  VOCÊ QUER TROCAR ALGUNS ELEMENTOS, FAZER ALGUM ELEMENTO 
+
+
+  FICAR NO TOPO EM MOBILE DEVICES...
+ )
+
+
+
+
+
+
+
+
+
+
+ --> PARA ISSO,
+
+ VOCÊ 
+
+
+
+
+ 1) DESENVOLVE SEU CÓDIGO PRIMEIRAMENTE DE UMA MANEIRA 'MOBILE-FIRST',
+
+
+ ou seja,
+
+
+ CONSIDERANDO coisas como 'order-sm-12',
+
+ e etc,
+
+
+
+
+
+ 2) DEPOIS, COMO SEU CÓDIGO JÁ ESTÁ '''NO LUGAR CERTO''' do html,
+
+
+ essas classes serão DESCONSIDERADAS 
+
+
+ quando o user estiver usando uma tela maior...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ col-sm-10
+
+
+
+
+
+
+
+
+
+ OBS:
+
+
+
+ 'py' é usado PARA DEFINIR O PADDING BOTTOM E TOP... (y axis)
+
+
+
+
+ já 
+
+
+ 'px' É USADO PARA _ DEFINIR O PADDING LEFT E RIGHT (x axis)...
+
+
+
+
+
+
+
+
+
+
+
+ --> O 'OFFSET' É USADO para EMPURRAR os elementos __ PARA A DIREITA, 
+
+ considerando os 'slots' das cells (
+
+
+  offset-2 ,
+
+  POR EXEMPLO, 
+  VAI PULAR 
+
+A COL __ 2 CASAS PARA A DIREITA...
+ )
+
+
+
+ ex:
+
+
+
+
+
+
+<div class="col-4 offset-2 ">Column</div>
+
+
+
+
+
+
+
+
+
+
+
+--> E O OFFSET TAMBÉM PODE SER USADO COM OS 'DEVICE-WIDTHS'...
+
+
+
+
+
+
+ex:
+
+
+
+<div class="col-4 offset-md-2 ">Column</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK...
+
+
+
+
+
+
+
+
+
+
+
+AGORA DEVEMOS VER A PRÓXIMA AULA, SOBRE NAVBARS...

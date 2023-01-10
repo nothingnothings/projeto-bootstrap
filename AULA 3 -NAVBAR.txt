@@ -1,0 +1,2012 @@
+
+
+
+
+
+
+
+
+PARA 'ATIVARMOS' O navbar 
+
+
+
+
+DO 
+
+
+
+
+
+BOOTSTRAP,
+
+
+devemos escrever 
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar"></nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SIM, 'navbar' É O NOME DA CLASS BOOTSTRAP RESPONSÁVEL POR ISSO...
+
+
+
+
+
+
+
+
+
+
+
+--> MAS POR SI SÓ, ISSO N FAZ NADA...
+
+
+
+
+
+
+
+
+
+--> PARA CONSEGUIR 
+
+
+
+
+
+AS COISA DO NAVBAR,
+
+
+PODEMOS COMEÇAR PELO 'BRAND'...
+
+
+
+
+
+
+
+
+
+
+para conseguir o brand, podemos escrever assim:
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Document3</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-brand"></div>
+    </nav>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK...
+
+
+
+
+
+
+
+
+
+
+ESSE 'navbar-brand'
+
+
+
+VAI GARANTIR QUE 
+
+
+ESSE 
+
+
+ELEMENTO SERÁ ESTILIZADO DE UMA FORMA ESPECÍFICA... (no lado esquerdo, em cima, bem no topo)...
+
+
+
+
+
+
+
+
+--> MAS ISSO, POR SI SÓ, NÃO VAI DEFINIR STYLE ALGUM...
+
+
+
+
+
+
+--> MAS AGORA PRECISAMOS ADICIONAR MAIS CLASSES AO 'navbar',
+
+PARA DEFINIRMOS __ MAIS _COISAS SOBRE ELA...
+
+
+
+
+
+--> PRECISAMOS:
+
+
+
+1) DO 'THEME' --> O PROFESSOR COLOCA 'navbar-light', para definir ESSE TEMA ESPECÍFICO...
+
+
+
+
+
+
+
+
+2) DO 'BACKGROUND THEME' --> o professor coloca 'bg-light', para conseguir ESSA COR NO NOSSO BACKGROUND...
+
+
+
+
+
+
+
+
+
+
+
+
+--> COM ISSO, FICAMOS COM UMA NAVBAR BÁSICA, branca/cinza, em cima...
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK.... O BRAND STYLE TAMBÉM FOI ALTERADO -------> ELE AINDA É 'CLICKABLE',
+
+
+
+MAS __ AGORA SE PARECE MENOS COM UM LINK (que é o que queremos.... isso foi implementado com 'navbar-light')..
+
+
+
+
+
+
+
+
+
+
+--> MAS EM UMA NAVBAR VOCÊ VAI QUERER TER MAIS DO QUE APENAS ELA,
+
+
+
+PQ VAI QUERER TER ALGUNS CLICKABLE ITEMS...
+
+
+
+
+
+
+
+
+
+
+
+--> PARA ISSO, CRIAMOS UMA 'ul' 
+
+DENTRO DA NAVBAR,
+
+
+
+E AÍ 
+
+
+colocamos a class de 'navbar-nav'... (indicamos que isso aí vai actually indicar nossos menu items)....)
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+    <nav class="navbar navbar-light bg-light">
+      <a href="#" class="navbar-brand">BRAND</div>
+        <ul class="navbar-nav">
+            
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    --> ISSO VAI SEGURAR NOSSOS 'MENU ITEMS'...
+
+
+
+
+
+
+
+    --> DENTRO DE UM LIST ITEM, podemos ter o link de 'Users' ------> 
+
+
+
+
+
+    ESSE LIST ITEM PODE RECEBER A CLASS DE 'nav-item'...
+
+
+
+
+
+
+EX:
+
+
+
+
+
+    <nav class="navbar navbar-light bg-light">
+      <a href="#" class="navbar-brand">BRAND</div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#">Users</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+-----> PODEMOS DAR A ESSE LINK (anchor tag) uma OUTRA CLASS, 
+
+QUE NO CASO 
+
+SERÁ A CLASS DE 'nav-link'...
+
+
+
+
+
+
+
+
+
+
+--> OK... ISSO TIROU AQUELE STYLE DEFAULT QUE DEIXAVA A ANCHOR TAG COM A APARÊNCIA DE UM LINK...
+
+
+
+
+
+
+
+
+
+
+
+----> É ESSA A ESTRUTURA QUE DEFINIMOS PARA 'MENU ITEMS'
+
+NA NAVIGATION BAR...
+
+
+
+
+
+
+
+
+
+PARA MENU ITEMS:
+
+
+
+
+
+
+1) WRAPPER DE 'navbar-nav' ,
+
+
+
+
+2) 'NAV-ITEM', cada 1 dos list items terá isso... 
+
+
+
+
+3) DENTRO DE CADA LIST ITEM, TIPICAMENTE TEMOS 1 LINK,
+
+
+e aí esse link tem a class de 'nav-link'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK.... COM ISSO, SALVAMOS TUDO E RECARREGAMOS A PÁGINA... --> O LINK FOI POSICIONADO AO LADO DIREITO DA NAVBAR,
+
+TUDO POR CONTA DO BOOTSTRAP..
+
+
+
+
+
+
+
+
+
+--> É CLARO QUE VOCÊ PODE 
+
+
+
+'''ALTERAR O POSICIONAMENTO DA SUA NAV''',
+
+
+
+
+
+
+
+OU SEJA,
+
+
+
+
+da 'navbar com os MENU ITEMS' 
+
+
+
+
+,
+
+
+basta ir até o elemento 
+
+
+'navbar-nav' 
+
+
+
+
+e aí 
+
+adicionar a class de 'mr-auto' (MARGIN-RIGHT AUTO)...
+
+
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+
+
+  <body>
+    <!-- 'navbar' é o ESTILO BÁSICO ATIVADOR DO BOOTSTRAP... DENTRO DESSA DIV VAMOS COLOCAR OS STYLES NECESSÁRIOS PARA ESSA NAVBAR-->
+    
+    <!-- 'navbar-light' é um TEMA DE NAVBAR, EM GERAL. Já 'bg-light' é a COR do background da navbar-->
+    <nav class="navbar navbar-light bg-light">
+
+        <!-- 'navbar-brand' TAMBÉM É UM STYLE BOOTSTRAP, e ele estiliza o look da sua 'BRAND', que vai ficar À ESQUERDA da sua navbar-->
+      <a href="#" class="navbar-brand">BRAND</a>
+
+      <!-- segura seus MENU ITEMS na navbar da direita, que serão clicados para levar a outras pages...-->
+      <!-- 'mr-auto' -- É MARGIN AUTO, é usado para posicionar seus elementos NA ESQUERDA, PQ O BOOTSTRAP USA FLEXBOX, E O DEFAULT DO FLEXBOX É ALINHAR À ESQUERDA... -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+        </ul>
+    </nav>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  --> CERTO... MAS MEUS ELEMENTOS ESTÃO FICANDO '1 EM CIMA DO OUTRO',
+
+
+
+
+
+e não é por conta do 'mr-auto'... 
+
+
+
+
+
+
+
+
+---> O COMPORTAMENTO DEFAULT DA NAVBAR ESTÁ FAZENDO ISSO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR DIZ QUE PODEMOS CONSERTAR ISSO DESSA FORMA:
+
+
+
+
+
+
+
+
+
+
+--> SE VISUALIZARMOS A 'UL' 
+
+
+COM A CLASS DE 'NAVBAR-NAV',
+
+
+VEREMOS QUE 
+
+
+
+A FLEX-DIRECTION ESTÁ SETTADA COMO 'column',
+
+ E NÃO COMO 'row'...
+
+
+
+
+
+
+
+
+
+
+--> ESSE É O DEFAULT,
+
+
+
+
+É ON PURPOSE,
+
+PQ 
+
+O 
+
+
+BOOTSTRAP 4 É CONSTRUÍDO DE UMA MANEIRA 'MOBILE-FIRST'...
+
+
+
+
+
+
+
+
+
+
+
+
+--> E É EXATAMENTE POR ISSO _ QUE PODEMOS _ CONSTRUIR 
+
+
+NOSSA 'NAVIGATION BAR'
+ 
+
+ DE UMA MANEIRA MOBILE-FIRST...
+
+
+
+
+
+---> PARA ISSO,
+
+DEVEMOS CRIAR UMA NOVA DIV,
+
+
+EM CIMA DE 'navbar-nav',
+
+
+QUE TERÁ UM CLASS NAME DE 
+
+
+
+'collapse navbar-collapse'...
+
+
+
+
+
+
+
+
+E ESSA SERÁ UMA 'WRAPPING DIV',
+
+QUE VAI WRAPPAR NOSSA 'navbar-nav'...
+
+
+
+
+
+
+
+
+
+
+--> VAI WRAPPAR NOSSA UNORDERED LIST DE 'navbar-nav'....
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+        </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        --> OK... MAS QUANDO FIZERMOS ISSO, NOSSA NAVBAR __ DESAPARECERÁ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK, MAS PQ OS NAV-ITEM SUMIRAM? 
+
+
+
+
+
+
+
+
+
+
+
+--> SUMIRAM PQ AGORA _ DEVEMOS COMUNICAR AO 'BOOTSTRAP'
+
+''' DE QUE PONTO EM DIANTE QUEREMOS RENDERIZAR 
+
+
+NOSSOS MENU-ITEM NO 
+NAV-BAR''',
+
+
+
+
+
+RENDERIZÁ-LOS NA  __ NAVBAR__ EM VEZ __ DE EM UM 
+
+'TOGGLEABLE MENU'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA ESPECIFICAR 'QUAIS ITEMS DEVEM APARECER NA NAVBAR' quando 
+
+
+acontecer o MOBILE-DEVICE,
+
+
+
+
+vocÊ 
+
+deve 
+
+USAR 
+
+A
+
+
+
+ADDITIONAL CLASS de 
+
+
+
+'navbar-expand-x',
+
+
+
+
+
+E O 'x' 
+
+
+
+
+É O BREAKPOINT ('sm', 'lg', 'md', 'xs', 'xl', etc ) _ QUE DEFINE 
+
+
+'EM QUE PONTO EM DIANTE __ 
+
+
+OS ELEMENTOS DEVERÃO SER ADICIONADOS AO NAVBAR EM SI'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COMO EXEMPLO DISSO, O PROFESSOR COLOCA 'lg',
+
+PARA QUE 
+
+
+
+ESSES ELEMENTOS SÓ DESAPARECAM EM 'BIGGER SCREENS'...
+
+
+
+
+
+ex:
+
+
+
+
+
+
+
+
+      <div class="collapse navbar-collapse navbar-expand-lg">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      --> MAS EU ESCREVI ERRADO.... --> ESSE 
+
+
+      'navbar-expand-lg' 
+
+
+      ou 
+
+      'navbar-expand-sm' 
+
+
+      ou QUALQUER OUTRO DESSE TIPO,,
+
+      ELE 
+
+
+      DEVE SER ADICIONADO 
+
+
+
+
+      __ AO ELEMENTO '<nav>' 
+
+      EM SI,
+
+      E NÃO A ESSE 'ul class=navbar-nav' ...
+
+
+
+
+
+
+
+
+
+      TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+
+
+
+          <nav class="navbar navbar-light bg-light">
+      <!-- 'navbar-brand' TAMBÉM É UM STYLE BOOTSTRAP, e ele estiliza o look da sua 'BRAND', que vai ficar À ESQUERDA da sua navbar-->
+      <a href="#" class="navbar-brand">BRAND</a>
+
+      <!-- segura seus MENU ITEMS na navbar da direita, que serão clicados para levar a outras pages...-->
+      <!-- 'mr-auto' -- É MARGIN AUTO, é usado para posicionar seus elementos NA ESQUERDA, PQ O BOOTSTRAP USA FLEXBOX, E O DEFAULT DO FLEXBOX É ALINHAR À ESQUERDA... -->
+      <!-- <ul class="navbar-nav mr-auto"> -->
+
+      <!-- 'COLLAPSE NAVBAR-COLLAPSE' é uma class SUPER IMPORTANTE, que deve ser colocada como WRAPPER de 'navbar-nav'... NELA, POR MEIO DE 'navbar-expand-x', VOCê DEFINE _ '' A PARTIR DE QUAL TAMANHO DE DISPOSITIVO SEUS NAV-ITEMS DEVERÃO SUMIR/SEREM INCLUÍDOS EM UM TOGGLEABLE MENU'' -->
+      <div class="collapse navbar-collapse navbar-expand-lg">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <nav class="navbar navbar-light bg-light navbar-expand-lg">
+      <a href="#" class="navbar-brand">BRAND</a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CERTO... ENTRETANTO, COM ISSO AINDA ESTAMOS COM UM PROBLEMA... --> OS 'NAV ITEMS' AGORA ESTÃO FICANDO ALINHADOS 
+
+
+
+LOGO AO LADO DO 'NAVBAR-BRAND'..
+
+
+
+
+
+
+
+--> E QUEREMOS QUE ELES FIQUEM ALINHADOS _ LÁ NA DIREITA...
+
+
+
+
+
+--> antes havíamos usado 'mr-auto',
+
+E  ISSO FEZ COM QUE O BOOTSTRAP EMPURRASSE TODOS OS ITEMS PARA A __ESQUERDA_...
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS QUEREMOS O CONTRÁRIO, QUEREMOS QUE SEJAM EMPURRADOS PARA A DIREITA...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA ISSO,
+
+
+USAMOS A CLASS ADICIONAL 
+
+
+
+
+'ml-auto',
+
+
+PARA 
+
+ADICIONAR MARGIN AUTOMATICAMENTE à ESQUERDA 
+
+
+DE NOSSOS LIST ITEM,
+
+PARA CONSEGUIRMOS ESSE BEHAVIOR (bem conveniente)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK... ISSO QUER DIZER QUE AGORA ESTAMOS COM UMA NAVBAR EM QUE OS ITEMS _ SÃO REMOVIDOS_ SE VAMOS 
+
+
+
+
+PARA BAIXO DE UM DETERMINADO TAMANHO (no caso, 'lg'...)....
+
+
+
+
+
+
+
+
+
+
+
+
+--> É CLARO QUE PODEMOS __ ALTERAR ESSE BREAKPOINT,
+
+DEIXAR 'sm',
+
+PARA QUE 
+
+
+ESSES NAVBAR ITEMS FIQUEM LÁ POR MT MAIS TEMPO,
+
+
+SUMAM APENAS _ EM __REALLY__ SMALL DEVICES....
+
+
+
+
+
+
+
+
+
+
+
+
+A PERGUNTA É:
+
+
+
+'''COMO _ FAZEMOS ESSES ELEMENTOS _ APARECEREM __ DE NOVO,
+
+
+
+EM SMALLER DEVICES?''' (
+
+
+
+    pq eles sumiram,
+    sim,
+
+    MAS NÃO TEMOS  MAIS COMO CLICAR NELES...
+)
+
+
+
+
+
+
+BEM, PARA ISSO,
+
+
+PRECISAMOS DE UM __ MENU EXTRA,
+
+UM MENU QUE PODE SER 
+
+'TOGGLED'
+
+
+
+na nossa página...
+
+
+
+
+
+
+
+--> MAS O PROBLEMA É:
+
+
+
+'''NÓS NÃO TEMOS NENHUM BUTTON DE TOGGLE''..
+
+
+
+
+
+
+
+
+
+
+
+--> BEM, MAS É POSSÍVEL ADICIONAR UM 'toggle button'
+
+POR MEIO 
+
+
+DO 
+
+
+BOOTSTRAP,
+
+
+A NAVBAR QUE O BOOTSTRAP NOS OFERECE JÁ POSUI UM TOGGLEABLE BUTTON DESSES...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA ADICIONAR UM 'TOGGLE BUTTON',
+
+
+
+
+
+
+
+
+vocÊ deve escrever um 'BUTTON' dentro de sua navbar,
+
+como sempre,
+
+
+MAS 
+
+AÍ 
+
+VOCÊ 
+
+DEVE 
+
+ADICIONAR UMA CLASS 
+
+DE 
+
+
+''navbar-toggler''....
+
+
+
+
+
+A CLASS É REALMENTE 'navbar-toggler'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> NESSE BUTTON, VOCÊ NÃO ESCREVE NADA, SÓ UM '<span>",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UM SPAN COM CLASS DE 'navbar-toggler-icon' -------> ISSO TE DARÁ O HAMBURGER MENU...
+
+
+
+
+
+
+
+
+
+
+
+NO NOSSO CÓDIGO, ISSO VAI FICANDO ASSIM:
+
+
+
+
+
+
+
+
+<button class="navbar-toggler">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+
+
+
+
+
+
+
+O CÓDIGO COMPLETO:
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="navbar navbar-light bg-light navbar-expand-lg">
+      <!-- 'navbar-brand' TAMBÉM É UM STYLE BOOTSTRAP, e ele estiliza o look da sua 'BRAND', que vai ficar À ESQUERDA da sua navbar-->
+      <a href="#" class="navbar-brand">BRAND</a>
+      <button class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- segura seus MENU ITEMS na navbar da direita, que serão clicados para levar a outras pages...-->
+      <!-- 'mr-auto' -- É MARGIN AUTO, é usado para posicionar seus elementos NA ESQUERDA, PQ O BOOTSTRAP USA FLEXBOX, E O DEFAULT DO FLEXBOX É ALINHAR À ESQUERDA... -->
+      <!-- <ul class="navbar-nav mr-auto"> -->
+
+      <!-- 'COLLAPSE NAVBAR-COLLAPSE' é uma class SUPER IMPORTANTE, que deve ser colocada como WRAPPER de 'navbar-nav'... NELA, POR MEIO DE 'navbar-expand-x' (lá no elemento '<nav>'), VOCê DEFINE _ '' A PARTIR DE QUAL TAMANHO DE DISPOSITIVO SEUS NAV-ITEMS DEVERÃO SUMIR/SEREM INCLUÍDOS EM UM TOGGLEABLE MENU'' -->
+
+      <!-- 'ML-AUTO' é outra ADDITIONAL CLASS, e é usada para EMPURRAR SEUS ELEMENTOS PARA A DIREITA, PQ É 'MARGINLEFT:AUTO' -- já mr-auto é o CONTRÁRIO, EMPURRA PARA A ESQUERDA.-->
+      <div class="collapse navbar-collapse ml-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ISSO NOS DÁ O HAMBURGER MENU, SIM,
+
+
+
+MAS NÃO NOS DÁ O MENU EM SI...
+
+
+
+
+
+
+
+
+
+---> OK... 
+
+
+
+
+
+--> 2 RAZÕES PARA O MENU NÃO SER EXIBIDO:
+
+
+
+
+
+1)  PRECISAMOS ADICIONAR ALGO A ESSE BUTTON PARA QUE ELE FUNCIONE... --> 
+
+
+
+a coisa é A PROPRIEDADE/ATTRIBUTE de 'data-toggle', que deve ter um valor de 'collapse'...
+
+
+(ESSA PROPRIEDADE TEM DE SER SETTADA NO BUTTON DE 'navbar-toggler')...
+
+
+
+
+
+
+
+
+
+
+ex:
+
+
+
+
+
+
+
+
+      <!-- navbar-toggler é usado PARA CRIAR O TOGGLER DAQUELE 'MENU HAMBURGER' que vai ter as opções da sua navbar, quando estiver no 'mobile mode'...-->
+      
+        <!-- "data-toggle=collapse" é necessário para FAZER O BUTTON ACTUALLY FUNCIONAR -->
+      <button class="navbar-toggler" data-toggle="collapse">
+        <!-- o 'icon', dentro  desse 'span', é o ACTUAL HAMBURGER ICON-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> ESSA PROPRIEDADE/ATTRIBUTE É USADO PELO PACKAGE DO BOOTSTRAP,
+
+QUE 
+
+VAI 
+
+
+
+AUTOMATICAMENTE FAZER 'LISTEN TO' A CLICKS NESSE BUTTON,
+
+
+E AÍ 
+
+VAI 
+
+
+ABRIR/FECHAR O MENU PARA NÓS,
+
+DE FORMA AUTOMÁTICA...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS MESMO COM ESSA MUDANÇA,
+
+
+AINDA NÃO ESTARÁ FUNCIONANDO...
+
+
+
+
+
+
+
+
+
+
+
+
+2) A RAZÃO PARA ISSO É QUE 
+
+NÃO HAVÍAMOS INCLUÍDO A PARTE 'JS' DO BOOTSTRAP (o 'popper.js' e o 'jquery.js')...
+
+
+
+
+
+
+
+
+
+
+
+
+-----> OK... PRECISAMOS DESSAS 2 LIBRARIES/PACKAGES PARA 
+
+
+CONSEGUIR FAZER 
+
+
+
+O TOGGLE BUTTON FUNCIONAR...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> ISSO FEITO, NOSSO BUTTON E MENU AINDA NÃO ESTARÃO FUNCIONANDO...
+
+
+
+
+
+
+
+
+
+
+
+--> MAS PQ? 
+
+
+
+
+
+
+
+
+
+
+
+3) NÓS ADICIONAMOS AQUELE 'data-toggle',
+
+
+
+
+QUE É ÓTIMO, PQ 
+
+VAI ACTUALLY LEVAR A UM LISTENER SENDO SETTADO  NESSE ELEMENT... --> 
+
+
+
+
+
+MAS _ AINDA RESTOU SETTAR 
+
+O 
+
+
+ATRIBUTO 'data-target',
+
+
+
+
+que _ deve _ SER APONTADO _AO __ ELEMENTO/MENU QUE DEVEMOS 
+
+TOGGLAR (
+
+
+
+
+PQ ESSE MENU TBM PODE SER CONFIGURADO/CUSTOMIZADO....
+
+)
+
+
+
+
+
+
+
+
+
+
+
+--> NO CASO,
+
+O PROFESSOR ESCREVE UM ID (o recomendado é usar um ID) 
+
+
+
+de nome 
+
+
+
+
+
+'navbarMenu'  (podemos escrever QUALQUER NOME, QUALQUER UM SERVE)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> A COISA IMPORTANTE, AGORA, É QUE VOCÊ PRECISA 
+
+
+
+
+_ ASSIGNAR ESSE ID  DE 'navbarMenu'
+
+
+
+
+
+LÁ NO ELEMENTO QUE VOCê QUER 
+
+
+QUE EXISTA COMO UM 'COLLAPSABLE MENU' ... 
+
+
+
+
+
+
+
+(
+
+    ou seja,
+
+    vamos querer escrever ESSE ID lá na div de 
+
+
+   " <div class="collapse navbar-collapse"> "
+)
+
+
+
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+<div class "collapse navbar-collapse" id="navbarMenu">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SALVAMOS TUDO ISSO, E FICA ASSIM:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="navbar navbar-light bg-light navbar-expand-lg">
+      <!-- 'navbar-brand' TAMBÉM É UM STYLE BOOTSTRAP, e ele estiliza o look da sua 'BRAND', que vai ficar À ESQUERDA da sua navbar-->
+      <a href="#" class="navbar-brand">BRAND</a>
+
+      <!-- navbar-toggler é usado PARA CRIAR O TOGGLER DAQUELE 'MENU HAMBURGER' que vai ter as opções da sua navbar, quando estiver no 'mobile mode'...-->
+
+      <!-- "data-toggle=collapse" é necessário para FAZER O BUTTON ACTUALLY FUNCIONAR... 'data-target' também... data-target DEVERÁ SER OS MENU ITEMS QUE VOCÊ DESEJA QUE EXISTAM NO COLLAPSABLE MENU, QUANDO ELE FOR TOGGLADo... -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <!-- o 'icon', dentro  desse 'span', é o ACTUAL HAMBURGER ICON-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- segura seus MENU ITEMS na navbar da direita, que serão clicados para levar a outras pages...-->
+      <!-- 'mr-auto' -- É MARGIN AUTO, é usado para posicionar seus elementos NA ESQUERDA, PQ O BOOTSTRAP USA FLEXBOX, E O DEFAULT DO FLEXBOX É ALINHAR À ESQUERDA... -->
+      <!-- <ul class="navbar-nav mr-auto"> -->
+
+      <!-- 'COLLAPSE NAVBAR-COLLAPSE' é uma class SUPER IMPORTANTE, que deve ser colocada como WRAPPER de 'navbar-nav'... NELA, POR MEIO DE 'navbar-expand-x' (lá no elemento '<nav>'), VOCê DEFINE _ '' A PARTIR DE QUAL TAMANHO DE DISPOSITIVO SEUS NAV-ITEMS DEVERÃO SUMIR/SEREM INCLUÍDOS EM UM TOGGLEABLE MENU'' -->
+
+      <!-- 'ML-AUTO' é outra ADDITIONAL CLASS, e é usada para EMPURRAR SEUS ELEMENTOS PARA A DIREITA, PQ É 'MARGINLEFT:AUTO' -- já mr-auto é o CONTRÁRIO, EMPURRA PARA A ESQUERDA.-->
+      <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    RESUMIDO:
+
+
+
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+          <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+
+---------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+--->   A VERSÃO DO PROFESSOR FUNCIONA, MAS A NOSSA NÃO...
+
+
+
+
+
+
+
+
+PQ? 
+
+
+
+
+
+ERA PQ EU HAVIA ERRADO _ _ A ORDEM _ DE IMPORTS DOS ARQUIVOS JAVASCRIPT... (devem ser escritos __ ANTES_ _ DO CSS DO BOOTSTRAP...)
+
+
+
+
+
+
+
+
+
+
+
+
+--> OS ESTILOS DO BOOTSTRAP FICARAM QUEBRADOS... --> ISSO ACONTECEU PQ:
+
+
+
+
+
+
+
+
+**** PARA QUE O BOOTSTRAP FUNCIONE __ COMPLETAMENTE (com essa feature da COLLAPSABLE NAVBAR), é necessário:
+
+
+
+
+1) O CÓDIGO CSS DO BOOTSTRAP EM SI 
+
+
+2) O POPPER.JS 
+
+3) O JQUERY.JS 
+
+
+4) O PACOTE DE INTEGRAÇÃO DO BOOTSTRAP COM ESSES PACOTES .JS (outro arquivo js)..
+
+
+
+
+
+
+
+
+-> BASICAMENTE, DEEVEMOS IMPORTAR ESSES 3 ARQUIVOS JS (bs, popper e jquery) 
+
+
+ANTES DO PRÓPRIO BOOTSTRAP CSS FILE...
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK... AGORA ESTÁ FUNCIONANDO BEM...
+
+
+
+
+
+
+
+NOSSO MENU É TOGGLADO COM SUCESSO...
+
+
+
+
+
+
+
+
+
+
+É ASSIM QUE PODEMOS ADICIONAR UMA NAVBAR BEM BÁSICA...
+
+
+
+
+
+
+
+
+
+NOS OFFICIAL DOCS,
+
+
+
+
+APRENDEMOS SOBRE COMO PODEMOS ADICIONAR UMA 'SEARCH' A SUA NAVBAR e etc...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS UMA COISA QUE O PROFESSOR QUER NOS MOSTRAR É 
+
+
+
+''COMO PODEMO DEFINIR DIFERENTES COLOR SCHEMES PARA ESSE NAVBAR''..
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> NO MOMENTO, ESTAMOS USANDO 
+
+
+'navbar-light' (LIGHT SCHEME)
+
+
+
+
+
+e o 
+
+
+'bg-light' 
+
+
+
+
+
+
+
+
+--> PODEMOS TROCAR ISSO PARA 
+
+'navbar-dark' 
+
+e 
+
+'bg-dark'..
+
+
+
+
+
+--> COM ISSO, FICAMOS COM UMA NAVBAR ESCURA, E O TEXT E O MENU BUTTON AUTOMATICAMNETE TROCARAM CORES...
+
+
+
+
+
+
+
+--> ISSO É BEM COOL,
+
+E TE DEIXA 
+
+criar 
+
+
+
+UMA NAVIGATION BAR RAPIDAMENTE, COM BASIC FEATURES, NA SUA PAGE...
+
+
+
+
+
+
+
+
+
+--> ISSO TUDO FOI ÚTIL, ESPECIALMENTE QUANTO A RESPONSIVENESS... (posicionar à direita, À esquerda, etc)...
+
+
+
+
+
+
+
+LEIA OS OFFICIAL DOCS PARA APRENDER MAIS SOBRE ISSO...

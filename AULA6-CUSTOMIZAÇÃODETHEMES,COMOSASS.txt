@@ -1,0 +1,2161 @@
+
+
+
+
+
+
+
+
+
+
+APRENDEMOS MT SOBRE BOOTSTRAP 4 NOS ÚLTIMOS VIDEOS..
+
+
+
+
+
+
+
+
+
+
+NESSE VÍDEO, O PROFESSOR NOS MOSTRARÁ COMO _ PODEMOS CUSTOMIZAR __ O 
+
+
+BOOTSTRAP..
+
+
+
+
+
+
+
+
+
+
+FAREMOS ISSO COM O SASS,
+
+
+
+__ O SASS QUE É UM SUPERSET DO CSS...
+
+
+
+
+
+
+
+
+
+
+----> VAMOS MUDAR ALGUNS DEFAULTS DO BOOTSTRAP,
+
+
+
+_ COMO 'BORDER-RADIUS'
+
+
+
+ou primary colors,
+
+
+
+
+TODAS SÃO COISAS QUE PODEMOS 
+
+
+
+
+
+EDITAR FACILMENTE COM O SASS..
+
+
+
+
+
+
+
+
+
+--> DEPOIS DE EDITARMOS TUDO ISSO COM O SASS,
+
+
+
+
+
+PODEMOS __ 
+
+IMPORTAR E OVERWRITTAR O QUE 
+
+PRECISAMOS,
+
+LÁ 
+
+DO 
+
+
+BOOTSTRAP PACKAGE...
+
+
+
+
+
+
+
+
+
+
+---> PARECE COMPLICADO, MAS É BEM SIMPES...
+
+
+
+
+
+
+
+
+
+--> PARA CUSTOMIZAR ISSO,
+
+
+PRIMEIRAMENTE VAMOS ATÉ A PÁGINA DE DOCUMENTAÇAÕ 
+
+
+
+DO 
+
+
+
+SASS.
+
+
+
+
+
+-----> LÁ, TEMOS A PARTE DE 'THEMING'..
+
+
+
+
+
+
+
+
+
+--> EM 'THEMING',
+
+TEMOS INSTRUÇÕES SOBRE COMO PODEMOS ALTERAR O THEME/GENERAL LOOK DO BOOTSTRAP4 -->  
+
+
+
+
+ISSO PQ 
+
+O 
+
+BOOTSTRAP 4 USA 
+
+__SASS__ POR TRÁS DAS CENAS... -->  O SASS É UM 
+
+SUPERSET 
+
+DO CSS 
+
+
+
+
+
+
+
+
+
+
+
+
+É TIPO UMA 'LANGUAGE' QUE BUILDS UPON O CSS --> TE DÁ ALGUMAS FEATURES EXTRAS...
+
+
+
+
+
+
+
+
+
+
+--> O BS4 USOU SASS PQ DEIXA O WRITE DE STYLES MAIS FÁCIL --> MAS TODOS OS ARQUIVOS 
+
+
+
+DO SASS PRECISAM SER COMPILADOS PARA 'CÓDIGO NORMAL CSS'
+
+
+
+ANTES 
+
+
+DE 
+
+SEREM 
+
+
+EXECUTADOS NO BROWSER...
+
+
+
+
+
+
+
+----> OK, MAS O BS4 
+
+USA 
+
+O 
+
+SASS 
+
+DURANTE O BUILD PROCESS,
+
+
+E É POR ISSO QUE 
+
+
+PRECSIAMSO 
+
+
+ENTRAR NESSA PARTE AÍ PARA CUSTOMIZAR OS DEFAULTS DO BOOTSTRAP ....
+
+
+
+
+
+
+
+
+
+
+
+-> PRECISAMOS ENTRAR 
+
+
+
+NOS ARQUIVOS SASS
+
+E AÍ OVERWRITTAR DEFAULTS 
+
+
+
+NESSE CÓDIGO SASS,
+
+PARA 
+
+AÍ RECOMPILARMOS
+ 
+
+ O 
+
+
+ CÓDIGO SASS EM CSS...
+
+
+
+
+
+
+
+
+
+
+
+
+ -----> TEMOS UM EXEMPLO DA ESTRUTURA QUE 
+
+
+
+
+ DEVEMOS USAR 
+
+
+ NO NOSSO PROJETO ---> COMO 
+
+
+
+
+
+ PODEMOS 
+
+ OVERWRITTAR O SASS CODE DO BOOTSTRAP,
+
+
+
+
+ etc etc...
+
+
+
+
+
+
+
+
+
+
+
+
+ --> MAS O QUE PODEMOS VER, AQUI, É QUE 
+
+
+ O BOOTSTRAP 
+
+
+
+ PRECISA EXISTIR LOCALMENTE PARA PODERMOS EDITAR ESSES DEFAULTS..
+
+
+
+
+
+
+ --> PODEMOS FACILMENTE CONSEGUIR ESSES ARQUIVOS POR MEIO DE UMA ESCRITA DE 'NPM INSTALL '
+
+
+
+
+
+
+
+
+ O CÓDIGO 
+
+
+ DE INSTALAÇÃO 
+
+
+
+ é 
+
+
+
+
+
+ 'npm init '
+
+
+
+ e depois 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 'npm install bootstrap --save'
+
+
+
+
+
+
+
+
+
+
+
+ OK... O QUE GANHAMOS COM ISSO?
+
+
+
+
+
+
+
+
+ PACKAGE-LOCK.JSON --> NOS DIZ A EXATA VERSÃO QUE FOI INSTALADA NO NOSSO PROJECT...
+
+
+
+
+
+
+
+
+
+ node_modules ---> AÍ TEMOS O BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> DENTRO DESSE FOLDER,
+
+
+ TEMOS O FOLDER DE 'bootstrap',
+
+
+ EM QUE 
+
+ TEMOS:
+
+ 1) DIST FOLDER  --> EM QUE TEMOS O CÓDIGO BOOTSTRAP JÁ COMPILADO E PRONTO PARA USO
+
+
+
+
+
+
+
+
+ 2) FOLDER DE 'CSS' --> ESSE FOLDER CONTÉM TODO 'RAW CODE' ---> É CLARO QUE PODERÍAMOS 
+
+
+
+
+ IR EM CADA 1 DAS FILES E AÍ COMEÇAR A EDITAR O CÓDIGO LÁ..
+
+
+
+
+
+
+
+
+
+
+
+ --> MAS NÃO DEVEMOS FAZER ISSO... NÃO EDITE OS ARQUIVOS BOOTSTRAP '.SCSS' 
+
+
+ diretamente -->  NÃO FAÇA ISSO PQ:
+
+
+
+
+
+
+
+
+ 1) O CÓDIGO NÃO SERÁ COMPILADO AUTOMATICAMENTE SÓ PQ VOCÊ EDITOU AS COISAS ALI....
+
+
+
+
+
+
+
+
+ 2) ALÉM DISSO,
+
+ VOCê NÃO DEVE TOCAR NISSO,
+
+ PQ 
+
+ SE EM ALGUM MOMENTO NO FUTURO VOCÊ QUISER
+
+
+ REINSTALAR 
+
+ SEU PROJETO, REINSTALAR ESSA DEPENDENCY,
+
+
+ TODAS SUAS CHANGES SERÃO OVERWRITTADAS...
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -----> É POR ISSO QUE DEVEMOS 
+
+
+
+ UTILIZAR UM APPROACH DISTINTO...
+
+
+
+
+
+
+
+
+ --> VAMOS CRIAR, NO ROOT DO NOSSO PROJETO,
+
+
+
+ UM 'main.scss',
+
+
+
+ EM QUE 
+
+
+
+ ESCREVEREMOS NOSSO PRÓPRIO CÓDIGO 
+
+
+
+ SASS/CSS 
+
+
+
+
+
+
+ CODE,
+
+
+
+
+ E EM QUE OVERWRITTAREMOS OS DEFAULTS 
+
+
+
+ DO BOOTSTRAP....
+
+
+
+
+
+
+
+
+
+
+
+
+----> BEM, MAS PARA ESCREVERMOS CÓDIGO 
+
+
+
+SASS,
+
+
+
+
+_ SCSS,
+
+
+
+PRECISAMOS DE UM SASS COMPILER... ---------> E EM MUITOS PROJETOS,
+
+
+
+
+
+TEREMOS WEBPACK COM SASS LOADER 
+
+
+NO SEU INTERIOR... --> MAS AQUI NÃO TEMOS  WEBPAKC,
+
+
+
+
+POR ISSO 
+
+
+
+O QUE O PROFESSOR FARÁ 
+
+É USAR UM  SASS COMPILER CRU...
+
+
+
+
+
+
+
+
+
+
+
+
+--> LÁ NO SITE DO SASS,
+
+TEMOS 
+
+'USING SASS'...
+
+
+
+
+
+
+
+
+-> SE ESTAMOS NO WINDOWS,
+
+
+PRECISAMOS INSTALAR O 'RUBY' antes...
+
+
+
+
+
+
+
+
+
+OU NÃO...
+
+
+
+
+
+
+
+npm install -g sass...
+
+
+
+
+
+
+
+
+
+
+----> ESSE NÃO É UM CURSO DE SASS...
+
+
+
+
+
+
+
+
+
+
+
+--> O QUE O PROFESSOR QUER FAZER É USAR O SASS COMPILER PARA OVERWRITTARMOS O BOOTSTRAP DEFAULTS...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----> PARA __ -EDITARMOS FACILMENTE OS BOOTSTRAP DEFAULTS,
+
+
+
+
+UMA 
+
+
+
+_ MANEIRA FÁCIL É 
+
+
+
+__ SIMPLESMENTE IMPORTAR TUDO LÁ DE 
+
+'node_modules/bootstrap/css/bootstrap'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------> ok.. IMPORTAMOS TUDO...
+
+
+
+
+
+FAZEMOS O IMPORT DISSO DENTRO DE 'main.scss',
+
+tipo assim:
+
+
+
+
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK.... ISSO FEITO,
+
+
+
+
+O PROFESSOR AVISA QUE DEVEMOS RODAR O COMANDO, NO TERMINAL,
+
+
+
+
+'sass main.scss main.css'
+
+
+
+
+
+
+
+
+
+
+--> ISSO _ PARA ENTÃO COMPILARMOS O ARQUIVO SASS 
+
+
+EM UM ARQUIVO __ CSS....
+
+
+
+
+
+
+
+
+
+
+
+--> o arquivo css agora vai CONTER TODO O CÓDIGO BOOTSTRAP CSS...
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR EXPLICA QUE ESSE CÓDIGO CSS NÃO ESTÁ MINIFADO,
+
+
+
+
+QUE ISSO PRECISA SER FEITO COM UMA BUILD STEP ADICIONAL (não sei como, ele não explica)..
+
+
+
+
+
+
+
+
+
+
+
+--> MAS O QUE INTERESSA´E QUE AGORA TEMOS TUDO ISSO,
+
+
+
+
+
+
+TODOS OS BOOTSTRAP STYLES,
+
+DENTRO 
+
+
+DESSE ARQUIVO 
+
+
+'main.css'...s.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR DIZ QUE AGORA DEVEMOS IMPORTAR ESSE ARQUIVO 'main.css'
+
+PARA DENTRO DO NOSSO HTML...
+
+
+
+
+
+
+
+
+FICOU TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- <link TROCAMOS PELO CÓDIGO EDITADO DO BOOTSTRAP, de 'main.css'...
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        > -->
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>Document6</title>
+    </head>
+    <body>
+
+
+
+
+
+------------------------------
+
+
+
+
+
+
+
+
+
+
+AGORA SALVAMOS TUDO E VOLTAMOS AO NOSSO PROJETO.. -> 
+
+
+
+
+NOSSO PROJETO FICA IGUAL A ANTES,
+
+
+
+
+
+PQ 
+
+O 
+
+
+CÓDIGO BOOTSTRAP AINDA ESTÁ IGUAL,
+
+SÓ QUE 
+
+AGORA 
+
+
+
+ELE ESTÁ NAQUELE ARQUIVO 'main.css',
+
+E NAÕ 
+
+
+ESTÁ MAIS SENDO IMPORTADO DAQUELE CDN REMOTO..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PARECE QUE O BOOTSTRAP USA 'CSS VARAIBLES' (como ':root')....
+
+
+
+
+
+
+
+
+
+
+
+
+MAS AGORA VAMOS OVERWRITTAR AS 'SASS VARIABLES' DO BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+
+
+----------------> PARA ISSO,
+
+
+DEVEMOS IR ATÉ OA RQUIVO 'main.scss',
+
+
+EM QUE 
+
+IMPORTAMOS TODO O PACOTE DO BOOTSTRAp....
+
+
+
+
+
+
+
+
+
+LÁ, 
+
+DEVEMOS 
+
+
+ASSEGURAR QUE 
+
+
+
+__ OVERWRITTAMOS QUALQUER COLOR/COISA QUE QUEREMOS MUDAR,
+ 
+ QUE 
+ O 
+
+
+ BOOTSTRAP USA...
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ------> NOS DOCS DO BOOTSTRAP, É POSSÍVEL 
+
+
+
+ ENCONTRAR DETALHES SOBRE COMO PODEMOS OVERWRITTAR 
+
+ DEFAULT COLORS,
+
+
+
+
+
+
+
+ como 
+
+
+ '$body-bg'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> ESSAS COLORS DEFAULT __ DEVEM _ SER COLOCADAS_ __ANTES__ DO IMPORT__ DO BOOTSTRAP,
+
+
+
+
+ PQ __ QUEREMOS DECLARAR __ NOSSOS STYLES PRIMEIRAMENTE, ANTES DE IMPORTAR OS STYLES BOOTSTRAP (
+
+    PQ 
+
+    AS VARIABLES 
+
+    DO 
+
+    BOOTSTRAP ESTÃO CONFIGURADAS 
+
+,
+
+NO SASS CODE,
+
+
+DE 
+MODO QUE 
+
+NÃO VÃO OVERWRITTAR AS VARIABLES QUE SETTAMOS ANTERIORMENTE .... SÓ SERÃO USADOS OS 'DEFAULTS'
+
+SE NENHUM VALOR TIVER SIDO SETTADO POR NÓS, ANTES...
+ )
+
+
+
+
+
+
+
+ --------> OK... 
+
+ PARA SETTAR COLORS, TEMOS A ESCRITA DE 
+
+
+
+
+ '$theme-colors: (
+
+    "primary": #007d49,
+    "danger": #f1212fç
+ )
+
+
+
+
+
+
+
+ ETC ETC...
+
+
+
+
+
+
+
+
+
+
+
+ --> É O MAP DE COLORS...
+
+
+
+
+
+
+
+
+
+
+
+ --> ISSO É BASICAMENTE UM JAVASCRIPT OBJECT,
+
+ E O IMPORTAMOS 
+
+
+
+ DENTRO DO ARQUIVO 'main.scss',
+
+ ANTES DO 
+
+ BOOTSTRAP IMPORT...
+
+
+
+
+
+
+
+
+
+
+ EX:
+
+
+
+
+
+
+ $theme-colors: (
+    "primary": #521751,
+    "danger": #ff21
+);
+
+
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> EM TODOS OS  LUGARES QUE USÁVAMOS 'primary',
+
+agora ficará 
+
+
+__ COM _ OUTRA __COR...
+
+
+
+
+
+--> E ISSO FUNCIONA COM __ TODAS AS PROPRIEDADES DO BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+---> E, QUANDO VOCÊ ALTERA ESSAS CORES,
+
+
+
+OS STYLES TAMBÉM SÃO ALTERADOS AUTOMATICAMENTE.... (
+
+    pq o bootstrap tem 
+
+    vínculos a cada uma das cores,
+
+    estão todas 
+
+    vinculadas..
+)
+
+
+
+
+
+
+
+
+
+----> VOCË PODE MUDAR MAIS DO QUE   `PRIMARY COLOR`
+
+
+
+
+
+
+
+
+
+PARA VER O QUE PODE SER ALTERADO, VOCÊ DEVE IR ATÉ O 
+
+'node_modules',
+
+
+pasta do 
+
+BOOTSTRAPP,
+
+
+
+
+E AÍ 
+
+
+VOCÊ TEM AQUELE ARQUIVO DE 
+
+'_variables.scss'...
+
+
+
+
+
+
+
+
+DENTRO DESSE ARQUIVO, TEMOS 
+__ BASTANTE COISA_...
+
+
+
+
+
+
+
+
+
+
+
+
+
+__DENTRO DALI,
+
+VOCÊ VÊ TODAS AS VARIABLES USADAS PELO BOOTSTRA.P...
+
+
+
+
+
+--> e TODOS ELES POSSUEM AQUELA FLAG DE '!default',
+
+
+
+
+QUE É UMA FLAG _ QUE __DETERMINA _ QUE 
+
+
+ESSES VALUES 
+
+DESSAS PROPRIEDADES _ SÓ _ SERÃO __ USADOS _ CASO VOCÊ 
+
+NÃO 
+
+
+SETTE NADA __ MANUALMENTE...
+
+
+
+
+----> E, ALI,
+
+
+VOCÊ 
+
+
+
+VÊ TODAS AS CORES QUE VOCê PODE OVERWRITTAR...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> VOCÊ PODE IR ATÉ O MAP DE 'colors',
+
+
+
+
+QUE É ESTA PARTE AQUI:
+
+
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+) !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS O QUE INTERESSA É ESTE TRECHO AQUI:
+
+
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+
+
+
+
+
+
+
+
+
+
+COM ISSO, VOCÊ PODE OVERWRITTAR ALGUNS 'THEME COLORS' --> PODEMOS TROCAR A COR DE 'PRIMARY',
+
+
+e assim por diante...
+
+
+
+
+
+
+
+
+
+--> também podemos alterar o tamanho das margins  e etc... 
+
+
+
+
+
+
+
+--> o border-radius default, etc etc...
+
+
+
+
+
+
+
+
+
+
+
+--> PARA ALTERAR ALGUMA PROPRIEDADE 
+
+
+
+
+
+
+DO _ BOOTSTRAP,
+
+
+
+VOCê PODE FAZER ISSO NA SU PRÓRPIA FILE DE 
+
+'main.scss'... ---> 
+
+
+
+
+
+
+
+
+
+BASTA VOCÊ PEGAR O 
+
+
+
+
+
+
+
+NOME DA VARIABLE,
+
+tipo 
+
+
+
+'$border-radius' ,
+
+
+
+
+E AÍ 
+
+
+VOCê 
+
+
+COLOCA NA FRENTE DO IMPORT,
+
+
+E AÍ 
+
+
+
+__ PODE TROCAR _ PARA ALGUM OUTRO VALOR (tipo de 0.25rem para 10rem)...
+
+
+
+
+
+
+
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+
+// declare as ALTERAÇÕES NOS DEFAULTS DO __ BOOTSTRAP __ ANTES_ DO SEU IMPORT (visto logo abaixo)
+
+
+
+$theme-colors: (
+    "primary": #521751,
+    "danger": #ff21
+);
+
+
+
+
+$border-radius : 10rem; ////exemplo de EDIÇÃO DE VARIABLE LÁ DO ARQUIVO '_variables.scss' do BOOTSTRAP...
+
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+
+.main-form {
+    width: 450px;
+    margin: auto;
+}
+
+
+
+
+
+
+-> ISSO FEITO,
+
+
+VOCÊ DEVE 
+
+
+
+SALVAR TUDO __ E RECOMPILAR SEU CÓDIGO 
+
+
+
+SASS, com 'sass main.scss main.css'...
+
+
+
+
+
+
+
+------> RECOMPILE SEU CÓDIGO, E AÍ VOCÊ VERÁ QUE SEUS INPUTS FICARÃO BEM MAIS REDONDOS,
+
+ISSO PQ 
+
+O 
+
+PROFESSOR EDITOU O 'BORDER-RADIUS'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----> CERTO... MAS HÁ MAIS UMA COISA QUE O PROFESSOR NOS EXPLICA...
+
+
+
+
+
+
+
+
+
+--> É A MANEIRA DE 'SHRINK THE SIZE OF YOUR BOOTSTRAP FILE'....
+
+
+
+
+
+
+'ONLY IMPORT WHAT YOU NEED'.. --> isso é bem bom,
+
+
+
+PQ _ TE PERMITE __ ENCOLHER O TAMANHO DO CÓDIGO CSS QUE 
+
+
+SEU 
+
+USER TEM DE BAIXAR...
+
+
+
+
+
+
+
+--> SE VOCê __ TEM PLENA CIÊNCIA DE QUE _ SÓ ESTÁ USANDO 
+
+
+
+'FORMS' 
+
+OU 
+
+'BUTTONS'
+
+
+OU APENAS 
+
+'FOOTER E POSITIONING',
+
+
+
+VOCÊ 
+
+PODE ACTUALLY IMPORTAR APENAS ESSAS PARTES 
+
+
+
+
+DO BOOTSTRAP...
+
+
+
+
+
+
+BASTA LIMITAR SEU IMPORT,
+
+
+
+NÃO IMPORTAR ALGO SECO COMO 
+
+
+
+'node_modules/bootstrap/scss/bootstrap' ,
+
+
+
+
+
+E
+ IMPORTAR ALGO COMO 
+
+
+
+
+
+
+
+
+
+ '@import "node_modules/bootstrap/scss/grid"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ---> ok... ISSO TE DEIXA LIMITAR UM MONTE O TAMANHO DO CÓDIGO BOOTSTRAP QUE SEUS USERS 
+
+
+ TEM DE BAIXAR...
+
+
+
+
+
+
+
+
+
+
+ --> SE VOCê SÓ USA 'GRID'
+  
+
+
+  E 
+
+
+  'FORM INPUTS' E 'BUTTONS',
+
+
+
+  VOCÊ PODE 
+
+  IMPORTAR APENAS ISSO,
+
+  PARA 
+
+
+  __LIMITAR_ O TAMANHO DO Arquivo bootstrap que vocÊ vai baixar...
+
+
+
+
+
+
+
+
+
+
+
+  AS COISAS QUE _ _SEMPRE DEVEM SER IMPORTADAS NO SEU ARQUIVO BOOTSTRAP:
+
+
+
+
+
+
+
+  1) @import "node_modules/bootstrap/scss/functions" 
+
+  2) @import "node_modules/bootstrap/scss/variables"
+
+
+  3) @import "node_modules/bootstrap/scss/mixins"
+
+
+
+
+
+
+
+
+  OU SEJA,
+
+  OS ARQUIVOS DAS FUNCTIONS,
+
+
+  DAS VARIABLES E DOS MIXINS...
+
+
+
+
+
+
+
+
+  ----> VOCê PODE OVERWRITTAR OS DEFAULTS DESSAS COISAS, SIM,
+
+
+
+  MAS _ APENAS AS COISAS QUE VOCÊ QUISER...
+
+
+
+
+
+
+
+
+
+
+--> AGORA O RESTO DAS COISAS QUE QUEREMOS/PRECISAMOS:
+
+
+
+1) THE GRID 
+
+
+2) BUTTONS 
+
+
+3) FORMS...
+
+
+
+
+
+
+
+FICA TIPO ASSIM:
+
+
+  1) @import "node_modules/bootstrap/scss/grid" 
+
+  2) @import "node_modules/bootstrap/scss/buttons"
+
+
+  3) @import "node_modules/bootstrap/scss/forms"
+
+
+
+
+
+
+
+
+
+
+
+CERTO... ISSO FAZ TOTAL SENTIDO...
+
+
+
+
+
+
+
+
+ISSO FEITO, RECOMPILAMOS NOSSO CÓDIGO, COM 
+
+
+
+'sass main.scss main.css'...
+
+
+
+
+
+
+
+
+
+
+
+
+-----> NÃO ENCONTRAREMOS AS CLASSES DE 'alerts', por exemplo, PQ NÃO INCLUÍMOS ALERTS 
+
+NA NOSSA PAGE..
+
+
+
+
+
+
+--> A NAVBAR TAMBÉM ESTÁ BROKEN,
+
+PQ NÃO IMPORTAMOS A NAVBAR...
+
+
+
+
+
+
+BASTA ESCREVER ASSIM?
+
+
+
+
+
+
+  1) @import "node_modules/bootstrap/scss/grid" 
+
+  2) @import "node_modules/bootstrap/scss/buttons"
+
+
+  3) @import "node_modules/bootstrap/scss/forms"
+
+  4) @import "node_modules/bootstrap/scss/navbar"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> O STYLE DEFAULT DO `text`,
+
+
+ELE TAMBÉM HAVIA FALTADO,
+POR ISSO 
+
+
+IMPORTAMOS 
+
+O 
+
+PACAKGE DE 'reboot',
+
+tipo assim:
+
+
+
+
+
+
+  1) @import "node_modules/bootstrap/scss/grid" 
+
+  2) @import "node_modules/bootstrap/scss/buttons"
+
+
+  3) @import "node_modules/bootstrap/scss/forms"
+
+  4) @import "node_modules/bootstrap/scss/navbar"
+
+  5) @import "node_modules/bootstrap/scss/reboot"
+
+
+
+
+
+
+
+
+
+
+--> O NAVBAR AINDA HAVIA FICADO BUGADO ... --> É 
+
+
+
+
+PQ __ ESTÁVAMOS SEM A PACKAGE DE 'utilities',
+
+
+POR ISSO ESCREVEMOS ASSIM:
+
+
+
+
+
+
+
+  1) @import "node_modules/bootstrap/scss/grid" 
+
+  2) @import "node_modules/bootstrap/scss/buttons"
+
+
+  3) @import "node_modules/bootstrap/scss/forms"
+
+  4) @import "node_modules/bootstrap/scss/navbar"
+
+  5) @import "node_modules/bootstrap/scss/reboot"
+
+  6)  @import "node_modules/bootstrap/scss/utilities"
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS A NATUREZA RESPONSIVA DO TOOLBAR TAMBÉM 
+
+NÃO ESTÁ FUNCIONANDO... PARA ISSO,
+
+PRECISAMOS 
+
+DO PACKAGE DE 'transitions'... (animation para expand/remove nosso navbar)...
+
+
+
+
+
+
+
+
+--> POR ISSO ASSIM:
+
+
+
+
+
+  1) @import "node_modules/bootstrap/scss/grid" 
+
+  2) @import "node_modules/bootstrap/scss/buttons"
+
+
+  3) @import "node_modules/bootstrap/scss/forms"
+
+  4) @import "node_modules/bootstrap/scss/navbar"
+
+  5) @import "node_modules/bootstrap/scss/reboot"
+
+  6)  @import "node_modules/bootstrap/scss/utilities"
+
+  7)  @import "node_modules/bootstrap/scss/transitions"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  --> COMO VOCê OBSERVA, PODE SER TRICKY 
+
+
+
+  IMPORTAR 
+
+
+  TODAS AS COISAS 
+
+
+
+  NECESSÁRIAS PARA O NEGÓCIO FUNCIONAR...
+
+
+
+
+
+
+
+
+
+  -> MAS A COISA BOA É QUE VOCÊ SEMPRE PODE 
+
+
+
+  OLHAR O CÓDIGO DE CADA UM DOS ARQUIVOS '.scss'...
+
+
+
+
+
+
+
+
+
+
+
+  --> PROFESSOR OLHA A PACKAGE DE 'type'...
+
+
+
+
+  DENTRO DELA, TAMBÉM TEMOS COISAS DE TIPOGRAFIA (
+
+
+
+
+    O REBOOT DEFINE  ALGUNS 'BROWSER DEFAULTS',
+
+
+    MAS O 
+
+    'type' 
+
+    É USADO PARA DEFINIR COISAS DEFAULT DE TIPOGRAFIA DO BOOTSTRAP....
+
+
+
+
+  )
+
+
+
+
+
+
+
+
+  VEJA O QUE É NECESSÁRIO NO SEU PROJETO,
+
+
+  AÍ 
+
+
+OVERWRITTE AS COISAS QUE VOCê QUER,
+
+
+E _ AÍ IMPORTE SÓ O QUE VOCÊ PRECISA,
+
+E AÍ 
+
+REDUZA O BUNDLE SIZE...
+
+
+
+
+
+
+
+
+
+É ASSIM QUE OPTIMIZAMOS 
+
+
+__PROJECTS QUE USAM BOOTSTRAP 4...
+
+
+
+
+
+
+
+
+
+
+
+--> VOCÊ PODERIA INCORPORAR
+
+
+
+ESSE BUILD DO ARQUIVO 'scss'  
+
+
+
+EM UM WEBPACK WORKFLOW....
+
+
+
+
+
+
+
+
+(ISSO É BEM INTERESSANTE)...
+
+
+
+
+
+
+
+
+
+
+
+
+ok, AGORA ENTENDEMOS COMO PODEMOS TRABALHAR COM O BOOTSTRAP E O ADICIONAR AOS NOSSOS PRÓXIMOS PROJECTS...
+
+
+

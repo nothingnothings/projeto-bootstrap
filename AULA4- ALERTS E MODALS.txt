@@ -1,0 +1,3475 @@
+
+
+
+
+
+
+
+
+
+
+
+NESSE VÍDEO,
+
+O PROFESSOR QUER NOS MOSTRAR ALERTS E MODALS;;
+
+
+
+
+
+
+QUER NOS 
+
+
+
+
+EXPLICAR 
+
+
+
+
+COMO 
+
+
+ELES __ FUNCIONAM,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+QUER:
+
+
+1) NOS MOSTRAR COMO __ ADICIONAR MODALS E ALERTS (isso é bem simples, mas o professor vai mostrar mesmo assim)..
+
+
+
+
+
+
+
+2) O QUE ACONTECE POR TRÁS DAS CENAS,
+
+E PQ AS COISAS QUE ENXERGAMOS AQUI __ FICAM COM ESSA APARÊNCIA MSM...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> COMEÇAMOS COM A PAGE/NAVBAR 
+
+DO ÚLTIMO VÍDEO...
+
+
+
+
+
+
+
+
+
+--> aGORA É HORA DE ADICIONARMOS ALGUNS MODALS E ALERTS...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DETALHE --> O PROFESSOR NÁO VAI NOS DAR UM WEBSITE COMPLETO,
+
+
+PQ 
+
+
+ELE SÓ QUER NOS 
+
+MOSTRAR 
+
+
+AS CORE BOOTSTRAP FEATURES (as features mais importantes)..
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS PODE EXISTIR 
+
+
+UM CURSO DO PROFESSOR EM QUE FAZEMOS UM BACKEND E UM FRONTEND COM BOOTSTRAP, ETC ETC...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> COMEÇAMOS COM OS ALERT..
+
+
+
+
+
+
+
+-> alert --> alerts TIPICAMENTE SÃO ELEMENTOS QUE SÓ SÃO DISPLAYADOS CONDICIONALMENTE (
+
+    tipicamente por meio de um frontend framework como angular, react, vue.js (e são renderizados por data incorreta em uma form, etc etc)...
+)
+
+
+
+
+
+
+
+
+
+
+
+
+--> OU, ENTÃO, VOCÊ FAZ DISPLAY DE UM ALERT __ POR MEIO __ 
+
+DO _ USO DE ALGUM 
+
+SERVERSIDE 
+
+FRAMEWORK PARA RENDERIZAR SUAS VIEWS (alguma coisa  como EXPRESSJS OU LARAVEL, ETC)...
+
+
+
+
+
+
+
+
+
+
+
+--> O USER FEZ ALGUMA COISA, E VOCê QUER MOSTRAR ALGUM ALERTA A ELE (
+
+
+
+COM O RENDER TRADICIONAL DE HTML,
+
+VOCÊ 
+
+RENDERIZARIA 
+
+SEU ALERT 
+
+LÁ 
+
+NO 
+
+SEU 
+
+SERVERSIDE RENDERED CODE,
+
+
+E AÍ 
+
+
+MANDARIA DE VOLTA UM HTML FILE COM ESSE 
+
+ALERT DENTRO DELE...
+
+)
+
+
+
+
+
+
+--> CERTO... -- O HARD CODE DE UM ALERT __ DENTRO __ _DE UM ÚNICO ARQUIVO HTML,
+
+COMO FAREMOS AGORA,
+
+É 
+RARAMENTE 
+
+
+
+
+ O QUE FAZEMOS,
+
+
+
+ MAS __ O CÓDIGO _ FRONTEND É O MESMO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ------> O PROFESSOR ADICIONA UM ALERT... --> 
+
+
+ E UM ALERT,
+
+
+ NO BOOTSTRAP,
+
+ É SIMPLESMENTE UMA 
+
+ DIV COM UMA CERTA CLASS....
+
+
+
+
+
+
+
+
+
+
+
+ <div class= "alert">
+
+
+
+
+
+
+
+
+
+
+
+
+ EX:
+
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document3</title>
+  </head>
+  <body>
+
+
+    <!-- É ASSIM QUE ADICIONAMOS ALERTS NO BOOTSTRAP... com a class 'alert' em uma DIV... -->
+    <div class="alert"></div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+    <div class="alert">I am an alert!</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    --> POR RAZÕES DE ACESSIBILIDADE,
+
+    O PROFESSOR ADICIONA UM ATTRIBUTE DE 
+
+
+
+    'role=alert" ------>  ISSO AJUDA COM 'SCREEN READERS',
+
+
+
+
+
+
+
+
+    SCREEN READERS PASSAM A ENTENDER A ROLE DESSE ALERT....
+
+
+
+
+
+
+
+
+EX:
+
+
+
+    <div class="alert" role="alert">I am an alert</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> CERTO...
+
+
+ADICIONAMOS ESSE ALERT AÍ,
+
+
+E ELE VIRA UM TEXTO BÁSICO, SEM NADA DE MAIS...
+
+
+
+
+
+
+
+
+
+
+
+--> MAS SE INSPECIONARMOS ESSE ELEMENTO NAS DEVTOOLS,
+
+
+
+VEREMOS QUE A CLASS DE '.alert'
+
+
+JÁ 
+
+ESTARÁ 
+
+
+
+FAZENDO UM TRABALHO:
+
+
+
+
+
+
+altera:
+
+
+
+position: relative,
+
+padding (um pouco) 
+
+
+margin-bottom 
+
+
+
+
+
+border TRANSPARENTE...
+
+
+
+
+
+
+
+
+
+--> MAS QUAL A IDEIA POR TRÁS DE UMA BORDA TRANSPARENTE?
+
+
+
+
+
+
+A IDEIA 
+
+
+É QUE 
+
+
+
+__ AGORA __ PODEMOS __ ADICIONAR UMA __ CLASS ADICIONAL A ESSA DIV DE 'alert',
+
+QUE 
+
+AÍ 
+
+VAI 
+
+
+
+SETTAR 
+
+
+1 COR ESPECIAL DE 
+
+
+BACKGROUND E BORDER-COLOR,
+
+
+TUDO 
+
+PARA 
+
+
+
+TE DAR 
+
+
+
+UM 
+
+ 
+ALERT COM APARÊNCIA MAIS FANCY --------> 
+
+
+
+
+
+
+
+
+OK, MAS PQ 
+
+O 
+
+
+ALERT TEM ESSA DISPOSIÇÃO ASSIM?
+
+
+
+
+
+
+
+<div class="alert" role="alert">
+ALERT
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS PQ ASSIM?
+
+
+
+
+
+
+
+
+--> É PQ 
+
+
+HÁ MAIS DE 1 MANEIRA DE FAZER DISPLAY DE UM ALERT (
+
+
+    info message deve ter uma cor branca,
+
+
+    E NÃO VERMELHA/BRANCA...
+)
+
+
+
+
+
+
+
+
+
+WARNINGS USAM YELLOW...
+
+
+
+
+ERROR --> USAM RED 
+
+
+
+
+
+SUCCESS --> USAM GREEN 
+
+
+
+as classes 
+
+
+
+são 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PARA ADICIONAR UMA 'SECONDARY CLASS' AO SEU ALERT,
+
+
+
+
+
+
+fazemos assim:
+
+
+
+
+
+<div class="alert alert-" role="alert"> 
+
+ALERT
+
+</div>
+
+
+
+
+
+
+
+
+
+--> OU SEJA,
+COMEÇAMOS POR 'alert-' 
+
+
+
+
+
+
+
+
+
+
+O PROFESSOR COMEÇA COM UMA DEFINIÇÃO DE 
+
+
+
+'alert-primary'...
+
+
+
+
+
+
+
+
+O PROFESSOR COLOCA ISSO NA NOSSA DIV, QUE FICA ASSIM:
+
+
+
+
+
+
+<div class="alert alert-primary" role="alert"> 
+
+ALERT
+
+</div>
+
+
+
+
+
+
+
+
+
+
+---> COM ISSO, O ALERT PASSA A OCUPAR TODA A WIDTH DE NOSSA PAGE... (
+
+
+    NOSSA ALERT DIV TIPICAMENTE 
+
+    OCUPA 
+
+    TODO O ESPAÇO DE 
+
+    NOSSA PAGE (horizontal),
+
+    POIS É UM BLOCK ELEMENT...
+)
+
+
+
+
+
+
+
+--> PARA FAZER COM QUE ELA OCUPE APENAS UM ESPACINHO DE NOSSA PAGE,
+
+
+DEVEMOS USAR AS CLASSES ADICIONAIS DO BOOTSTRAP, TIPO ASSIM:
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+<div class="alert alert-primary" role="alert"> 
+ALERT
+</div> 
+        </div> 
+
+
+
+
+
+
+
+
+
+
+
+        CERTO.... AGORA 
+
+        ISSO ESTÁ POSICIONADO DENTRO DE UMA 'col' 
+
+
+        NO INTERIOR DA NOSSA GRID....
+
+
+
+
+
+
+
+
+
+
+
+        TIPO ASSIM:
+
+
+
+
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                    <div class="alert alert-primary" role="alert">I am an alert</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    -> OK, COM ISSO AGORA O ALERT ESTÁ NO MEIO...
+
+
+
+
+
+
+--> AGORA PERCEBEMOS QUE O CONTAINER ESTÁ CENTRALIZANDO TUDO ISSO....
+
+
+
+
+
+
+
+
+
+
+--> PODEMOS ADICIONAR UM POUCO DE SPACING EM RELAÇÃO AO TOPO (tanto por meio de um elemento 
+
+
+adicional no html, ou por meio de outras classes adicionais do bootstrap, tipo 'py'...)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E SIM, 'py' FUNCIONA...
+
+
+
+
+
+
+
+
+
+
+
+O PROFESSOR TAMBÉM COLOCOU UM TITLE,
+
+de 
+
+'ALERTS E MODAL'...
+
+
+
+
+
+REPLIQUEI, FICOU ASSIM:
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row py-3">
+            <div class="col">
+                <h1>Alerts E Modal</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-3">
+                    <div class="alert alert-primary" role="alert">I am an alert</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    -------------------
+
+
+
+
+
+
+
+
+
+
+
+
+    OK, MAS DE VOLTA AO ALERT...
+
+
+
+
+
+
+
+
+--> NOSSO ALERT FICOU AZUL..
+
+
+
+
+
+--> NÓS USAMOS 'alert-primary',
+
+SIM,
+
+
+
+E ISSO _ DEIXOU NOSSO ALERT___ AZUL_....
+
+
+
+
+
+
+
+
+
+
+----> NÓS TAMBÉM TEMOS 'alert-secondary',
+
+
+
+
+E SE O ESCREVEMOS, FICAMOS COM UMA COR DE 'CINZA' no background... (bem peculiar)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PRIMARY --> MENSAGEM NORMAL...
+
+
+
+
+SECONDARY --> MENSAGEM NORMAL (CINZA)
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row py-3">
+            <div class="col">
+                <h1>Alerts E Modal</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-3">
+                    <div class="alert alert-primary" role="alert">I am a BLUE alert (alert-primary)</div>
+                    <div class="alert alert-secondary" role="alert">I am a GREY alert (alert-secondary)</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ---------> MAIS INTERESSANTES DO QUE ESSAS CLASSES 'BÁSICAS'
+
+
+    SÃO AS SPECIAL CLASSES....
+
+
+
+
+
+
+
+
+
+
+
+--> TEMOS CLASSES COMO 'SUCCESS'...
+
+
+
+
+
+
+
+
+
+----> 'alert-success'...
+
+
+
+
+
+
+
+
+
+
+--> ESSA CLASS ADICIONAL NOS DÁ UM ALERT __ VERDE_...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> ALÉM DISSO,
+
+
+TAMBÉM TEMOS 'danger'
+
+
+
+E danger 
+
+VAI DAR AO USER UM ''RED ALERT'....
+
+
+
+
+
+
+
+
+
+
+
+
+
+alert-danger...
+
+
+
+
+
+
+
+--> TAMBÉM TEMOS 'alert-warning',
+
+QUE VAI DAR UM ALERT 
+
+
+AMARELO AO USER (
+
+
+
+    o user ainda não ganhou um erro, mas você quer o avisar...
+)
+
+
+
+
+
+
+
+
+
+
+
+--> 'alert-info'  --> É A MESMA COR DE 'alert-primary'... (quase igual)...
+
+
+
+
+
+
+
+
+
+
+
+--> MAS AQUI HÁ ALGO IMPORTANTE QUE DEVEMOS TER EM MENTE:
+
+
+
+
+a COR 'alert-primary'
+
+
+ACTUALLY 
+
+
+
+
+__ USA__ O 
+
+
+'PRIMARY THEME COLOR',
+
+
+
+E THEME COLORS 
+
+
+PODEM 
+
+SER 
+
+
+
+OVERWRITTADOS,
+
+
+QUANDO 
+
+
+VOCê 
+
+
+CONSTRÓI 
+
+
+
+BOOTSTRAP 
+
+LÁ DO 'SOURCE',
+
+
+
+quando você EMBEDDA O BOOTSTRAP DENTRO DO SEU BUILD WORKFLOW (é por isso que 
+
+'PRIMARY' NÃO SERÁ SEMPRE BLUE... ao contrário de 'alert-info')....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK.... NÓS TAMBÉM TEMOS 'light' e 'dark'...
+
+
+
+
+dark-alert 
+
+
+
+light-alert
+
+
+
+
+
+--> E É ASSIM QUE PODEMOS TRABALHAR COM ALERTS...
+
+
+
+EX:
+
+
+
+
+            <div class="col-12 py-3">
+                    <div class="alert alert-primary" role="alert">I am a BLUE alert (alert-primary)</div>
+                    <div class="alert alert-secondary" role="alert">I am a GREY alert (alert-secondary)</div>
+                    <div class="alert alert-success" role="alert">I am a SUCCESS alert (alert-success)</div>
+                    <div class="alert alert-info" role="alert">I am a INFO alert (alert-info)</div>
+                    <div class="alert alert-dark" role="alert">I am a black alert (alert-black)</div>
+                    <div class="alert alert-light" role="alert">I am a black alert (alert-light)</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+----> E É ASSIM QUE PODEMOS TRABALHAR COM ALERTS...
+
+
+
+
+
+
+
+
+
+--> MAS HÁ 2 COISAS ESPECIAIS QUE PODEMOS ADICIONAR A ALERTS...
+
+
+
+
+
+
+
+
+
+
+1a coisa) PODEMOS ADICIONAR __ LINKS__ NOS NOSSOS ALERTS...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ex:
+
+
+
+
+
+
+
+
+                    <div class="alert alert-primary" role="alert">I am a BLUE alert (alert-primary).
+                    <a href="#">CLICK ME</a>
+                    
+                    
+                    
+                    
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ---> SE SALVAMOS ISSO AÍ,
+
+
+            FICAMOS COM UM LINK FEIO,
+
+            LINK AZUL (mesmo style de um link comum no bootstrap)...
+
+
+
+
+
+
+
+
+
+
+--> MAS TALVEZ VOCÊ QUEIRA 
+
+
+TER UMA COR QUE 
+
+
+__ SE ENCAIXE NO ALERT QUE VOCÊ 
+
+TEM... --> 
+
+
+
+
+PARA CONSEGUIR ISSO,
+
+
+
+VOCÊ 
+
+
+DEVE ADICIONAR UMA CLASS 
+
+ESPECIAL AO SEU LINK,
+
+
+
+
+
+
+a class de 'alert-link'...
+
+
+
+
+
+
+
+
+
+--> VOCÊ VERÁ QUE A APARÊNCIA MUDARÁ, ficará mais dark...
+
+
+
+
+
+
+
+
+
+--> E VOCÊ TAMBÉM PODE USAR TAGS de 'h1' e 'h2',
+
+
+
+
+e colocar uma class de 'alert-heading' ---> ISSO VAI TE DAR UM HEADING ESPECIAL,
+
+
+
+
+
+mais bonito...
+
+
+
+
+
+
+
+-> ex:
+
+
+              <div class="alert alert-success" role="alert">
+              <h2 class="alert-heading">This is an Alert!
+                    <a href="#" class="alert-link">CLICK ME</a>
+                    </div>
+
+
+
+
+
+
+
+-----------------------
+
+
+
+
+
+você também pode usar lists, qualquer tipo de element,
+ 
+
+ dentro de um alert...
+
+
+
+
+
+
+
+
+
+ --> A ÚLTIMA COISA QUE O PROFESSOR QUER NOS MOSTRAR 
+
+
+
+
+
+
+ É 
+
+ QUE 
+
+
+ VOCê PODE __ CONFIGURAR O BOOTSTRAP,
+
+
+
+ DE MODO 
+
+ QUE 
+
+
+ ___ESSES ALERTS__ POSSAM 
+
+ SER 'DISMISSED' PELO USER...
+
+
+
+
+
+
+
+
+
+
+
+ ---> VOCÊ PODE ADICIONAR ISSO 
+
+ POR CONTA PRÓPRIA, COM SUA PRÓPRIA LIBRARY JAVASCRIPT OU FRAMEWORK... MAS DIGAMOS QUE 
+
+
+
+
+
+ VOCê RENDERIZA ESSE ALERT _ COMO _ PARTE _ DE UMA SERVERSIDE HTML PAGE __ RENDERIZADA _ 
+
+
+
+
+
+RETORNADA PELO SEU EXPRESS/LARAVEL APP... ---> 
+
+
+EM CASOS 
+
+
+COMO ESSES, VOCê TIPICAMENTE VAI QUERER 
+
+
+
+
+
+TER A OPÇÃO DE 'REMOVE THE ALERT'
+
+
+
+SEM ADICIONAR UMA FRONTEND FRAMEWORK...
+
+
+
+
+
+
+
+
+
+--> PARA CONSEGUIR FAZER ISSO COM O BOOTSTRAP, O DISMISS DO NEGÓCIO,
+
+
+
+PRIMEIRAMENTE VOCÊ PRECISA DOS 'BOOTSTRAP JS FILES' (popper.js e jquery)...
+
+
+
+
+
+
+
+
+
+
+--> DEPOIS DISSO,
+
+VOCÊ PRECISA 
+
+
+
+ADICIONAR ALGO AO SEU ALERT,
+
+QUE SERÁ 
+UM BUTTON,
+
+QUE VAI 
+
+TE CONFERIR 
+
+ESSA 
+
+FEATURE DE 'DISMISS'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> vamos testar com um 'alert-danger'...
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="alert alert-danger" role="alert>
+
+Alert! Click to Dismiss!
+
+<button type="button"><span aria-hidden=true>&times;</span></button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> PARA ISSO, ADICIONAMOS UM '<button>',
+
+
+
+DE TYPE 'button',
+
+
+E AÍ 
+
+
+SIMPLESMENTE 
+
+
+ADICIONAMOS UM 'X',
+para que 
+
+SEJA POSSÍVEL FECHAR 
+
+
+ESSE ALERT...
+
+
+
+
+
+
+--> o professor coloca um SPAN de attribute 'aria-hidden=true',
+
+
+
+
+PARA INDICAR QUE __ ISSO _ 'NÃO SERÁ REAL CONTENT' (a letra do elemento)...
+
+
+
+
+
+-> e a escrita no interior de 'span' será 
+
+
+
+&times;
+
+
+
+
+
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+<button type="button"><span aria-hidden=true>&times;</span></button>
+
+
+
+
+
+
+
+
+
+
+OK, MAS QUANDO SALVAMOS ISSO,  O ÍCONE N FICA TÃO BONITO...
+
+
+
+
+
+
+
+
+
+
+--> ISSO FEITO,
+
+
+O PROFESSOR ADICIONA MAIS ALGUMAS CLASSES AOS NOSSOS ELEMENTS...
+
+
+
+
+
+
+
+
+--> PRIMEIRAMENTE, NO 'div class=alert' 
+
+
+EM SI,
+
+
+ELE COLOCA A CLASS DE 'alert-dismissable'...
+
+
+
+
+
+
+
+
+
+--> JÁ NO BUTTON,
+
+ele coloca a class de 'close'...
+
+
+
+
+
+
+
+
+--> O NEGÓCIO AINDA FICOU FEIO... --> FICOU FEIO PQ O BUTTON É UM 'INLINE ELEMENT',
+
+
+
+
+POR ISSO DEVEMOS O POSICIONAR AO TOPO DE NOSSO ALERT,
+
+
+ tipo assim:
+
+
+
+
+
+
+
+                <div class="alert alert-danger alert-dismissable" role="alert">
+                                <button type="button" class="close">
+                                <span aria-hidden=true >&times;</span></button>
+
+                                Alert! Click to Dismiss!
+                                
+                             
+                                    
+                                </div>
+
+
+
+
+
+
+
+
+
+
+-------------------> OK, MAS QUANDO CLICAMOS NESSE BUTTON,
+
+
+
+
+NADA ACONTECE...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> PQ NADA ACONTECE?
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> É PQ __ AINDA __ NÃO CONECTAMOS ESSE ALERT E ESSE BUTTON 
+
+
+
+AOS NOSSOS ARQUIVOS JAVASCRIPT DO BOOTSTRAP......
+
+
+
+
+
+
+
+
+
+
+
+--> PARA CONSEGUIRMOS ESSE EFEITO,
+
+DEVEMOS ADICIONAR OUTRO ATTRIBUTE ESPECIAL AO BUTTON,
+
+
+que é 
+
+
+
+
+'data-dismiss'...
+
+
+
+
+
+
+
+
+--> ESSE ATTRIBUTE SERÁ AUTOMATICAMENTE 'WATCHED' PELO BOOTSTRAP JAVASCRIPT FILE..
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+               <div class="alert alert-danger alert-dismissable" role="alert">
+
+                                <!-- 'data-dismiss' é usado para FAZER COM QUE O ARQUIVO JAVASCRIPT DO BOOTSTRAP CONSIGA TARGETTAR ESSE BUTTON...-->
+                                <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden=true >&times;</span></button>
+
+                                Alert! Click to Dismiss!
+                                
+                             
+                                    
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK.... ISSO FUNCIONOU, AGORA PODEMOS CLICAR NESSE BUTTON E 
+
+
+
+__ REMOVER NOSSO ALERT...
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> PARA __ MUDARMOS _ O BEHAVIOR _ 
+
+
+
+
+
+
+DO 'REMOVE' (fazer com que ele suma GRADUALMENTE, e não instantaneamente),
+
+
+
+PODEMOS USAR AS CLASSES DE 'fade show',
+
+
+
+
+na div QUE SEGURA O ALERT EM SI...
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+                    <div class="alert alert-danger alert-dismissable fade show" role="alert">
+
+                                <!-- 'data-dismiss' é usado para FAZER COM QUE O ARQUIVO JAVASCRIPT DO BOOTSTRAP CONSIGA TARGETTAR ESSE BUTTON...-->
+                                <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden=true >&times;</span></button>
+
+                                Alert! Click to Dismiss!
+                                
+                             
+                                    
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                OK... AGORA NOSSO ALERT FAZ 'FADE OUT' adequadamente,..
+
+
+
+
+
+
+
+
+
+
+
+
+OK, É ASSIM QUE PODEMOS FAZER O ALERT FICAR DISMISSABLE,
+
+SEM USAR QUALQUER CÓDIGO JAVASCRIPT ADICIONAL...
+
+
+
+
+
+
+
+
+
+
+
+ESSES FORAM OS ALERTS, AGORA DEVEMOS ESTUDAR OS 'MODALS' DO BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+O QUE SÃO MODALS?
+
+
+
+----> É UM POPUP QUE SIMPLESMENTE SE RENDERIZA SOBRE TODOS OS OUTROS ELEMENTOS DE SUA PAGE...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> O MODAL SERÁ UM OVERLAY,
+
+POR ISSO 
+
+
+O PROFESSOR COMEÇA
+
+
+
+
+
+com uma div..
+
+
+
+
+
+
+
+
+<div class="modal"></div>
+
+
+
+
+
+
+
+
+
+OS MODALS SEMPRE POSSUEM ESSA CLASS DE 'modal',
+
+É ISSO QUE OS ATIVA...
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+    <!-- DEMONSTRAÇÃO DE COMO SÃO ADICIONADOS MODALS COM O BOOTSTRAP-->
+    <div class="modal">
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    --> OK... AGORA PODEMOS ADICIONAR 
+
+
+
+
+
+    CONTENT DENTRO DO MODAL..
+
+
+
+
+
+
+
+
+
+
+
+    ---> PODEMOS ADICIONAR ALGUNS ATTRIBUTES DE ACCESSIBILITY 
+
+    A ESSE MODAL, MAS SÃO 'OPCIONAIS'...
+
+
+
+
+
+
+
+
+
+    -> CERTO.... DENTRO DA DIV DO MODAL,
+
+    DEVEMOS ADICIONAR O CONTENT DELE..
+
+
+
+
+
+
+
+
+    --> PARA ISSO, PRECISAMOS DE OUTRA WRAPPING DIV,
+
+    QUE NO CASO SERÁ 
+
+
+
+    'modal-dialog'...
+
+
+
+
+
+    <div class="modal">
+        <div class="modal-dialog">
+
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        --> 'modal-dialog'
+
+        VAI ACEITAR OS DIFERENTES MODAL COMPONENTS 
+
+        QUE TEREMOS..
+
+
+
+
+
+
+
+
+
+
+        --> TEREMOS OUTRO WRAPPER DENTRO DE 'dialog',
+
+
+        QUE SERÁ 
+
+
+
+        'modal-content'...
+
+
+
+
+
+        EX:
+
+
+
+
+        
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+A PRIMEIRA COISA QUE O PROFESSOR COLOCA É UM 'modal-header' (
+
+
+    É OPCIONAL,
+
+
+    MAS _ ELE TE DEIXA PROVIDENCIAR UMA CAPTION/TITLE PARA SEU MODAL,
+
+    e TAMBÉM 
+
+    UM 
+
+
+    CLOSE BUTTON (que também pode ser adicionado POR FORA, SEM ESSE HEADER,  mas ele é conveniente)...
+)
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+--> DENTRO DO HEADER, O PROFESSOR COLOCA UM H2 TAG,
+
+em que diz 
+'Please confirm'...
+
+
+
+
+
+
+
+Ex:
+
+
+
+
+
+
+
+
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h2>Please confirm!</h2>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        COLOCAMOS UMA CLASS DE 'modal-title',
+
+
+        PARA ESTILIZAR 
+
+
+        ESSE TITLE DE UMA MANEIRA BONITA...
+
+
+
+
+
+EX:
+
+
+
+        
+    <div class="modal">
+        <!--precisamos DESSE WRAPPER de 'dialog'-->
+        <div class="modal-dialog">
+
+            <!-- É DENTRO DE 'content' QUE VAMOS ADICIONAR O ACTUAL CONTENT DE NOSSO MODAL...-->
+            <div class="modal-content">
+                <h2 class="modal-title">Please confirm!</h2>
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+--> TAMBÉM PODEMOS ADICIONAR UM BUTTON 
+
+
+A ESSE MODAL,
+
+
+
+
+
+com a escrita de 
+
+
+
+<button type="button" class="close"><span>&times;</span></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> COM ISSO,
+
+FICAMOS ESSENCIALMENTE 
+
+COM O  
+
+MESMO BUTTON 
+
+DE ANTES,
+
+DE 'dismiss',
+
+
+MAS DESSA VEZ,
+
+DENTRO 
+
+DE NOSSO MODAL...
+
+
+
+
+
+SALVAMOS TUDO E AÍ RECARREGAMOS...
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+    <div class="modal">
+        <!--precisamos DESSE WRAPPER de 'dialog'-->
+        <div class="modal-dialog">
+
+            <!-- É DENTRO DE 'content' QUE VAMOS ADICIONAR O ACTUAL CONTENT DE NOSSO MODAL...-->
+            <div class="modal-content">
+                <h2 class="modal-title">Please confirm!</h2>
+                <!-- MESMO BUTTON/ESCRITA DE BUTTON VISTA MAIS ABAIXO... é a mesma lógica -->
+                <button class="close" type="button"><span>&times;</span></button>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+-----------------------
+
+
+
+
+
+
+
+
+MAS MESMO COM TUDO ISSO,
+
+
+
+NÃO ENXERGAMOS NOSSO MODAL...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR NOS EXPLICA QUE A RAZÃO DISSO É QUE NÃO HAVÍAMOS ADICIONADO 
+
+
+
+
+UMA OUTRA DIV AO NOSSO MODAL,
+
+cujo nome é 
+
+'<div class="modal-body">'
+
+
+
+
+
+
+ESSA DIV SERÁ O ACTUAL CONTENT QUE SERÁ DISPLAYADO...
+
+
+
+EX:
+
+
+
+
+
+    <div class="modal">
+        <!--precisamos DESSE WRAPPER de 'dialog'-->
+        <div class="modal-dialog">
+
+            <!-- É DENTRO DE 'content' QUE VAMOS ADICIONAR O ACTUAL CONTENT DE NOSSO MODAL...-->
+            <div class="modal-content">
+                <h2 class="modal-title">Please confirm!</h2>
+                <!-- MESMO BUTTON/ESCRITA DE BUTTON VISTA MAIS ABAIXO... é a mesma lógica -->
+                <button class="close" type="button"><span>&times;</span></button>
+            </div>
+
+            <!-- EXTREMAMENTE IMPORTANTE, É A PARTE DO MODAL QUE ACTUALLY É MOSTRADA...-->
+            <div class="modal-body">
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DENTRO DESSE 'MODAL-BODY',
+
+PODEMOS:
+
+
+
+1) USAR A CSS GRID 
+
+
+2) CONSTRUIR UMA FORM,
+
+
+3) QUALQUER COISA QUE QUEREMOS FAZER...
+
+
+
+
+
+
+
+
+
+
+
+O PROFESSOR COLOCA 
+
+
+UM <p> com 'THIS IS THE MODAL BODY, DO YOU LIKE IT?'
+
+
+
+
+DEPOIS DISSO,
+
+
+ELE COLOCA UM MODAL FOOTER,
+
+
+
+E
+ NESSE FOOTER ELE __ COLOCA ALGUNS BUTTONS,
+
+
+ E ESSES BUTTONS PODEM SER USADOS PARA:
+
+
+
+
+ 1) SEND DATA TO THE SERVER 
+
+
+
+ 2) CANCEL THE MODAL,
+
+
+
+
+ todas essas coisas básicas...
+
+
+
+
+
+
+
+
+
+ --> MAIS TARDE O PROFESSOR NOS MOSTRARÁ MAIS SOBRE FORMS E BUTTONS (E a data handling) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----> O CÓDIGO VAI FFICANDO ASSIM:
+
+
+
+
+
+ <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-title">Please confirm!</h2>
+                <button class="close" type="button"><span>&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+        <p>This is the modal body, do you like it?</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button">Confirm</button>
+              <button type="button">Cancel</button>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+-----> COMO CLASS DESSES BUTTONS, O PROFESSOR COLOCA 
+
+
+
+'btn btn-secondary' 
+
+e 
+
+'btn btn-danger'...
+
+
+
+
+EX:
+
+
+
+
+
+
+ <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-title">Please confirm!</h2>
+                <button class="close" type="button"><span>&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+        <p>This is the modal body, do you like it?</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">Confirm</button>
+              <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VEREMOS MAIS SOBRE ISSO NO PRÓXIMO VIDEO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS AINDA ASSIM, NÕA VEREMOS O MODAL... --> ISSO ACONTECE PQ, POR DEFAULT,
+
+O 
+
+
+MODAL 
+
+
+
+
+NÃO ESTARÁ VISIBLE...
+
+
+
+
+
+
+
+
+
+
+
+----> O MODAL SERÁ MOSTRADO, TIPICAMENTE,
+
+POR CONTA DE UMA __ ACTION..
+
+
+
+
+
+
+
+
+-_> MAS COMO MOSTRAMOS ESSE MODAL?
+
+
+
+
+
+
+
+
+
+PRECISAMOS DE JAVASCRIPT PARA CONSEGUIR ESSE EFEITO...
+
+
+
+
+
+--> E NÓS SEMPRE PODEMOS ADICIONAR AS CLASSES QUE FAZEM 'SHOW' 
+
+DESSE MODAL 
+
+MANUALMENTE... --> 
+
+
+
+MAS AGORA VAMOS 
+
+
+
+
+FAZER ESSE SHOW POR MEIO DE UM CLICK EM UM BUTTON 
+
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR DIZ QUE 
+
+
+É MELHOR TER NOSSO MODAL __ NO LADO _ DE FORA DA GRID (pq aí faz mais sentido, semanticamente)...
+
+
+
+
+
+
+
+
+
+
+--> o professor escreve 
+
+
+
+
+,
+
+
+DENTRO DE NOSSA GRID,
+
+UM BUTTON...
+
+
+
+
+
+
+
+tipo assim :
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <button type="button" class="bnt btn-primary">Show Modal</button>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+--> SIM,
+
+MAS AÍ O PROFESSOR DIZ QUE PRECISAMOS DE UM NOVO ATTRIBUTE,
+
+DE NOME 'data-toggle' --> 
+
+
+O VALUE QUE 
+DEVE SER ESPECIFICADO DESSE ATTRIBUTE DEVERÁ SER 
+
+
+
+'QUAL MODAL'... --> 
+
+
+
+
+
+DEVEMOS APONTAR AO _ ID__ 
+
+
+DESSE MODAL...
+
+
+
+
+
+
+
+
+
+--> TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-title">Please confirm!</h2>
+                <button class="close" type="button"><span>&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+        <p>This is the modal body, do you like it?</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">Confirm</button>
+              <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+        </div>
+
+
+
+
+....
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <button type="button" class="bnt btn-primary" data-toggle="modal>Show Modal</button>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> NESSE BUTTON, precisamos do data attribute de 'data-toggle',
+
+
+QUE DEVE 
+
+
+TER UM VALOR DE 'modal',
+
+
+PQ 
+
+
+
+_ ISSO VAI DIZER AO BOOTSTRAP JS 
+
+
+QUAL 
+
+
+TIPO DE TRIGGER ESSE É (trigger de MODAL)...
+
+
+
+
+
+--> QUANDO ESSE BUTTON FOR CLICADO, VAMOS QUERER 'OPEN A MODAL'...
+
+
+
+
+
+
+
+
+
+
+--> MAS TAMBÉM PRECISAMOS ESPECIFICAR 'QUAL ID  
+
+
+É O DO SEU MODAL'..
+
+
+
+
+
+
+
+--> ESCREVEMOS O ATTRIBUTE DE 'data-target',
+
+
+E AÍ 
+
+DIGITAMOS O ID DO 
+
+MODAL QUE VAMOS QUERER FAZER SHOW/HIDE...
+
+
+
+
+
+
+
+
+
+
+ex:
+
+
+
+
+
+
+
+ <div class="modal" id="demoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h2 class="modal-title">Please confirm!</h2>
+                <button class="close" type="button"><span>&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+        <p>This is the modal body, do you like it?</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">Confirm</button>
+              <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+        </div>
+
+
+
+
+....
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <button type="button" class="bnt btn-primary" data-toggle="modal" data-target="#demoModal">Show Modal</button>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document3</title>
+  </head>
+  <body>
+
+    <div class="modal" id="demoModal">
+      <!--precisamos DESSE WRAPPER de 'dialog'-->
+      <div class="modal-dialog">
+
+          <!-- É DENTRO DE 'content' QUE VAMOS ADICIONAR O ACTUAL CONTENT DE NOSSO MODAL...-->
+          <div class="modal-content">
+              <h2 class="modal-title">Please confirm!</h2>
+              <!-- MESMO BUTTON/ESCRITA DE BUTTON VISTA MAIS ABAIXO... é a mesma lógica -->
+              <button class="close" type="button"><span>&times;</span></button>
+          </div>
+
+          <!-- EXTREMAMENTE IMPORTANTE, É A PARTE DO MODAL QUE ACTUALLY É MOSTRADA...-->
+          <div class="modal-body">
+              <p>This is the modal body, do you like it?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">Confirm</button>
+          </div>
+      </div>
+      </div>
+
+    <div class="container">
+        <div class="row py-3">
+            <div class="col">
+                <h1>Alerts E Modal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- DEMONSTRAÇÃO DE COMO SÃO ADICIONADOS MODALS COM O BOOTSTRAP-->
+        
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-3">
+                    <div class="alert alert-primary" role="alert">I am a BLUE alert (alert-primary)</div>
+                    <div class="alert alert-secondary" role="alert">I am a GREY alert (alert-secondary)</div>
+                    <div class="alert alert-success" role="alert">I am a SUCCESS alert (alert-success)</div>
+                    <div class="alert alert-info" role="alert">I am a INFO alert (alert-info)</div>
+                    <div class="alert alert-dark" role="alert">I am a black alert (alert-black)</div>
+                    <div class="alert alert-light" role="alert">I am a black alert (alert-light)</div>
+
+                    <div class="alert alert-primary">I AM AN ALERT WITH A LINK <a href="#">CLICK ME (bad/no styling)</a></div>
+                    <div class="alert alert-primary">I AM AN ALERT WITH A LINK <a href="#" class="alert-link">CLICK ME (alert-link styling)</a></div>
+                    <div class="alert alert-success" role="alert">
+                        <h2 class="alert-heading">This is an Alert!
+                              <a href="#" class="alert-link">CLICK ME</a>
+                              </div>
+
+                            <!-- 'alert-dismissable' é utilizado para TE DAR A OPÇÃO DE DAR 'DISMISS' nesse elemento alert... VOCÊ TAMBÉM PRECISA DA CLASS 'close' no button nesteado dentro do seu alert...-->
+                              
+                            <!-- 'fade' e 'show' são classes que controlam o COMPORTAMENTO DE 'SHOW/REMOVE' DO ALERT, AO SER CLICADO O BUTTON/ALERT SER MOSTRADO NA PÁGINA-->
+                            <div class="alert alert-danger alert-dismissable fade show" role="alert">
+
+                                <!-- 'data-dismiss' é usado para FAZER COM QUE O ARQUIVO JAVASCRIPT DO BOOTSTRAP CONSIGA TARGETTAR ESSE BUTTON...-->
+                                <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden=true >&times;</span></button>
+
+                                Alert! Click to Dismiss!
+                                
+                             
+                                    
+                                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col">
+            <!-- data-toggle e data-target SÃO NECESSÁRIOS... (data-toggle COMUNICA AO JS DO BOOTSTRAP QUE DEVE SER ABERTO 1 MODAL) ... já o data target especifica 'QUAL MODAL DEVE SER ABERTO/HIDDEN'...-->
+              <button type="button" class="bnt btn-primary" data-toggle="modal" data-target="#demoModal">Show Modal</button>
+          </div>
+      </div> 
+    </div>
+
+    <!-- É ASSIM QUE ADICIONAMOS ALERTS NO BOOTSTRAP... com a class 'alert' em uma DIV... -->
+    <!-- <div class="alert" role="alert">I am an alert</div> -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK... AGORA O MODAL ESTÁ FUNCIONANDO...
+
+
+
+
+
+
+
+
+MAS OS STYLES ESTÃO TODOS QUEBRADOS...
+
+
+
+
+
+
+
+
+
+CERTO... AGORA ESTÁ FUNCIONANDO... A ORDEM FICOU
+
+
+
+
+
+
+
+modal 
+
+
+modal-dialog 
+
+
+modal-content --- modal-header (com title e button de 'X' no meio)
+            ----- modal-body (com p)
+            ----- modal-footer (com button de ACCEPT/CANCEL)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            --> OK... MAS MAIS ALGUNS DETALHES:
+
+
+
+
+
+
+
+
+
+1) NENHUM DOS BUTTONS ESTÁ FUNCIONANNDO...
+
+
+
+
+
+
+
+2) ENTRETANTO, QUANDO CLICAMOS NO BACKDROP, O MODAL FECHA...
+
+
+
+
+
+
+
+
+
+--> CLICKS NO BACKDROP REMOVEM O MODAL...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> INSPECIONAMOS O MODAL.... --> 
+
+A DIV DE MODAL 
+
+
+
+_NA VERDADE WRAPPA TODO O TAMANHO DE SUA PAGE...
+
+
+
+
+
+
+
+
+--> MAS NA 
+
+DIV DE 'modal',
+
+
+
+PERCEBMOS QUE FICAMOS COM UMA CLASS DE 'show' --> ESSA É CLASS  QUE 
+
+É ADICIONADA PELO 
+
+
+
+BOOTSTRAP JS QUANDO RODAMOS AQUELE CÓDIGO JAVASCRIPT, QUANDO AQUELE BUTTON É CLICADO....
+
+
+
+
+
+
+
+
+
+
+ESSA CLASS DE 'show' É 
+
+
+A CLASS RESPONSAVEL PELO SHOW.. -> 
+
+
+SE O PROFESSOR REMOVE 'display: block',
+
+
+DEIXA 'display: none' 
+
+
+E
+ remove 
+
+
+
+ A CLASS DE 'show' 
+
+
+ em 'MODAL',
+
+
+
+ O MODAL SOME .... (e podemos fazer essa manipulação cmo qualquer uma das tecnologias frontend)...
+
+
+
+
+
+
+
+ --> ESSA CLASS É ADICIONADA PELO BOOTSTRAP, SIM....
+
+
+
+
+
+
+
+
+
+ --> CERTO, MAS NOSSOS BUTTONS ED 'CONFIRM' 
+
+ E 
+
+
+ 'CLOSE'
+
+ AINDA NÃO ESTÃO FUNCIONANDO..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ VOCÊ PODERIA COLOCAR SUA PRÓPRIA IMPLEMENTAÇÃO DE JAVASCRIPT PARA 
+
+ CONSERTAR ESSE BUTTONS...
+
+
+
+
+
+
+
+
+
+
+ --> MAS COM O BOOTSTRAP, 
+
+ BASTA 
+
+
+
+ ESCREVERMOS UMA COISA,
+
+ o 
+
+
+ 'data-dismiss="modal"',
+
+
+
+
+ ESPECIFICAR COMO 'DISMISS' O modal,
+
+
+
+ PARA _ FAZER DISMISS DESSE MODAL ESPECÍFICO (e não alert, como antes)...
+
+
+
+
+
+
+
+
+ --> VOCÊ SÓ PODE TER 1 MODAL POR VEZ,
+
+
+ MÚLTIPLOS MODALS NÃO SÃO SUPORTADOS...
+
+
+
+
+
+
+ --> OK...
+
+
+
+
+
+
+FAZEMOS A MESMA COISA COM OS BUTTON NO FOOTER--> AGORA QUANDO ESSES BUTTNOS SÃO CLICADOS,
+
+O MODAL É FECHADO..
+
+
+
+
+
+
+
+
+
+
+
+
+--> TEMOS CLASSES ALTERNATIVAS 
+
+
+,
+
+PARA MODALS MAIORES,
+
+
+
+MANEIRAS DE CENTRALIZAR MODALS,
+
+ETC ETC...
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS É CLARO QUE O MODAL ESTÁ SENDO FECHADO __ DE FORMA 'SECA' ------> 
+
+SE QUEREMOS 
+
+
+
+
+COLOCAR UMA ANIMATION 
+
+DE 'fade'
+
+AO NOSSO MODAL,
+
+BASTA COLOCAR UMA CLASS ADICIONAL DE 'fade'
+
+
+EM NOSSO MODAL,
+
+TIPO ASSIM:
+
+
+  <div class="modal fade" id="demoModal">
+    <!--precisamos DESSE WRAPPER de 'dialog'-->
+    <div class="modal-dialog">
+
+      <!-- É DENTRO DE 'content' QUE VAMOS ADICIONAR O ACTUAL CONTENT DE NOSSO MODAL...-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Please confirm!</h2>
+          <!-- MESMO BUTTON/ESCRITA DE BUTTON VISTA MAIS ABAIXO... é a mesma lógica -->
+          <!-- DATA-DISMISS, MAS DESSA VEZ COM UM VALUE DE 'modal', para fazer DISMISS DESSE MODAL ESPECÍFICO...-->
+          <button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+
+
+        <!-- EXTREMAMENTE IMPORTANTE, É A PARTE DO MODAL QUE ACTUALLY É MOSTRADA...-->
+        <div class="modal-body">
+          <p>This is the modal body, do you like it?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Confirm</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  --> OK... ACABMAOS COM MODALS...

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="./style.css">
+        <title>Document5</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+            <a href="#" class="navbar-brand">BRAND</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Seasons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Players</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- VERSÃO _ PORCA__ de forms... (sem 'form-group' em cada PAR label-input, e sem uma class no SURROUNDING FORM ELEMENT )-->
+        <div class="container">
+            <div class="row py-4">
+                <div class="col">
+                    <form action="" style="width: 500px; margin: auto;">
+                        <label for="username">Username</label>
+                        <!-- 'form-control' é o bread n butter do bootstrap, e é sempre colocado nos INPUT FIELDS -->
+                        <input type="text" name="username" class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="form-control">
+                        <label for="gender">Gender</label>
+                        <!-- ESSA CLASS TAMBÉM FUNCIONA PARA 'select' tags...-->
+                        <select name="gender" class="form-control">
+                            Gender
+                        </label>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <!-- E, PARA 'CHECKBOXES', É NECESSÁRIA UMA WRAPPING DIV COM CLASS DE 'form-check'... -->
+                    <div class="form-check">
+                        <!-- para checkboxes, não devemos usar 'form-control', e sim devemos usar 'form-check-input' no INPUT element, e aí 'form-check-label' NA LABEL.. -->
+                        <input type="checkbox" class="form-check-input">
+                        <label for="user-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
+                    </div>
+                    <!-- EXEMPLO RADIO... É ESSENCIALMENTE A MESMA COISA...-->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" value="1">
+                        <label for="user-terms" class="form-check-label">Radio</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- VERSÃO SEM INLINE-STYLE PORCO DE 'width: 500px, margin: auto'-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- 'MAIN-FORM' É UMA CLASS CRIADA POR NÓS...-->
+                <form action="" class="main-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="checkbox-input">
+                        <label for="user-terms" class="form-check-label">Accept Terms & Conditions</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="radio-input">
+                        <label for="user-terms" class="form-check-label">Radio</label>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" name="first-name">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="second-name">Second Name</label>
+                            <input type="text" class="form-control" name="second-name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="username2">Username2</label>
+                        <!-- 'is-invalid' é o ESTILO DINÂMICO DO BOOTSTRAP USADO PARA _ QUANDO __ HOUVE UM INPUT INVÁLIDO, ANALISADO NO BACKEND/FRONTEND-->
+                        <input type="text" class="form-control is-invalid" name="username2">
+                        <!-- 'invalid-feedback' é usado para AS MENSAGENS DE ERRO QUE APARECEM EMBAIXO DE CADA INPUT, RENDERIZADAS DINAMICAMENTE...-->
+                        <div class="invalid-feedback">Looks Bad!</div>
+                        <!-- 'small' é uma tag, no BOOTSTRAP e em qualquer tipo de form, USADA PARA INFORMAR AO USER como deve ser a coisa que ele deve inputtar... 
+                    no caso do bootstrap, deve receber a class de 'form-info'-->
+                        <small class="form-info">Username must have at least 6 characters.</small>
+                        <br>
+                        <!-- 'text-muted' é uma class usada para TORNAR SEU TEXTO CINZA...-->
+                        <small class="form-info text-muted">Username must have at least 6 characters.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="username3">Username3</label>
+                        <!-- 'is-valid' é o ESTILO DINÂMICO DO BOOTSTRAP USADO PARA _ QUANDO __ O INPUT É TIDO COMO VÁLIDO PELO SEU FRONTEND...-->
+                        <input type="text" class="form-control is-valid" name="username3">
+                        <!-- SE EXISTIR/ESTIVER PRESENTE O ESTILO DINÂMICO DE 'is-valid' no input desse form-group, a div de class 'valid-feedback' VAI _ FAZER COM QUE _ AQUELA MENSAGEM APAREÇA... (no caso, 'looks good')-->
+                        <div class="valid-feedback">Looks Good!</div>
+                    </div>
+                    <!-- depois do POSICIONAMENTO DOS FORM ELEMENTS, TEMOS O TÓPICO DA __ VALIDATION_.... CLASSES QUE PODEMOS ADICIONAR MANUALMENTE AOS NOSSOS ELEMENTOS NO INTERIOR DAS FORMS PARA __ FAZER COM QUE OS INPUT FIELDS SEJAM INTELIGENTES...-->
+                </form>
+                <hr>
+
+
+
+
+
+                <!-- EXEMPLO DE 'FRONTEND AUTOMATIC VALIDATION' de uma form, POR CONTA DO BOOTSTRAP... ele faz isso por meio da class de 'needs-validation', que NÃO É SUPORTADA POR TODOS OS BROWSERS...-->
+                <!-- PARA DESATIVAR A VALIDATION 'BROWSER-DEFAULT', que diz coisas como 'please fill this field', você precisa ACRESCENTAR O ATTRIBUTE DE 'novalidate' a sua form -- isso fará com que o validation do BOOTSTRAP, causado por 'needs-validation', seja ATIVADO.....-->
+                <form action="" class="main-form needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="name2">Name2</label>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">Looks Bad!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password2</label>
+                        <input type="password" class="form-control" name="password2" required>
+                        <div class="invalid-feedback">Looks Bad!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="address" class="form-control" name="address">
+                        <div class="invalid-feedback">Looks Bad!</div>
+                    </div>
+                    <!-- <button>Submit</button>  BUTTON SEM ESTILO-->
+
+                    <!-- BUTTON COM ESITLO BOOTSTRAP (class 'btn')-->
+                    <button type="submit" class="btn">Button</button>
+                    <button type="submit" class="btn btn-primary">Button</button>
+                    <button type="submit" class="btn btn-outline-primary">Button</button>
+                    <button type="submit" class="btn btn-danger">Button</button>
+                    <button type="submit" class="btn btn-outline-success">Button</button>
+                    <button type="submit" class="btn btn-outline-danger">Button</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- CÓDIGO JAVASCRIPT NECESSÁRIO PARA ATIVAR A 'AUTOMATIC FORM VALIDATION' do bootstrap.... VOCÊ TAMBÉM PRECISA ADICIONAR O attribute de 'novalidate' lá na sua form, para que esse código javascript de validation a PARTIR DE SUBMITS seja executado/considerado-->
+    <script>
+
+
+    var form = document.querySelector('.needs-validation');
+
+    form.addEventListener('submit', function(event) {
+
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+    })
+    </script>
+</body>
+</html>

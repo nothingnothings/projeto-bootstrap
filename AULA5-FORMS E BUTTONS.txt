@@ -1,0 +1,3991 @@
+
+JÁ APRENDEMOS UM MONTE SOBRE BOOTSTRAP NAS ÚLTIMAS AULAS..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> NESSE VIDEO, DAREMOS UMA OLHADA EM BOOTSTRAP 'FORMS'...
+
+
+
+
+
+
+
+
+
+
+
+
+--> VEREMOS NÃO SÓ COMO ESTILIZAR FORMS DE FORMA BONITA,
+
+
+
+
+
+
+
+MAS __ TAMBÉM _ VEREMOS __ 
+
+
+COMO _ PODEMOS FAZER 'VALIDATE' DE NOSSAS FORMS,
+
+PARA 
+
+
+GARANTIR 
+
+USER FEEDBACK
+,
+
+
+
+FAZER NOSSOS USERS 
+
+TRABALHAR COM 
+
+FORMS 
+
+DA MANEIRA QUE DESEJAMOS...
+
+
+
+
+
+
+
+
+
+
+VAMOS COMEÇAR PELO ADD DE USER FORMS AO NOSSO PROJECT..
+
+
+
+
+
+
+
+
+
+
+
+
+
+STARTER CODE....
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document5</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document5</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR QUER TER APENAS A 'NAVIGATION BAR'...
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <a href="#" class="navbar-brand">BRAND</a>
+
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Seasons</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Players</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+-----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> O PROFESSOR CRIA UMA FORM,
+
+
+
+tipo assim:
+
+
+
+
+
+
+
+
+<form action="">
+    <input type"text" name="username">
+    <input type="password" name="password">
+</form>
+
+
+
+
+
+
+
+
+
+--> É UMA FORM TÍPICA... -->
+
+
+
+
+
+
+
+TAMBÉM É BOM ADICIONAR ALGUMAS LABELS,
+
+
+
+POR ISSO ESCREVEMOS ASSIm:
+
+
+
+
+
+
+
+
+
+<form action="">
+<label for="username">Username</label>
+    <input type"text" name="username">
+    <label for="password">Password</label>
+    <input type="password" name="password">
+</form>
+
+
+
+
+
+'for' attribute --> é para SCREEN READERS..
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK, FICAMOS COM UMA FORM BEM SIMPLES,
+
+POUQUÍSSIMO ESTILO....
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----> QUEREMOS ESTILIZAR ESSA FORM MELHOR...
+
+
+
+
+
+
+
+--> ESTILIZAR ESSA FORM COM O BOOTSTRAP É MT SIMPLES...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> A MANEIRA MAIS SIMPLES DE 
+
+
+
+DAR AOS NOSSOS ELEMENTOS UM LOOK MAIS 'FORM-LIKE'
+
+
+
+É 
+
+
+
+__ADICIONAR UMA CLASS AOS 
+
+NOSSOS INPUTS..
+
+
+
+
+
+
+
+
+
+--> É A CLASS DE 'form-control'...
+
+
+
+
+
+
+
+
+--> EU JÁ USEI VÁRIAS VEZES 
+
+
+ESSA CLASS....
+
+
+
+
+
+
+
+
+
+FICA TIPO ASSIM:
+
+
+
+
+
+
+        <div class="col">
+          <form action="">
+            <label for="username">Username</label>
+
+            <!-- 'form-control' é o bread n butter do bootstrap, e é sempre colocado nos INPUT FIELDS -->
+            <input type="text" name="username" class="form-control" />
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" />
+          </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AGORA NOSSOS 
+
+INPUT FIELDS FICARAM COM UM LOOK NICE,
+
+
+
+POSSUEM:
+
+
+
+1) OCUPAM A WIDTH INTEIRA DO SEU CONTAINER... (da tela, nesse caso inicial, pq ainda não estilizamos adequadamente)...
+
+
+
+
+
+
+
+2) GANHAMOS UM ANIMATED OUTLINE BONITINHO 
+
+
+
+3) PADDING NO INTERIOR 
+
+
+4) ROUNDED CORNERS...
+
+
+
+
+
+
+5) SLIGHT GREY BORDER...
+
+
+
+
+
+
+
+
+---_> 
+
+
+
+
+
+MAS É CLARO QUE NOSSO ESTILO AINDA NÃO ESTÁ CORRETO,
+
+
+PQ 
+
+
+
+OS INPUT FIELDS ESTÃO OCUPANDO A LARGURA INTEIRA DA TELA...
+
+
+
+
+
+
+--> PRECISAMOS DA 
+'GRID',
+
+
+
+OU 
+
+DE MAIS ALGUM CÓDIGO QUE __ RESTRINJA _ 
+
+O 
+
+TAMANHO DO SURROUNDING CONTAINER...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> POR EXEMPLO, SE COLOCAMOS 
+
+
+
+
+
+
+NA 'SURROUNDING FORM'
+ 
+
+
+ um INLINE STYLE (o que é ruim, mas apenas para demonstration purposes),
+
+
+
+
+
+
+
+
+
+
+ TIPO ASSIM:
+
+
+
+
+
+     <form action="" style="width: 500px; margin: auto;">
+            <label for="username">Username</label>
+
+            <!-- 'form-control' é o bread n butter do bootstrap, e é sempre colocado nos INPUT FIELDS -->
+            <input type="text" name="username" class="form-control" />
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" />
+          </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    --> MARGIN AUTO E WIDTH DE 500,
+
+
+    PARA 
+
+    CONSEGUIR CENTRALIZAR BEM O NOSSO ELEMENTO...
+
+
+
+
+
+
+
+
+
+
+
+
+--> CERTO... MAS EM VEZ DE USAR 'INLINE STYLES',
+
+
+É MELHOR USAR UMA HELPER CLASS E ENTÃO ASSIGNAR ISSO A NOSSA 'SURROUNDING FORM'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> ok, isso já parece mais nice...
+
+
+
+
+
+
+
+--> CERTO...
+
+
+
+
+
+
+
+MAS PODEMOS TAMBÉM ASSIGNAR 
+
+
+NOSSA CLASS DE 'form-control'
+
+
+
+A INPUTS DE TIPO 
+
+
+'SELECT',
+
+
+
+tipo assim:
+
+
+
+
+
+
+
+<label for="gender">Gender</label>
+<select name="gender">Gender</label>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select>
+
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+
+
+                <form action="" style="width: 500px; margin: auto;">
+                    <label for="username">Username</label>
+
+                    <!-- 'form-control' é o bread n butter do bootstrap, e é sempre colocado nos INPUT FIELDS -->
+                    <input type="text" name="username" class="form-control" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" />
+                    <label for="gender">Gender</label>
+                    <!-- ESSA CLASS TAMBÉM FUNCIONA PARA 'select' tags...-->
+                    <select name="gender" class="form-control">Gender</label>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ---------> certo...
+
+
+
+
+
+
+
+
+MAS E QUANTO A 'CHECKBOXES'
+
+E 
+
+'RADIO BUTTONS'?
+
+
+
+
+
+
+
+
+--> TAMBÉM É POSSÍVEL 
+
+
+
+OS ESTILIZAR...
+
+
+EX:
+
+
+
+   
+                    <input type="checkbox">
+                         <label for="user-terms">Agree</label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    EX:
+
+
+
+
+
+
+
+               
+                    <input type="checkbox">
+                         <label for="user-terms">Accept Terms & Conditions</label>
+
+
+
+
+
+
+
+
+
+
+
+-> CERTO... MAS A CLASS DE 'checkbox'
+
+
+
+NÃO SERÁ A MESMA CLASS DE 'form-control'...
+
+
+
+
+
+
+
+
+--> A CLASS É 'form-check-input'....
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+                    <input type="checkbox" class="form-check-input">
+                         <label for="user-terms">Accept Terms & Conditions</label>
+
+
+
+
+
+
+
+
+
+
+
+
+    ---> MAS MESMO ASSIM, MESMO COM ESSE STYLE, O CHECKBOX N FICOU PERFEITO... FICOU PARA A ESQUERDA...
+
+
+
+
+
+
+
+
+
+
+---> PARA CONSERTAR ESSE STYLE, O PROFESSOR NOS EXPLICA QUE É NECESSÁRIO USAR 
+
+
+
+A CLASS DE 
+
+'form-check-label'
+
+
+
+À LABEL DO NOSSO CHECKBOX, TIPO ASSIM:
+
+
+           <input type="checkbox" class="form-check-input">
+                         <label for="user-terms" class="form-check-label">Accept Terms & Conditions</label>
+
+
+
+
+
+----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------> OK... --> MAS ISSO __ AINDA __ NÃO CONSERTOU __ NOSSO STYLE...
+
+
+
+
+
+
+
+
+ISSO PQ AINDA PRECISAMOS DE UMA CLASS ADICIONAL, QUE DEVERÁ SER ADICIONADA 
+
+A UM 
+
+
+__wRAPPING ELEMENT__ DE NOSSO 'LABEL' E DO 'CHECKBOX'...
+
+
+
+
+
+
+
+
+
+--> É UMA DIV,
+
+
+A DIV TERÁ UMA CLASS DE 
+
+'form-check'...
+
+
+
+
+
+
+
+
+
+
+
+
+--> OU SEJA,
+
+
+
+
+
+'CHECKBOXES'
+
+
+
+SEMPRE EXIGEM _ UMA _ wRAPPING DIV,
+ DE NOME 
+
+
+
+ 'form-check'...
+
+
+
+
+
+
+
+
+
+
+ ---> RADIO BUTTONS __ TAMBÉM _ EXIGEM _ UMA WRAPPING DIV de 'form-check'..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ok.... COM ISSO REALMENTE FICAMOS COM UM STYLE MELHOR,
+
+
+ AGORA ELE ESTÁ 
+
+
+ APROPRIADO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ AGORA ISSO PARECE MELHOR...
+
+
+
+
+
+
+
+
+
+
+
+OK, MAS E COM OS 'RADIO'?
+
+
+
+
+
+
+
+
+
+
+
+É BASICAMENTE A MESMA COISA:
+
+
+
+
+              <div class="form-check">
+                       
+                        <input type="radio" class="form-check-input" value="1">
+                        <label for="user-terms">Accept Terms &amp; Conditions</label>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK.... ESSA É A FORMA 'SIMPLE' 
+
+
+
+
+
+
+
+DE CRIAR E ESTILIZAR UMA FORM USANDO BOOTSTRAP..
+
+
+
+
+
+
+
+
+
+
+OK, MAS E SE QUISERMOS TER  MAIS _ _cONTROLE?
+
+
+
+
+
+
+
+
+
+
+---> PARA CONTROLAR MELHOR SEU LAYOUT,
+
+
+VOCê PODE __ AGRUPAR __ 
+
+
+
+
+SUAS 'LABELS' E 'INPUTS',
+
+usando 
+
+
+'form-group'...
+
+
+
+
+
+
+
+--> PARA __ AGRUPAR__ SUAS LABELS E INPUTS MELHOR,
+
+
+VOCÊ 
+
+DEVE USAR 
+
+A 
+
+CLASS DE 
+
+
+'form-group'...
+
+
+
+
+
+
+TIPO 
+
+
+
+<div class="form-group">
+                      <label for="username">Username</label>
+                        <input type="text" name="username" class="form-control">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+->>> CERTO...
+
+
+SE FIZERMOS ISSO E SALVARMOS,
+
+
+
+
+VEREMOS QUE 
+
+
+
+UM POUCO MAIS DE MARGIN FOI ADICIONADO AO FINAL DO GROUP,
+
+
+PARA SEPARAR UM PCO MELHOR DO SURROUDING ELEMENT...
+
+
+
+
+
+
+
+
+
+
+--> isso é geralmente o que você vai querer fazer, com suas forms...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ok... ficou um pouco melhor, mesmo..
+
+
+
+
+
+
+
+
+É UMA FORM MAIS CLEAN, COM ALGUMA DIFERENÇA MAIOR ENTRE OS ELEMENTOS..
+
+
+
+
+
+
+
+
+
+
+
+
+
+---> AGRUPAR OS DIFERENTES FORM INPUT-LABELS COM 'form-group'
+
+
+É UMA EXCELENTE IDEIA...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> ANTES DE SEGUIRMOS PARA O ESTUDO DE 
+
+
+
+'''VALIDATION-STYLES''' (show de errors e etc, também BUTTONS),
+
+
+
+
+
+
+O 
+
+
+PROFESSOR QUER NOS MOSTRAR 
+
+
+
+
+
+
+UMA MANEIRA __ DIFERENTE__ DE ESTILIZAR ESSE NEGÓCIO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> ISSO PQ _ ATÉ AGORA __ TEMOS 
+
+
+TUDO, OS INPUT FIELDS,
+
+
+
+
+
+1 COLOCADO EM CIMA DO OUTRO...
+
+
+
+
+
+
+
+
+
+
+--> FREQUENTEMENTE ISSO É AQUILO QUE VOCÊ VAI QUERER...
+
+
+
+
+
+
+
+
+
+
+
+--> FREQUENTEMENTE, ESSE SERÁ O LOOK DESEJADO.... ---> MAS 
+
+
+
+
+DIGAMOS QUE 
+
+FICAMOS COM 2 NOVOS GROUPS,
+
+
+
+1 GROUP PARA O 'FIRST NAME',
+
+E OUTRO 
+
+
+PARA 
+
+
+O 
+
+'LAST NAME'....
+
+
+
+
+
+
+
+
+
+(
+
+
+
+
+
+    OU SEJA,
+
+    TEMOS 2 NOVOS FIELDS...
+
+
+
+
+
+
+
+)
+
+
+
+
+
+
+
+
+
+--> NADA DE ERRADO COM ESSES 2 FIELDS 1 EM CIMA DO OUTRO,
+
+
+MAS DIGAMOS QUE VOCÊ QUER POSICIONAR ESSES FIELDS '1 AO LADO DO OUTRO' (com cada um tomando METADE DA WIDTH DO ROW)...
+
+
+
+
+
+
+
+
+
+
+
+
+--> COMO PODERÍAMOS FAZER ISSO?
+
+
+
+
+--> TALVEZ COM o sistema da grid?
+
+
+
+
+
+
+
+--> MAS, PARA ISSO, SERÍAMOS OBRIGADOS A ESTRUTURAR NOSSA FORM EM 'cols'...
+
+
+
+
+
+
+
+
+
+
+--> COMO FAZER ISSO?
+
+
+
+
+
+
+
+
+
+ESCREVI TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+              <div class="row">
+                <div class="form-group col-6">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" name="first-name">
+                </div>
+                <div class="form-group col-6">
+                    <label for="second-name">Second Name</label>
+                    <input type="text" class="form-control" name="second-name">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+E ISSO ME DEU 
+
+2 
+FORMS 
+
+
+
+ESPAÇADAS 
+
+IGUALMENTE,
+
+
+COM TAMANHOS IGUAIS,
+
+NA MINHA GRID... (ficou bom, acho...)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR DIZ QUE PODEMOS USAR A GRID.... --> 
+
+
+
+
+
+
+
+
+BEM, FOI EXATAMENTE ISSO QUE EU FIZ...
+
+
+
+
+
+
+
+
+
+----> USAMOS UM ROW (a class 'container' não é necessária)...
+
+
+
+
+
+
+
+
+-> PROFESSOR FEZ A MESMA COISA,
+
+USOU 1 'ROW',
+
+
+
+E AÍ 
+
+
+
+USOU 2 COLS, 
+
+1 PARA CADA 'FORM-GROUP'...
+
+
+
+
+
+
+
+
+
+
+------> AGORA ESTAMOS TIRANDO VANTAGEM DA 'GRID'
+
+PARA CONSEGUIR 
+
+
+__FORM LAYOUTS MAIS AVANÇADOS...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> VOCÊ DEVE TER EM MENTE --> 
+
+
+
+A 
+
+
+GRID É 'PERFECTLY FINE',
+
+
+E DEVE SER USADA EM CONJUNTO COM SUAS FORMS...
+
+
+
+
+
+
+
+
+
+
+
+
+--> SE VOCê TEM QUALQUER FORM QUE DEVE SER MAIS DO QUE 
+
+''ELEMENTO APÓS ELEMENTO APÓS ELEMENTO'',
+
+
+
+
+
+
+
+----
+ 
+
+ ---
+  
+
+  --
+   
+
+   ---
+
+
+
+
+
+
+
+   ,
+
+
+   VOCÊ 
+
+   DEVE USAR 
+
+
+   A GRID,
+
+   PARA 
+
+   AÍ 
+
+
+POSICIONAR SEUS ELEMENTOS MELHOR,
+
+
+
+
+FAZER COM QUE O LAYOUT FIQUE MAIS ELABORADO...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+o professor cria uma nova class para a form,
+
+de nome 
+
+
+
+
+
+'.main-form {
+
+    width: 450px;
+    margin: auto;
+}
+'
+
+
+
+--> AÍ ELE UTILIZA ESSA CLASS NO NOSSO FORM ELEMENT, PARA REMOVERMOS 
+
+
+
+O 
+
+
+
+
+INLINE-STYLE...
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------
+
+
+
+
+
+
+
+
+
+
+
+CERTO.... E A PARTE LEGAL É QUE PODEMOS USAR TODAS AS FEATURES DA GRID.... -> PODEMOS 
+
+USAR 
+
+
+AS 
+
+
+CLASSES RESPONSIVE DO GRID (ou seja,
+
+
+
+APENAS DEIXAR ELEMENTOS 'NEXT TO EACH OTHER'EM 
+
+
+TELAS MAIORES,
+
+
+E 
+
+DEIXAR 
+
+
+OS ELEMENTOS 1 EM CIMA DO OUTRO __ APENAS __ 
+
+
+NA VERSÃO MOBILE, ETC ETC...
+
+
+)
+
+
+
+
+
+
+
+
+
+-----> E O MAIS LEGAL É QUE VOCÊ PODE 'MIXAR'
+
+OS STYLES...
+
+
+
+
+
+(podemos usar 'rows' e 'cols'
+
+
+EM APENAS ALGUNS DOS PARES 'label-input' 
+
+
+de nossa form,
+
+e não em todos...
+
+
+)
+
+
+
+
+
+
+OK, É ASSIM QUE FAZEMOS...
+
+
+
+
+
+
+
+
+
+
+---> AGORA DEVEMOS SEGUIR PARA O TÓPICO DE 'VALIDATION'...
+
+
+
+
+
+
+
+
+
+
+
+--> SUPONHA-SE QUE _ JÁ CONSEGUIMOS FAZER 'SEND' DE NOSSA FORM... --> 
+
+
+
+
+
+
+FAZER SUBMIT DE NOSSA FORM... -> MAS É CLARO QUE 
+
+NOSSA FORM PODE SER __ VÁLIDA OU INVÁLIDA...- -> 
+
+
+
+
+E O 
+
+BOOTSTRAP
+
+
+
+NOS OFERECE UM PUNHADO DE MANEIRAS 
+
+
+
+DE SINALIZAR ISSO AO USER...
+
+
+
+
+
+
+
+
+
+
+---> COMO ISSO FUNCIONA?
+
+
+
+
+
+
+
+--> ANTES DE MAIS NADA,
+
+
+O 
+
+
+BOOTSTRAP NOS OFERECE ALGUMAS __ HELPER CLASSES__
+
+
+
+
+QUE PODEMOS ADICIONAR MANUALMENTE AOS NOSSOS FORM ELEMENTS,
+
+
+
+
+PARA _ AÍ _ 
+
+
+
+
+MUDAR A APARÊNCIA DOS INPUTS, POR EXEMPLO...
+
+
+
+
+
+
+
+-----------> PRIMEIRO EXEMPLO:
+
+
+
+
+
+
+
+
+DIGAMOS QUE __ A FORM DO USER FOI SUBMITTADA AO SERVER,
+
+
+E AÍ O INPUT DE 'FIRST NAME' FOI CHECADO,
+
+FOI CHECADO E CONSTATADO QUE É 'INVÁLIDO'... -------> 
+
+
+
+
+
+O QUE FAZEMOS, TIPICAMENTE?
+
+
+
+
+
+
+
+
+--> NÓS ENVIAMOS DE VOLTA A PAGE, LÁ DO SERVER,
+
+
+E AÍ 
+
+ADICIONAMOS CSS CLASSES AOS INPUTS QUE FORAM INCORRETOS,
+
+
+
+
+PARA AÍ SINALIZAR 
+
+
+AO USER QUE 
+
+
+__ ALGO DEU ERRADO,
+
+UI HELP PARA 
+
+
+
+COMUNICAR A PARTE QUE 
+
+
+ELE ESCREVEU INCORRETAMENTE...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA MARCAR UM INPUT COMO INVÁLIDO,
+
+TEMOS A CLASS DE 'is-invalid'...
+
+
+
+
+
+
+
+
+
+
+
+
+--> TAMBÉM HÁ A CLASS DE 'is-valid',
+
+
+QUE FAZ JUSTAMENTE O CONTRÁRIO, SINALIZA QUE O INPUT É VÁLIDO AO USER..
+
+
+
+
+
+
+
+
+
+
+
+----->             <div class="form-group">
+                <label for="username2">Username2</label>
+                <input type="text" class="form-control is-invalid" name="username2">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> OK, O BOOTSTRAP NOS ADICIONOU ESSA COLORAÇÃO VERMELHA,
+
+SINAL DE QUE 
+
+O INPUT DO USER ESTÁ ERRADO...
+
+
+
+
+
+
+
+
+
+
+
+-----> ok... MAS SUPONHA-SE QUE TAMBÉM QUEREMOS MOSTRAR UM 'HELP TEXT',
+
+
+TEXT 
+
+
+DIZENDO A _ RAZÃO _ DO ERROR/INPUT INVÁLIDO...
+
+
+
+
+
+
+
+
+--> PARA ISSO, O PROFESSOR ADICIONA UMA TAG DE '<div></div>"...
+
+
+
+
+
+
+
+-----> "Looks Bad"
+
+
+
+
+
+
+
+
+
+<div>Looks Bad!</div>
+
+
+
+
+
+
+
+
+--> É CLARO QUE ESSA DIV SERIA/SERÁ RENDERIZADA CONDICIONALMENTE,
+
+LÁ NO NOSSO SERVER,
+
+
+
+PARA ASSEGURAR QUE ELE SÓ APAREÇA QUANDO O INPUT REALMENTE TIVER SIDO INCORRETO...
+
+
+
+
+
+
+
+
+
+--> MAS PARA DAR A ESSE ELEMENTO UMA COR VERMELHA DE ERRO,
+
+também precisamos de uma class adicional...
+
+
+
+
+
+
+
+
+--> precisamos da class 
+
+
+
+'invalid-feedback'...
+
+
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+
+            <div class="form-group">
+                <label for="username2">Username2</label>
+                <input type="text" class="form-control is-invalid" name="username2">
+                <div class="invalid-feedback">Looks Bad!</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+OUTRA COISA QUE VOCÊ PODE FAZER É USAR A TAG DE '<small>',
+
+PARA AÍ 
+
+ADICIONAR ALGUMA 
+
+
+
+INFO SOBRE O TIPO DE INPUT QUE O USER DEVE COLOCAR ALI... (como 
+
+
+por exemplo,
+
+
+'Names must have at least 6 characters'
+)
+
+
+
+
+
+
+
+
+---> no caso do BOOTSTRAP, É NECESSÁRIO ADICIONAR A CLASS DE 'form-info' PARA 
+
+ESTILIZAR ESSE TEXTO ADEQUADAMENTE...
+
+
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+            <div class="form-group">
+                <label for="username2">Username2</label>
+                <input type="text" class="form-control is-invalid" name="username2">
+                <small class="form-info">Username must have at least 6 characters.</small>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------> POR FIM, TEMOS A CLASS DE 'text-muted', 
+
+QUE PODE SER ADICIONADO A ELEMENTOS COM TEXTO NO INTERIOR (
+
+    VAI DEIXAR 
+
+
+    NOSSO TEXTO __CINZA___...
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----> NÓS TAMBÉM TEMOS A CLASS DE 'valid-feedback',
+
+
+
+
+
+QUE É UMA CLASS _ QUE _ SÓ APARECE _ NO SEU INPUT SE ELE TIVER A CLASS DE 'is-valid'
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+           <div class="form-group">
+                <label for="username3">Username3</label>
+                <!-- 'is-valid' é o ESTILO DINÂMICO DO BOOTSTRAP USADO PARA _ QUANDO __ O INPUT É TIDO COMO VÁLIDO PELO SEU FRONTEND...-->
+                <input type="text" class="form-control is-valid" name="username3">
+                <!-- SE EXISTIR/ESTIVER PRESENTE O ESTILO DINÂMICO DE 'is-valid' no input desse form-group, a div de class 'valid-feedback' VAI _ FAZER COM QUE _ AQUELA MENSAGEM APAREÇA... (no caso, 'looks good')-->
+                <div class="valid-feedback">Looks Good!</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MAS ISSO TE MOSTRA ALGO IMPORATNTE, ISSO DO 'is-valid' e do 'is-invalid'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----> o 'INVALID TEXT' E O 'VALID TEXT' ___ SÓ __ 
+
+
+_ APARECEM __ SE 
+
+
+O 'INPUT FIELD'
+
+
+ANTERIOR 
+
+
+A
+ ELES_ __ 
+
+
+
+
+ __ TIVER__ A CLASS DE 'is-valid'  (para que a div com 'valid-feedback' apareça)
+
+
+ ou 
+
+ 'is-invalid' (para que a div com 'invalid-feedback' apareça)
+
+
+
+
+(RENDER CONDICIONAL)...
+
+
+
+
+
+
+
+
+
+--------> ISSO QUER DIZER QUE VOCê DEVE RENDERIZAR 
+
+
+
+
+
+MENSAGENS DE ERRO NO SERVIDOR/PELO SERVIDOR _ APENAS QUANDO NECESSÁRIO,
+
+
+
+
+
+
+
+
+
+
+MAS O BOOTSTRAP 
+
+TAMBÉM 
+
+VAI _ DISPLAYAR__ ESSAS DIVS/STYLES_ APENAS SE 'is-valid'/'is-invalid' realmente estiver lá...
+
+
+
+
+
+
+
+
+
+OK, ISSO FOI BASTANTE COISA,
+
+MAS 
+
+
+
+O QUE INTERESSA É QUE
+
+
+
+
+VOCÊ TEM ESSAS CLASSES E FEATURES PARA QUE VOCÊ CONSIGA 
+
+
+
+
+
+DAR O MELHOR USER FEEDBACK POSSÍVEL (mostrar apenas o text que faz sentido 'for the given input'), 
+
+
+
+POR MEIO DO USO DAS CLASSES ADEQUADAS (adjusting the classes),
+
+
+
+e também 
+
+
+
+
+POR MEIO 
+
+
+
+DO SHOW DE APENAS O TEXT _ ADEQUADO PARA THE 'GIVEN INPUT'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS O BOOTSTRAP TAMBÉM É CAPAZ 
+
+
+DE 
+
+TIRAR VANTAGEM 
+
+
+
+DO 'AUTOMATIC VALIDATION' NO FRONTEND... --> O PROFESSOR QUER DIZER BASICAEMTNE 
+
+
+VALIDATION POR MEIO DE JAVASCRIPT...
+
+
+
+
+
+
+
+
+
+
+
+
+--> O ADD AUTOMÁTICO DE CLASSES (
+    no frontend
+) POR MEIO DE JAVASCRIPT...
+
+
+
+
+
+
+
+
+
+--> NO SERVERSIDE,
+
+
+O VALIDATION É FEITO POR MEIO _ DO USO 
+
+DE 
+
+TEMPLATING ENGINES COMO O EJS...
+
+
+
+
+
+
+
+
+
+
+
+--> MAS VOCÊ TAMBÉM PODE TIRAR VANTAGEM DO 
+
+
+
+
+JAVASCRIPT --------> VOCÊ PODE USAR JAVASCRIPT 
+
+
+
+PARA USAR 
+
+
+A VALIDATION API 
+
+
+
+QUE 
+
+
+BROWSERS MODERNOS OFERECEM,
+
+
+
+EM QUE 
+
+A VALIDITY 
+
+
+DA FORM É HANDLADA NO BACKGROUND, PELO BROWSER --> COM ISSO,
+
+
+O BOOTSTRAP PODE CHECAR A VALIDADE 
+
+
+
+DESSAS FORMS 
+
+E TAL,
+
+
+E AÍ _ AUTOMATICMANETE 
+
+
+ADICIONAR OS STYLES ADEQUADOS,
+
+
+
+COM BASE 
+
+
+
+
+NOS PSEUDOSELECTORS ':VALID/:INVALID'
+
+
+
+OFERECIDOS PELO 
+
+
+
+BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> ESSA É UMA FEATURE QUE NÃO É SUPORTADA POR TODOS OS BROWSERS, MAS É ASSIM QUE FUNCIONA:
+
+
+
+
+
+
+
+
+--> vamos até A NOSSA 'OVERALL-FORM',
+
+a wrapping form,
+
+
+
+
+
+E AÍ 
+
+ADICIONAMOS 
+
+A CLASS DE 
+
+
+'needs-validation' 
+
+
+
+,
+
+TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+<form action="" class="main-form needs-validation">
+
+
+
+
+
+
+
+-> ISSO SINALIZA AO BOOTSTRAP QUE ESSA É UMA FORM QUE DEVE SER VALIDADA E ESTILIZADA
+ 
+
+ APROPRIADAMENTE,
+
+
+ DE FORMA _ AUTOMÁTICA....
+
+
+
+
+
+
+
+
+
+ TIPO ALGO ASSIM:
+
+
+
+
+
+
+
+
+
+                 <form action="" class="main-form needs-validation">
+                    <div class="form-group">
+                        <label for="name2">Name2</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password2/label>
+                        <input type="password" class="form-control" name="password2">
+                    </div>
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        CERTO.... E NÓS AINDA PODEMOS 
+
+
+ADICIONAR AQUELAS DIVS DE 'invalid-feedback' 
+
+e 
+
+'valid-feedback'
+
+a esses input fields...
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+              <form action="" class="main-form needs-validation">
+                    <div class="form-group">
+                        <label for="name2">Name2</label>
+                        <input type="text" class="form-control">
+                        <div class="invalid-feedback">Please enter a valid name</div>
+                              <div class="valid-feedback">Looks Good!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password2/label>
+                        <input type="password" class="form-control" name="password2">
+                    </div>
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+OK, AGORA 
+
+
+TEMOS OS 2 TIPOS DE MENSAGEM, MAS É CLARO QUE NENHUMA DELAS SERÁ MOSTRADA...
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA QUE SEJAM MOSTRADAS SEM USAR O ADD MANUAL DE 'is-valid' e 'is-invalid' ao INPUT element,
+
+
+
+DEVEMOS 
+
+
+
+_ 
+
+
+__ PRIMEIRAMENTE_ USAR __ UM 'EVENT' QUE 
+
+
+_TRIGGUE __ O 
+
+
+
+'BROWSER-SIDE, BUILT-IN VALIDATION'...
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA ISSO,
+
+PARA 
+
+
+
+__ TER UM EVENT QUE TRIGGUE ESSA VALIDATION,
+
+PRECISAMOS, NO CASO DO BOOTSTRAP,
+
+DE UM __ BUTTON_...
+
+
+
+
+
+
+
+
+
+
+
+
+
+->  O PROFESSOR ADICIONA UM BUTTON GENÉRICO,
+
+
+
+
+
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+
+<button>Submit</button>
+
+
+
+
+
+
+
+
+
+EX:
+
+
+
+
+
+
+
+
+                <form action="" class="main-form needs-validation">
+                    <div class="form-group">
+                        <label for="name2">Name2</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password2</label>
+                        <input type="password" class="form-control" name="password2">
+                    </div>
+                    <button>Submit</button>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    --> OK ,
+
+
+    MAS O STYLING DESSE BUTTON ESTÁ UMA BOSTA,
+
+    E ELE SÓ ESTÁ MANDANDO 
+
+
+
+    NOSSO INPUT AO SERVER, SEM NENHUM PROBLEMA...
+
+
+
+
+
+
+
+
+
+---> MAS O QUE QUEREMOS FAZER, AQUI, É VALIDAR O INPUT NO CLIENT,
+
+
+
+
+
+
+ASSIM COMO VOCÊ FAZ COM VÁRIOS FRONTEND FRAMEWORK SOLUTIONS,
+
+
+
+
+COMO REACT ANGULAR VUE,
+
+
+
+
+
+E _ AÍ _ 
+
+ENVIAR ESSE REQUEST,
+
+POR TRÁS DAS CENAS,
+
+SE 
+
+ELE 
+
+ESTIVER VÁLIDO...
+
+
+
+
+
+
+
+
+
+
+
+--> é claro que 
+
+VOCÊ PODERIA TIRAR VANTAGEM 
+
+DE QUALQUER 
+
+
+TIPO 
+
+DE 
+
+
+'FRONTEND VALIDATION METHOD'
+ 
+
+OFERECIDO POR SEU FRAMEWORK DE ESCOLHA,
+
+
+
+
+
+
+
+MAS _ VOCÊ TAMBÉM PODE FAZER ISSO MANUALMENTE,
+
+
+COM SEU PRÓPRIO CÓDIGO...
+
+
+
+
+
+
+
+
+
+
+
+--> PARA CONSEGUIR FAZER ISSO, AQUI,
+
+O PROFESSOR 
+
+
+
+ADICIONA CÓDIGO JAVASCRIPT CUSTOMIZADO, 
+DE FORMA 
+
+
+INLINE,
+
+TIPO ASSIm:
+
+
+
+
+
+
+<script>
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+--> O PROFESSOR USA QUERY SELECTOR PARA 
+
+ACESSAR 
+
+
+O NOSSO ELEMENTO 
+
+
+DE FORM 
+
+
+POR MEIO DE '.needs-validation'...
+
+
+
+
+
+
+ex:
+
+
+
+
+<script>
+
+
+    var form = document.querySelector('.needs-validation');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> O PROFESSOR NOS EXPLICA QUE, CASO TIVÉSSEMOS MÚLTIPLOS 
+
+
+
+FORMS NA NOSSA PAGE,
+
+COM ESSA CLASS DE 
+
+
+'.needs-validation',
+
+SERIA 
+
+NECESSÁRIO 
+
+
+OS SELECIONAR, SELECIONAR TODOS ELES,
+
+POR MEIO DE 
+
+
+'querySelectorAll',
+
+E QUE 
+
+DEPOIS 
+
+SERIA NECESSÁRIO LOOPAR POR DENTRO DE TODOS ELES... (com for xx of yy )
+
+
+
+
+
+
+
+
+
+
+
+---------> ok.... AÍ O PROFESSOR ADICIONA UM EVENT LISTENER 
+
+PARA O ELEMENTO 'FORM',
+
+
+
+
+
+PARA O EVENTO DE 'submit'...
+
+
+
+ex:
+
+
+
+
+
+
+
+
+<script>
+
+
+    var form = document.querySelector('.needs-validation');
+
+    form.addEventListener('submit', function(event) {
+
+
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------> AÍ, VAMOS CHECAR ,
+
+
+
+
+
+
+'if (form.checkValidity())',
+
+
+
+
+
+ESSE METHOD __ OFERECIDO PELO BROWSER EM SI... -----> 
+
+
+
+E SE ISSO ESTIVER COMO FALSE,
+
+
+
+SABEREMOS QUE A FORM SERÁ INVALID...
+
+
+
+
+
+
+
+
+
+
+--> AÍ PODEREMOS RODAR 'event.preventDefault()',
+
+
+PARA QUE 
+
+
+
+NOSSA FORM NÃO SEJA SUBMITTADA...
+
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+    var form = document.querySelector('.needs-validation');
+
+    form.addEventListener('submit', function(event) {
+
+        if (form.checkValidity() === false) {
+
+        }
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+-------> SE A FORM ESTIVER COMO INVALID,
+
+VAMOS QUERER PREVENIR O DEFAULT,
+
+
+POR MEIO DE preventDefault',
+
+
+
+
+PARA QUE NENHUM REQUEST SEJA ENVIADO...
+
+
+
+
+
+
+
+
+-->  O PROFESSOR TAMBÉM USA UM METHOD QUE NUNCA VI ANTES,
+
+
+'event.stopPropagation()',
+
+que é usado 
+
+
+PARA 
+
+
+__ PREVENIR O SEND DE REQUESTS QUANDO SEU SUBMIT NÃO É FEITO POR MEIO DE AJAX REQUESTS... (
+
+
+PQ QUEREMOS TER UMA NORMAL FORM SUBMISSION, MAS _ APENAS _ SE A FORM ESTIVER COMO VALID...
+
+)
+
+
+
+
+
+
+
+
+------> DEPOIS DISSO,
+
+O PROFESSOR 
+
+DIZ QUE 
+
+
+_ DEVEMOS 
+
+
+COLOCAR A CLASS DE 'was-validated' 
+
+
+
+
+SE __ A FORM ESTIVER COMO REALMENTE 'VALID'...
+
+
+
+
+
+TIPO ASSIM:
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+    var form = document.querySelector('.needs-validation');
+
+    form.addEventListener('submit', function(event) {
+
+        if (form.checkValidity() === false) {
+            event.stopDefault();
+            event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> ESSA É UMA CLASS ADICIONAL QUE VOCÊ PRECISA ADICIONAR,
+
+
+PQ ELA __ VAI SER INCORPORADA LÁ NA '<form>'...
+
+
+
+
+
+
+
+
+
+
+
+--> VAI SER COLOCADA JUNTO DE 'needs-validation',
+
+E VAI ASSEGURAR 
+
+
+QUE 
+
+
+__ O BOOTSTRAP ASSIGNARÁ OS 
+
+ESTILOS CORRETOS 
+
+AOS ELEMENTS,
+
+
+
+AOS 
+
+
+
+
+__ INPUTS DENTRO DO FORM QUE 
+
+_ ESTIVEREM 'INVALID'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CERTO... 
+
+
+MAS É CLARO QUE AINDA NÃO ACABOU...
+
+
+
+
+
+
+
+
+
+
+
+COMO O BROWSER __ DETERMINARÁ SE ALGO É 'INVALID' OU NAÕ?
+
+
+
+
+
+
+
+
+
+--> BEM, PARA ISSO,
+VOCÊ PRECISA SETTAR ALGUNS __ BUILT-IN ATTRIBUTES DO BROWSER..
+
+
+
+
+
+
+
+
+
+
+
+
+--> PARA O USERNAME,
+
+QUE É UM TEXT INPUT,
+
+DEVEMOS USAR 'required',
+
+PARA 
+
+COMUNICAR AO BROWSER QUE 
+
+
+ESSE 
+
+
+FIELD __ SÓ ESTARÁ __ VALID__ SE NÃO ESTIVER COMO 'EMPTY' (pq é required)...
+
+
+
+
+
+
+
+
+
+
+
+--> E TEMOS OUTROS ATTRIBUTES, COMO 'maxLength' e etc...
+
+
+
+
+
+
+
+
+
+------> MAS SE O PROFESSOR TENTA SUBMITTAR A FORM,
+
+
+
+ELE __ GANHA _ AQUELA MENSAGEM DE ERRO 
+
+
+DO PRÓPRIO BROWSER ('''você deve preencher o email, etc etc''')...
+
+
+
+
+
+--> ESSA É UMA MENSAGEM DE ERRO POR PARTE DO PRÓPRIO BROWSER,
+
+E NÃO DO BOOTSTRAP... ----> E O PROFESSOR/NÓS 
+
+
+
+
+
+__ NÃO QUEREMOS ISSO,
+
+PORTANTO 
+
+
+DEVEMOS RODAR ALGUM CÓDIGO PARA _ DESABILITAR ESSE COMPORTAMENTO,
+
+PARA QUE 
+
+
+ENTÃO 
+
+NOSSO CÓDIGO JAVASCRIPT 
+
+DE 
+
+INPUT ERROR HANDLING CONSIGA 'KICK IN'...
+
+
+
+
+
+
+
+
+
+
+-------> ISSO PQ ESSE COMPORTAMENTO de 'please fill this field'
+
+JÁ VAI PREVENIR 
+
+O SEND 
+
+
+
+DA FORM DE QUALQUER FORMA...
+
+
+
+
+
+
+
+--> PARA PREVENIR ESSE COMPORTAMENTO ,
+
+
+
+PARA DISABLAR O BROWSER DEFAULT,
+
+
+DEVEMOS 
+
+
+
+
+IR ATÉ 
+
+
+
+
+
+O ELEMENTO '<form>'
+
+
+
+MAIS UMA VEZ,
+
+E DESSA VEZ PRECISAMOS ADICIONAR O ATTRIBUTE DE 'novalidate'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------> OK... ADICIONEI, FICOU ASSIM:
+
+
+
+
+ <form action="" class="main-form needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="name2">Name2</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password2</label>
+                        <input type="password" class="form-control" name="password2">
+                    </div>
+                    <button>Submit</button>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        --> ISSO VAI DESABILITAR O 'BROWSER DEFAULT CHECK',
+
+
+        PARA QUE 
+
+        NOSSO CÓDIGO JAVASCRIPT DO BOOTSTRAP CONSIGA SER EXECUTADO (AQUELE CÓDIGO DE 
+        
+        ''''
+            <script>
+
+
+    var form = document.querySelector('.needs-validation');
+
+    form.addEventListener('submit', function(event) {
+
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+    })
+    </script>
+
+    ''''
+
+
+        
+        
+        )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        --> OK... AGORA QUANDO SUBMITTEI A FORM,
+
+
+        ELA FOI SUBMITTADA, O QUE SIGNIFICA QUE HOUVE UM ERRO... (
+
+
+            o comportamento default do browser não foi impedido....
+        )
+
+
+
+
+
+
+
+
+--> MAS NA VERSÃO DO PROFESSOR DA PÁGINA,
+
+
+
+A FORM NÃO FOI ENVIADA,
+
+E APARECERAM AS MENSAGENS DE 'is-invalid', o que significa que isso foi um sucesso...
+
+
+
+
+
+
+
+
+
+--> ah, faltaram os 'required' attributes... 
+
+
+
+
+
+
+
+
+
+
+
+
+AGORA FUNCIONOU:
+
+
+
+
+
+
+                <!-- EXEMPLO DE 'FRONTEND AUTOMATIC VALIDATION' de uma form, POR CONTA DO BOOTSTRAP... ele faz isso por meio da class de 'needs-validation', que NÃO É SUPORTADA POR TODOS OS BROWSERS...-->
+                <!-- PARA DESATIVAR A VALIDATION 'BROWSER-DEFAULT', que diz coisas como 'please fill this field', você precisa ACRESCENTAR O ATTRIBUTE DE 'novalidate' a sua form -- isso fará com que o validation do BOOTSTRAP, causado por 'needs-validation', seja ATIVADO.....-->
+                <form action="" class="main-form needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="name2">Name2</label>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">Looks Bad!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password2</label>
+                        <input type="password" class="form-control" name="password2" required>
+                        <div class="invalid-feedback">Looks Bad!</div>
+                    </div>
+                    <button>Submit</button>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----> POR TERMOS DEFINIDO 'novalidate'
+
+
+
+
+
+e 'needs-validation'
+
+NA FORM,
+
+
+
+O _ BOOTSTRAP 
+
+
+AUTOMATICAMENTE 
+
+
+
+
+
+
+SETTA ALGUNS STYLES PARA O 'USERNAME' (o qual identifica como 'invalid', corretamente),
+
+
+
+
+
+E AÍ 
+
+
+
+DEFINE VALID A TODOS OS OUTROS ELEMENTS, QUE 
+
+NÃO TIVEREM O 'required' attribute .....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OK... FUNCIONOU..
+
+
+
+
+
+
+
+
+
+
+             <form action="" class="main-form needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="name2">Name2</label>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">Looks Bad!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Password2</label>
+                        <input type="password" class="form-control" name="password2" required>
+                        <div class="invalid-feedback">Looks Bad!</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="address" class="form-control" name="address">
+                        <div class="invalid-feedback">Looks Bad!</div>
+                    </div>
+                    <button>Submit</button>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------> ISSO TUDO ESTÁ FUNCIONANDO POR CONTA DO BROWSER BUILT-IN VALIDATION...
+
+
+
+
+
+
+
+
+
+
+--> se você ESTÁ FAZENDO ESSA VALIDATION MANUALMENTE,
+
+VOCÊ NÃO PRECISA DO     'needs-validation'..
+
+
+
+
+
+
+
+
+
+
+
+-->  AQUELA CLASS DE 'was-validated' também é necessária, se você quer usar a BOOTSTRAP VALIDATION...
+
+
+
+
+
+
+
+
+
+
+--> É ASSIM QUE PODEMOS VALIDAR BOOTSTRAP FORMS...
+
+
+
+
+
+
+
+
+--> VAMOS ACABAR COM ESSA AULA 
+
+
+
+COM O STYLING DE BUTTONS...
+
+
+
+
+
+O STYLING DE BUTTONS É SUPER SIMPLES,
+
+
+
+E, COMO SEMPRE,
+
+
+LINKS AOS OFFICIAL DOCS PODEM SER ENCONTRADOS NA AULA..
+
+
+
+
+
+
+
+
+
+
+
+--> NO BOOTSTRAP,
+
+
+A CLASS UTILIZADA É 
+
+
+
+'btn'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+tipo 
+
+
+
+
+<button type="submit" class="btn">Button</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> MAS É CLARO QUE O BUTTON ACEITA MAIS DO QUE O STYLE BASE...
+
+
+
+
+
+
+
+
+
+---> TEMOS OS STYLES DE COR QUE DEVEM SER ADICIONADOS A ELE... --> 
+
+
+
+
+O MAIS BÁSICO/COMUM É 
+
+
+
+'btn btn-primary'... ----> SERÁ, POR DEFAULT, AZUL,
+
+
+PQ O PRIMARY-THEME É AZUL..
+
+
+
+
+
+
+
+
+
+
+
+-----> O SECONDARY É 'GREY'...
+
+
+
+
+--> TAMBÉM TEMOS 'btn btn-success' 
+
+
+'btn-alert'
+
+
+'btn-warning',
+
+
+
+etc etc...
+
+
+
+
+
+tipo assim:
+
+
+
+
+                    <button type="submit" class="btn btn-danger">Button</button>
+                                <button type="submit" class="btn btn-success">Button</button>
+                                            <button type="submit" class="btn btn-warning">Button</button>
+                                                        <button type="submit" class="btn btn-primary">Button</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CERTO... TAMBÉM É POSSÍVEL __ 'INVERTER' AS CORES DO BUTTON,
+
+
+
+
+PARA QUE 
+
+
+TENHAMOS uma parte DO MEIO 'INVISÍVEL',
+
+
+PARA QUE 
+
+SÓ EXISTA A BORDA...
+
+
+
+
+
+
+
+
+
+
+PARA ISSO,
+
+ 
+
+ USAMOS A CLASS DE 
+
+
+ 'btn btn-outline-success'...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ --> SE COLOCAMOS 
+
+
+
+
+ A CLASS DE 'disabled' (que pode ser adicionada PROGRAMATICAMENTE, É CLARO),
+
+
+
+
+ O BUTTON FICA COM UM ESTILO NICE DE 'DESABILITADO'...
+
+
+
+
+
+
+
+ COM ISSO, 
+
+ TEMOS 
+
+
+ TODO O CONHECIMENTO DE QUE PRECISAMOS PARA CONSTRUIR 
+
+ FORMS BONITAS E FLEXÍVEIS, COM A AJUDA DO BOOTSTRAP...
+
+
+
+
+
+
+
+
+
+ --> JÁ SABEMOS:
+
+ 1) COMO ADICIONAR FORM ELEMENTS E OS ESTILIZAR CORRETAMENTE
+
+
+
+
+
+
+ 2) COMO ESTRUTURAR ELEMENTOS, COM FORM GROUPS 
+
+
+
+
+ 3) COMO LAYOUTAR MELHOR, COM A GRID DENTRO DA FORM 
+
+
+
+
+ 4) COMO VALIDAR FORMS (manualmente ou AUTOMATICAMENTE, com o bootstrap)
+
+
+
+
+ 5) COMO ESTILIZAR BUTTONS...

@@ -1,0 +1,192 @@
+
+
+
+
+
+
+
+
+DIFERENÇA ENTRE DESIGN RESPONSIVO E DESIGN FLUIDO....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SÃO DIFERENTES...
+
+
+
+
+
+
+DESIGN FLUIDO É DIFERENTE...
+
+
+
+
+
+
+
+
+
+
+
+
+--> SITES COM LAYOUTS FLUIDOS...
+
+
+
+
+
+
+
+
+
+
+--> sites com layouts fluídos __ UTILIZAM _ _PORCENTAGENS PARA A CONFIGURAÇÃO DE SUAS MEDIDAS...
+
+
+
+
+
+
+
+
+
+
+--> PODEMOS CRIAR LAYOUTS FIXOS (definindo largura e altura em PIXELS),
+
+
+
+E PODEMOS CRIAR LAYOUTS FLUÍDOS (
+
+
+    EM QUE AS MEDIDAS 
+
+
+    SÃO DEFINIDAS EM PORCENTAGENS...
+)
+
+
+
+
+
+
+
+
+
+
+
+RESUMO FLUÍDO:
+
+
+
+
+CONFORME REDUZO O TAMANHO DA TELA,
+
+
+O LAYOUT VAI 'FLUINDO', VAI SE ADAPTANDO AO NOVO 
+
+TAMANHO DE TELA...
+
+
+
+
+
+
+
+
+
+
+
+--> E DESIGNS FLUÍDOS SÃO DIFERENTES DE LAYOUTS RESPONSIVOS...
+
+
+
+
+
+
+--> É UM DESIGN COM COLUNAS
+
+
+
+
+
+
+
+
+
+--> DEFINIMOS AS LARGURAS EM PORCENTAGENS..
+
+
+
+
+
+
+
+-> ex: '70% da largura disponível' (vai sempre ocupar isso aí, independentemente do dispositivo que acessa o site)...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----> NOS NOSSOS SITES, 
+
+
+
+PODEMOS COLOCAR 'LARGURA MÁXIMA' E 'LARGURA MÍNIMA',
+
+PARA QUE 
+
+O 
+LAYOUT NÃO FIQUE MT ESTICADO EM 
+
+TELAS MAIORES...
+
+
+
+
+
+
+
+
+--> ESSE É O LAYOUT FLUIDO/LÍQUIDO,
+
+PQ ELE TEM A CAPACIDADE DE 'FLUIR' ATÉ OS LIMITES DOS DISPOSITIVOS...
+
+
+
+
+
+
+
+
+
+
+
+--> JÁ UM LAYOUT RESPONSIVO __ RESPONDE __ AOS DIFERENTES TIPOS DE TAMANHO DE TELA...
+
+
+
+
+

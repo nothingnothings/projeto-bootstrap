@@ -1,0 +1,16 @@
+// declare as ALTERAÇÕES NOS DEFAULTS DO __ BOOTSTRAP __ ANTES_ DO SEU IMPORT (visto logo abaixo)
+
+
+
+$theme-colors: (
+    "primary": #521751,
+    "danger": #ff21
+);
+
+
+
+
+$border-radius : 10rem; ////exemplo de EDIÇÃO DE VARIABLE LÁ DO ARQUIVO '_variables.scss' do BOOTSTRAP...
+
+
+@import 'node_modules/bootstrap/scss/bootstrap';

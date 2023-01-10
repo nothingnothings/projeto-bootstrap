@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- <link TROCAMOS PELO CÓDIGO EDITADO DO BOOTSTRAP, de 'main.css'...
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        > -->
+        <!-- arquivo DO BOOTSTRAP QUE IMPORTAMOS APÓS O COMPILAR E PEGAR APENAS AS COISAS IMPORTANTES (reduzir bundle size com edição de código sass do bootstrap)-->
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>Document6</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a href="#" class="navbar-brand">BRAND</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Seasons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Players</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+     
+    <!-- CÓDIGO JAVASCRIPT NECESSÁRIO PARA ATIVAR A 'AUTOMATIC FORM VALIDATION' do bootstrap.... VOCÊ TAMBÉM PRECISA ADICIONAR O attribute de 'novalidate' lá na sua form, para que esse código javascript de validation a PARTIR DE SUBMITS seja executado/considerado-->
+    <script>
+
+
+    var form = document.querySelector('.needs-validation');
+    console.log(form);
+
+    form.addEventListener('submit', function(event) {
+
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+    })
+    </script>
+</body>
+</html>
